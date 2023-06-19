@@ -26,4 +26,10 @@ A.~G. Cohn and J.~Renz, ``Qualitative spatial representation and reasoning,'' \e
 \bibitem{cohn2023dialectical}
 A.~G. Cohn and J.~Hernandez-Orallo, ``Dialectical language model evaluation: An initial appraisal of the commonsense spatial reasoning abilities of llms,'' \emph{arXiv preprint arXiv:2304.11164}, 2023.
 
+\bibitem{borji2023categorical}
+A.~Borji, ``A categorical archive of chatgpt failures,'' \emph{arXiv preprint arXiv:2302.03494}, 2023.
+
+\bibitem{lin2023using}
+F.~Lin, Z.~Shou, and C.~Chen, ``Using language models for knowledge acquisition in natural language reasoning problems,'' \emph{arXiv preprint arXiv:2304.01771}, 2023.
+
 \end{thebibliography}
