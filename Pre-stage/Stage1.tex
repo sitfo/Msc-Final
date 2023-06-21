@@ -32,8 +32,16 @@ By assessing their performance in VQA and their ability to comprehend and reason
 \end{enumerate}
 
 \section{Key Literature and Background Reading}
-For LLMs, the Spatial Reasoning should contain the following aspects: (i) mereotopology,
-(ii) direction and orientation, (iii) size, (iv) distance and (v) shape \cite{cohn2008qualitative}. LLMs' answer should contain more than one of these aspects to be considered as a correct answer. Based on this goal, Cohn \textit{et al} \cite{cohn2023dialectical} built a general Spatial Reasoning test which contains Basic spatial relations(parthood, rotation, direction, etc), size shape and location(for instance: \emph{If a circle b is larger than a circle c, is it possible to move b so that it is entirely contained by c?}), Affordances and object interaction and Object permanence, and they found that LLMs give different answers to the same question with continuous seccsions which means LLMs are not consistent in Spatial Reasoning. Lin \textit{et al} \cite{lin2023using} also built a test on the Spatial Reasoning of LLMs, but they are more focused on the repereaentation of the questions in mathematical form. They found that LLMs are not good at answering questions but good at transform the questions into mathematical form based on the users demands.
+For Large Language Models (LLMs), Spatial Reasoning encompasses several key aspects, including (i) mereotopology, (ii) direction and orientation, (iii) size, (iv) distance, and (v) shape, as discussed by Cohn et al. (2008) in their qualitative analysis \cite{cohn2008qualitative}. To assess LLMs' performance in Spatial Reasoning, Cohn et al. (2023) developed a comprehensive Spatial Reasoning test that incorporates basic spatial relations (such as parthood, rotation, and direction), size, shape, location, affordances, object interaction, and object permanence \cite{cohn2023dialectical}. Their findings revealed inconsistencies in LLMs' responses to the same question during continuous sessions, indicating that LLMs struggle with maintaining consistency in Spatial Reasoning tasks.
+
+In a related study by Lin et al. (2023), a test was devised to evaluate LLMs' Spatial Reasoning abilities with a focus on mathematical representation of questions \cite{lin2023using}. Their research demonstrated that while LLMs may not excel at directly answering spatial questions, they exhibit proficiency in transforming questions into mathematical forms based on user demands.
+
+Moreover, Borji (2023) proposed a failure task category for ChatGPT, within which Spatial Reasoning was highlighted \cite{borji2023categorical}. In this task, the researcher provided a grid description and asked the model to find a path from a start point to an end point. However, the model failed to answer the question accurately, highlighting its limitations in Spatial Reasoning tasks.
+
+Collectively, these studies shed light on the challenges LLMs face when it comes to Spatial Reasoning, including inconsistencies in responses, struggles with direct spatial question answering, and difficulties in solving specific spatial tasks like path finding. But there are a few research on the Spatial Reasoning abilities of Visual Language Models (VLMs), which are a subset of LLMs that incorporate visual information into their training process. 
+
+
+
 
 \section{Development and Implementation Summary}
 \section{User Interface Mockup}
