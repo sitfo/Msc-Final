@@ -1,22 +1,23 @@
 \documentclass[journal,10pt]{IEEEtran}
 \usepackage{sharina}
 
-\author{
-    \IEEEauthorblockN{Jinlong Liu}\\
-    \IEEEauthorblockA{Department of Computer Science, University of Liverpool
-    \\J.Liu157@liverpool.ac.uk}
-}
-\title{Research Proposal of Visual Spatial Reasoning of Large Language Models}
 \begin{document}
-\maketitle
-\begin{abstract}
-Large Language Models has become a hot topic in the field of Natural Language Processing. The Visual Spatial Reasoning is a key ability of human intelligence. In this paper, we will review the recent research on the Visual Spatial Reasoning of Large Language Models.
-\end{abstract}
-\section{Reasearch Topic}
+\input{title.tex}
+\section{Project Description}
 In recent years, Large Language Models (LLMs) have achieved great success in the field of Natural Language Processing (NLP). The LLMs are trained on large-scale text corpus, and can be used to solve many NLP tasks, such as machine translation, question answering, and text generation. The LLMs are usually trained on text corpus, and can be used to solve many NLP tasks, such as machine translation, question answering, and text generation.\\
-However, the LLMs are not good at solving the Spatial Reasoning tasks. In generally, Spatial knowledge have these aspects: including (i) mereotopology, (ii) direction and orientation, (iii) size, (iv) distance and (v) shape \cite{cohn2008qualitative}. And Spatial Reasoning is  reasoning more than one of these aspects of Spatial knowledge at same time. Cohn \textit{et al.} \cite{cohn2023dialectical} build a Spatial Reasoning dataset, which contains 1000 questions. The questions are about the Spatial knowledge of the objects in the images. The LLMs can not solve the Spatial Reasoning tasks well. Borji \textit{et al.} \cite{borji2023categorical} proposed a comphensive analysis of ChatGPT's failures and Spatial Reasoning is one of the failures. Furthermore, Lin \textit{et al.} \cite{lin2023using} tested the Spatial Reasoning ability of GPT-4 and found that GPT-4 can not solve the Spatial Reasoning tasks well, but it can consider as a knowledge acquisition tool. \\
-Following the Research of testing Spatial Reasoning of LLMs, I noticed that there a few researches focus on the Visual Spatial Reasoning of Visual Language Models, such as ViLBERT \cite{lu2019vilbert}, LXMERT \cite{tan2019lxmert}, and UNITER \cite{chen2019uniter}. The Visual Spatial Reasoning is a key ability of human intelligence. In this paper, we will review the recent research on the Visual Spatial Reasoning of Large Language Models.
+However, the LLMs are not good at solving the Spatial Reasoning tasks. In this project, I will design an experiment for most popular LLMs, such as GPT-4, to test their ability of Visual Spatial Reasoning. The experiment will be based on the Visual Question Answering (VQA)--a task that requires the machine to answer questions about the given image. For example, given an image with different objects, the machine needs to answer the question "What the relevant position of the object A to the object B?". With these tests, we can evaluate what level of Spatial Reasoning ability the LLMs have.\\
+\section{Aims and Objectives}
 
+\section{Key Literature and Background Reading}
+\cite{borji2023categorical}
+\section{Development and Implementation Summary}
+\section{User Interface Mockup}
+\section{Data Sources}
+\section{Testing}
+\section{Evaluation}
+\section{Ethical Considerations}
+\section{Project Plan}
+\section{Risks and Contingency Plans}
 
 \bibliographystyle{IEEEtran}
 \bibliography{mybib}
