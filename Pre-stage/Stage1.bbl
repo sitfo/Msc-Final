@@ -59,4 +59,7 @@ X.~Liu, D.~Yin, Y.~Feng, and D.~Zhao, ``Things not written in text: Exploring sp
 \bibitem{mirzaee2021spartqa}
 R.~Mirzaee, H.~R. Faghihi, Q.~Ning, and P.~Kordjmashidi, ``Spartqa:: A textual question answering benchmark for spatial reasoning,'' \emph{arXiv preprint arXiv:2104.05832}, 2021.
 
+\bibitem{lin2014microsoft}
+T.-Y. Lin, M.~Maire, S.~Belongie, J.~Hays, P.~Perona, D.~Ramanan, P.~Doll{\'a}r, and C.~L. Zitnick, ``Microsoft coco: Common objects in context,'' in \emph{Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2014, pp. 740--755.
+
 \end{thebibliography}
