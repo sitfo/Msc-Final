@@ -32,6 +32,9 @@ F.~Lin, Z.~Shou, and C.~Chen, ``Using language models for knowledge acquisition 
 \bibitem{borji2023categorical}
 A.~Borji, ``A categorical archive of chatgpt failures,'' \emph{arXiv preprint arXiv:2302.03494}, 2023.
 
+\bibitem{7410636}
+S.~Antol, A.~Agrawal, J.~Lu, M.~Mitchell, D.~Batra, C.~L. Zitnick, and D.~Parikh, ``Vqa: Visual question answering,'' in \emph{2015 IEEE International Conference on Computer Vision (ICCV)}, 2015, pp. 2425--2433.
+
 \bibitem{liu2022visual}
 F.~Liu, G.~Emerson, and N.~Collier, ``Visual spatial reasoning,'' \emph{arXiv preprint arXiv:2205.00363}, 2022.
 
