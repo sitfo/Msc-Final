@@ -51,8 +51,7 @@ In a related study by Lin et al. (2023), a test was devised to evaluate LLMs' Sp
 
 Moreover, Borji (2023) proposed a failure task category for ChatGPT, within which Spatial Reasoning was highlighted \cite{borji2023categorical}. In this task, the researcher provided a grid description and asked the model to find a path from a start point to an end point. However, the model failed to answer the question accurately, highlighting its limitations in Spatial Reasoning tasks.
 
-Besides, 
-
+Besides, an additional area of research closely connected to Spatial Reasoning is Theory-of-Mind (ToM). Theory-of-Mind entails comprehending and reasoning about the mental states of individuals, encompassing their beliefs, intentions, and desires. It requires a common-sense understanding of Spatial Reasoning to grasp the spatial relationship between agents and objects. The investigation revealed that despite their remarkable language capabilities, LLMs encounter difficulties when confronted with Theory-of-Mind tasks involving trivial alterations. Trivial alterations denote minor modifications in the task settings or presented scenarios \cite{ullman2023large}.
 
 Collectively, these studies shed light on the challenges LLMs face when it comes to Spatial Reasoning, including inconsistencies in responses, struggles with direct spatial question answering, and difficulties in solving specific spatial tasks like path finding. 
 
@@ -71,12 +70,6 @@ Researchers have dedicated efforts to assess the ability of VLMs in comprehendin
 
 For instance, Liu et al. (2022) meticulously curated an extensive dataset comprising more than 10,000 text-image pairs, encompassing a remarkable range of 66 distinct types of spatial relations \cite{liu2022visual}. Through their comprehensive evaluation, encompassing both human subjects and Virtual Language Models (VLMs), they illuminated the notable disparity between VLMs and human performance in this intricate task. Furthermore, to comprehensively assess the spatial reasoning capacities of VLMs, various benchmarks have been developed.
 
-One such benchmark, GQA \cite{hudson2019gqa}, delves into the domain of question generation, pushing the boundaries of VLMs' ability to generate relevant questions. AGQA \cite{grunde2021agqa}, on the other hand, extends the evaluation to include video-based data, capturing the nuances of spatial reasoning in dynamic visual contexts. The Compositional Visual Relations Dataset \cite{zerroug2022benchmark} was meticulously constructed with a focus on Compositional Visual Relations (CVR), challenging VLMs with intricate visual relationships. VALSE \cite{parcalabescu2021valse} places its emphasis on unraveling the sensitivity of VLMs in spatial reasoning tasks, aiming to uncover their aptitude for subtle distinctions.
-
-Furthermore, Liu et al. (2021) introduced a benchmark \cite{liu2022things} that scrutinizes the relative scales of objects, enabling a deeper exploration of VLMs' comprehension of spatial proportions. To capture a richer spectrum of spatial phenomena, SpartQA \cite{mirzaee2021spartqa} was meticulously devised, providing a challenging arena for evaluating VLMs' spatial reasoning capabilities.
-
-Figure \ref{fig:spatial_reasoning_benchmarks} showcases a glimpse of these remarkable benchmarks, highlighting the efforts undertaken to assess and comprehend the spatial reasoning prowess of VLMs.
-
 \begin{figure*}[tp]
     \centering
   \subfloat[a\label{1a}]{%
@@ -93,6 +86,12 @@ Figure \ref{fig:spatial_reasoning_benchmarks} showcases a glimpse of these remar
   \caption{Examples of spatial reasoning benchmarks. (a)Example in benchmark proposed by Liu et al. (2022) \cite{liu2022visual}  (b)Example questions and images of GQA \cite{hudson2019gqa}. (c)Example questions and images of AGQA \cite{grunde2021agqa}. (d)Example in benchmark proposed by Liu et al. (2021) it asks VLMs to give potential position between car and man. \cite{liu2022things}.}
   \label{fig:spatial_reasoning_benchmarks}
 \end{figure*}
+
+One such benchmark, GQA \cite{hudson2019gqa}, delves into the domain of question generation, pushing the boundaries of VLMs' ability to generate relevant questions. AGQA \cite{grunde2021agqa}, on the other hand, extends the evaluation to include video-based data, capturing the nuances of spatial reasoning in dynamic visual contexts. The Compositional Visual Relations Dataset \cite{zerroug2022benchmark} was meticulously constructed with a focus on Compositional Visual Relations (CVR), challenging VLMs with intricate visual relationships. VALSE \cite{parcalabescu2021valse} places its emphasis on unraveling the sensitivity of VLMs in spatial reasoning tasks, aiming to uncover their aptitude for subtle distinctions.
+
+Furthermore, Liu et al. (2021) introduced a benchmark \cite{liu2022things} that scrutinizes the relative scales of objects, enabling a deeper exploration of VLMs' comprehension of spatial proportions. To capture a richer spectrum of spatial phenomena, SpartQA \cite{mirzaee2021spartqa} was meticulously devised, providing a challenging arena for evaluating VLMs' spatial reasoning capabilities.
+
+Figure \ref{fig:spatial_reasoning_benchmarks} showcases a glimpse of these remarkable benchmarks, highlighting the efforts undertaken to assess and comprehend the spatial reasoning prowess of VLMs.
 
 
 These benchmarks and datasets serve as valuable tools to assess the progress and limitations of VLMs in the realm of spatial reasoning and they have such things in common: (i) they are all based on commonsense spatial reasoning, (ii) they all focus on VLMs, (iii) they all only ask LLMs to use simple answers to these questions, like "yes" or "no", and (iv) they all given some bound words to the model to help it understand the spatial relations. However, in my research, I will focus on LLMs and their Spatial Reasoning capabilities, which is a distinct topic from VLMs. 

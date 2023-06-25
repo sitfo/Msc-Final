@@ -41,6 +41,9 @@ F.~Lin, Z.~Shou, and C.~Chen, ``Using language models for knowledge acquisition 
 \bibitem{borji2023categorical}
 A.~Borji, ``A categorical archive of chatgpt failures,'' \emph{arXiv preprint arXiv:2302.03494}, 2023.
 
+\bibitem{ullman2023large}
+T.~Ullman, ``Large language models fail on trivial alterations to theory-of-mind tasks,'' \emph{arXiv preprint arXiv:2302.08399}, 2023.
+
 \bibitem{li2019visualbert}
 L.~H. Li, M.~Yatskar, D.~Yin, C.-J. Hsieh, and K.-W. Chang, ``Visualbert: A simple and performant baseline for vision and language,'' \emph{arXiv preprint arXiv:1908.03557}, 2019.
 
@@ -62,14 +65,14 @@ D.~A. Hudson and C.~D. Manning, ``Gqa: A new dataset for real-world visual reaso
 \bibitem{grunde2021agqa}
 M.~Grunde-McLaughlin, R.~Krishna, and M.~Agrawala, ``Agqa: A benchmark for compositional spatio-temporal reasoning,'' in \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, 2021, pp. 11\,287--11\,297.
 
+\bibitem{liu2022things}
+X.~Liu, D.~Yin, Y.~Feng, and D.~Zhao, ``Things not written in text: Exploring spatial commonsense from visual signals,'' \emph{arXiv preprint arXiv:2203.08075}, 2022.
+
 \bibitem{zerroug2022benchmark}
 A.~Zerroug, M.~Vaishnav, J.~Colin, S.~Musslick, and T.~Serre, ``A benchmark for compositional visual reasoning,'' \emph{arXiv preprint arXiv:2206.05379}, 2022.
 
 \bibitem{parcalabescu2021valse}
 L.~Parcalabescu, M.~Cafagna, L.~Muradjan, A.~Frank, I.~Calixto, and A.~Gatt, ``Valse: A task-independent benchmark for vision and language models centered on linguistic phenomena,'' \emph{arXiv preprint arXiv:2112.07566}, 2021.
-
-\bibitem{liu2022things}
-X.~Liu, D.~Yin, Y.~Feng, and D.~Zhao, ``Things not written in text: Exploring spatial commonsense from visual signals,'' \emph{arXiv preprint arXiv:2203.08075}, 2022.
 
 \bibitem{mirzaee2021spartqa}
 R.~Mirzaee, H.~R. Faghihi, Q.~Ning, and P.~Kordjmashidi, ``Spartqa:: A textual question answering benchmark for spatial reasoning,'' \emph{arXiv preprint arXiv:2104.05832}, 2021.
