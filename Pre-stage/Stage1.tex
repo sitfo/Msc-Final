@@ -49,9 +49,26 @@ One important aspect to consider is Visual Spatial Reasoning (VSR) and its relev
 
 Researchers have dedicated efforts to assess the ability of VLMs in comprehending commonsense spatial reasoning. Visual Question Answering (VQA) tasks have been employed to evaluate the performance of VLMs in answering questions that involve spatial relationships between objects depicted in images\cite{7410636}. Consequently, various benchmarks and question sets have been developed to specifically evaluate the spatial reasoning capabilities of VLMs.
 
-For instance, Liu et al. (2022) constructed a dataset consisting of over 10,000 text-image pairs, encompassing 66 types of spatial relations \cite{liu2022visual}. They evaluated the performance of both human subjects and VLMs on this dataset, revealing that VLMs still lag behind humans in this task. Additionally, other benchmarks such as GQA \cite{hudson2019gqa}, AGQA \cite{grunde2021agqa}, Compositional Visual Relations Dataset \cite{zerroug2022benchmark}, VALSE \cite{parcalabescu2021valse}, Liu et al. (2021) \cite{liu2022things}, and SpartQA \cite{mirzaee2021spartqa} have been developed to further gauge the spatial reasoning capabilities of VLMs.
+For instance, Liu et al. (2022) constructed a dataset consisting of over 10,000 text-image pairs, encompassing 66 types of spatial relations \cite{liu2022visual}. They evaluated the performance of both human subjects and VLMs on this dataset, revealing that VLMs still lag behind humans in this task. Additionally, other benchmarks such as GQA \cite{hudson2019gqa}, AGQA \cite{grunde2021agqa}, Compositional Visual Relations Dataset \cite{zerroug2022benchmark}, VALSE \cite{parcalabescu2021valse}, Liu et al. (2021) \cite{liu2022things}, and SpartQA \cite{mirzaee2021spartqa} have been developed to further gauge the spatial reasoning capabilities of VLMs. Figure \ref{fig:spatial_reasoning_benchmarks} shows some examples of these benchmarks.
 
-These benchmarks and datasets serve as valuable tools to assess the progress and limitations of VLMs in the realm of spatial reasoning and they have such things in common: (i) they are all based on commonsense spatial reasoning, (ii) they all focus on VLMs, and (iii) they all given some bound words to the model to help it understand the spatial relations. However, in my research, I will focus on LLMs and their Spatial Reasoning capabilities, which is a distinct topic from VLMs. 
+\begin{figure*}[!htbp]
+    \centering
+  \subfloat[a\label{1a}]{%
+       \includegraphics[width=0.45\linewidth]{./pic/Example of Bechmark.png}}
+    \hfill
+  \subfloat[b\label{1b}]{%
+        \includegraphics[width=0.45\linewidth]{./pic/GQA-example.png}}
+    \\
+  \subfloat[c\label{1c}]{%
+        \includegraphics[width=0.45\linewidth]{./pic/AGQA-example.png}}
+    \hfill
+  \subfloat[d\label{1d}]{%
+        \includegraphics[width=0.45\linewidth]{./pic/example of B Liu.png }}
+  \caption{Examples of spatial reasoning benchmarks. (a)Example in benchmark proposed by Cohn et al. (2023) \cite{cohn2023dialectical}. (b)Example of GQA \cite{hudson2019gqa}. (c)Example of AGQA \cite{grunde2021agqa}. (d)Example in benchmark proposed by Liu et al. (2021) \cite{liu2022things}.}
+  \label{fig:spatial_reasoning_benchmarks}
+\end{figure*}
+
+These benchmarks and datasets serve as valuable tools to assess the progress and limitations of VLMs in the realm of spatial reasoning and they have such things in common: (i) they are all based on commonsense spatial reasoning, (ii) they all focus on VLMs, (iii) they all only ask LLMs to use simple answers to these questions, like "yes" or "no", and (iv) they all given some bound words to the model to help it understand the spatial relations. However, in my research, I will focus on LLMs and their Spatial Reasoning capabilities, which is a distinct topic from VLMs. 
 
 
 \section{Development and Implementation Summary}
