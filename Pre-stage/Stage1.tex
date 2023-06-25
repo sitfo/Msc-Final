@@ -53,7 +53,16 @@ Moreover, Borji (2023) proposed a failure task category for ChatGPT, within whic
 
 Collectively, these studies shed light on the challenges LLMs face when it comes to Spatial Reasoning, including inconsistencies in responses, struggles with direct spatial question answering, and difficulties in solving specific spatial tasks like path finding. 
 
-An essential consideration lies in the domain of Visual Spatial Reasoning (VSR) and its intrinsic significance within the realm of Visual Language Models (VLMs), which constitutes a distinct sphere divergent from the purview of LLMs. It is of utmost importance to underscore the extensive body of research pertaining to this domain. VLMs, in stark contrast to their LLM counterparts, assume a multifaceted disposition as they amalgamate both visual and textual information, wherein images and text coalesce to effectuate various tasks. Notable exemplars of such triumphant VLMs include ViLBERT \cite{li2019visualbert}, LXMERT \cite{tan2019lxmert}, and UNITER \cite{chen2020uniter}.
+An essential consideration lies in the domain of Visual Spatial Reasoning (VSR) and its intrinsic significance within the realm of Visual Language Models (VLMs), which constitutes a distinct sphere divergent from the purview of LLMs. It is of utmost importance to underscore the extensive body of research pertaining to this domain. VLMs, in stark contrast to their LLM counterparts, assume a multifaceted disposition as they amalgamate both visual and textual information, wherein images and text coalesce to effectuate various tasks. Notable exemplars of such triumphant VLMs include ViLBERT \cite{li2019visualbert}, LXMERT \cite{tan2019lxmert}, and UNITER \cite{chen2020uniter}, there architectural blueprints are illustrated in Figure \ref{fig:VLMs}.
+
+\begin{figure}[htbp]
+    \centering
+    \subfloat[ViLBERT]{\includegraphics[width=0.8\linewidth]{./pic/ViBERT.png}}\\
+    \subfloat[LXMERT]{\includegraphics[width=0.8\linewidth]{./pic/LXMERT.png}}\\
+    \subfloat[UNITER]{\includegraphics[width=0.8\linewidth]{./pic/UNITER.png}}
+    \caption{Architectural blueprints of ViLBERT, LXMERT, and UNITER.}
+    \label{fig:VLMs}
+\end{figure}
 
 Researchers have dedicated efforts to assess the ability of VLMs in comprehending commonsense spatial reasoning. Visual Question Answering (VQA) tasks have been employed to evaluate the performance of VLMs in answering questions that involve spatial relationships between objects depicted in images\cite{7410636}. Consequently, various benchmarks and question sets have been developed to specifically evaluate the spatial reasoning capabilities of VLMs.
 
@@ -196,6 +205,7 @@ By following this well-structured project plan, the project aims to ensure effic
     \label{fig:gantt}
 \end{figure*}
 
+\newpage
 \section{Risks and Contingency Plans}
 
 \bibliographystyle{IEEEtran}
