@@ -245,4 +245,73 @@ Package pdftex.def Info: ./pic/ViBERT.png  used on input line 62.
 <./pic/LXMERT.png, id=16, 625.33624pt x 196.735pt>
 File: ./pic/LXMERT.png Graphic file (type png)
 <use ./pic/LXMERT.png>
-Package pdftex.def Info: .
+Package pdftex.def Info: ./pic/LXMERT.png  used on input line 63.
+(pdftex.def)             Requested size: 201.60077pt x 63.42477pt.
+<./pic/UNITER.png, id=17, 485.815pt x 202.7575pt>
+File: ./pic/UNITER.png Graphic file (type png)
+<use ./pic/UNITER.png>
+Package pdftex.def Info: ./pic/UNITER.png  used on input line 64.
+(pdftex.def)             Requested size: 201.60077pt x 84.1366pt.
+<./pic/Example of Bechmark.png, id=18, 588.1975pt x 504.88625pt>
+File: ./pic/Example of Bechmark.png Graphic file (type png)
+<use ./pic/Example of Bechmark.png>
+Package pdftex.def Info: ./pic/Example of Bechmark.png  used on input line 76.
+(pdftex.def)             Requested size: 232.19843pt x 199.30846pt.
+<./pic/GQA-example.png, id=19, 400.49625pt x 309.155pt>
+File: ./pic/GQA-example.png Graphic file (type png)
+<use ./pic/GQA-example.png>
+Package pdftex.def Info: ./pic/GQA-example.png  used on input line 79.
+(pdftex.def)             Requested size: 232.19843pt x 179.24397pt.
+<./pic/AGQA-example.png, id=20, 414.54875pt x 326.21875pt>
+File: ./pic/AGQA-example.png Graphic file (type png)
+<use ./pic/AGQA-example.png>
+Package pdftex.def Info: ./pic/AGQA-example.png  used on input line 82.
+(pdftex.def)             Requested size: 232.19843pt x 182.72107pt.
+<./pic/example of B Liu.png, id=21, 648.4225pt x 307.1475pt>
+File: ./pic/example of B Liu.png Graphic file (type png)
+<use ./pic/example of B Liu.png>
+Package pdftex.def Info: ./pic/example of B Liu.png  used on input line 85.
+(pdftex.def)             Requested size: 232.19843pt x 109.98717pt.
+ [2 <./pic/ViBERT.png> <./pic/LXMERT.png> <./pic/UNITER.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./pic/Example of Bechmark.png> <./pic/GQA-example.png> <./pic/AGQA-example.png> <./pic/example of B Liu.png>]
+<./pic/workflow.drawio.png, id=35, 678.535pt x 824.07875pt>
+File: ./pic/workflow.drawio.png Graphic file (type png)
+<use ./pic/workflow.drawio.png>
+Package pdftex.def Info: ./pic/workflow.drawio.png  used on input line 140.
+(pdftex.def)             Requested size: 201.60077pt x 244.8364pt.
+ [4 <./pic/workflow.drawio.png>]
+<./pic/Gnatt.png, id=40, 2003.485pt x 425.59pt>
+File: ./pic/Gnatt.png Graphic file (type png)
+<use ./pic/Gnatt.png>
+Package pdftex.def Info: ./pic/Gnatt.png  used on input line 179.
+(pdftex.def)             Requested size: 412.80157pt x 87.6881pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 188.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 188.
+ [5] (./Stage1.bbl
+Underfull \hbox (badness 1715) in paragraph at lines 72--73
+[]\OT1/ptm/m/n/8 A. Zer-roug, M. Vaish-nav, J. Colin, S. Mus-slick, and T. Serre,
+ []
+
+[6 <./pic/Gnatt.png>]) [7
+
+] (./Stage1.aux) ) 
+Here is how much of TeX's memory you used:
+ 3902 strings out of 476025
+ 75354 string characters out of 5790018
+ 1870388 words of memory out of 5000000
+ 24324 multiletter control sequences out of 15000+600000
+ 553384 words of font info for 98 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 86i,10n,91p,879b,374s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Stage1.pdf (8 pages, 4706678 bytes).
+PDF statistics:
+ 73 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+
