@@ -36,7 +36,7 @@ In summary, this project aims to investigate the Spatial Reasoning abilities of 
 
 \section{Key Literature and Background Reading}
 
-Spatial Reasoning plays a fundamental role in commonsense reasoning, dating back to the Naive Physics enterprise\cite{Hobbs1985-HOBFTO}. Extensive research has been conducted on the representation of qualitative spatial reasoning\cite{chen2015survey}, exploring various methods for representing spatial relations in both 2D and 3D spaces. Building upon these foundations, Spatial Reasoning encompasses several key aspects, including (i) mereotopology, (ii) direction and orientation, (iii) size, (iv) distance, and (v) shape, as discussed by Cohn et al. (2008) in their qualitative analysis\cite{cohn2008qualitative}.
+Spatial Reasoning plays a fundamental role in commonsense reasoning, dating back to the Naive Physics enterprise\cite{Hobbs1985-HOBFTO}. Extensive research has been conducted on the representation of qualitative spatial reasoning\cite{chen2015survey}, exploring various methods for representing spatial relations in both 2D and 3D spaces. Building upon these foundations, Spatial Reasoning encompasses several key aspects, including (i) mereotopology, (ii) direction and orientation, (iii) size, (iv) distance, and (v) shape, as discussed by Cohn et al. (2008) in their qualitative analysis\cite{cohn2008qualitative}. These aspects should be judged simultaneously to determine the spatial relationship between two objects. For example, to determine whether a circle is larger than a square, we must consider both the size and shape of the objects. 
 
 To evaluate the performance of Large Language Models (LLMs) in Spatial Reasoning, Cohn et al. (2023) developed a comprehensive Spatial Reasoning test that covers essential spatial relations, such as parthood, rotation, and direction, as well as size, shape, location, affordances, object interaction, and object permanence\cite{cohn2023dialectical}. Their findings revealed inconsistencies in LLMs' responses to the same question across multiple sessions, indicating that LLMs struggle to maintain consistency in Spatial Reasoning tasks. Here is an example prompt and response from their study:
 \begin{quote}
@@ -46,7 +46,6 @@ To evaluate the performance of Large Language Models (LLMs) in Spatial Reasoning
     center of circle b towards the center of circle c until the edge of circle b touches the edge of circle c. As long as the radius of circle b is smaller than the distance between the centers of the two circles, it is possible to move circle b in this way so that it is entirely contained by circle c. It’s important to note that in order for circle b to be entirely contained by circle c, the radius of circle b must be less than or equal to the 
     difference between the radii of circle c and circle b.}
 \end{quote}
-And there are more 
 
 In a related study by Lin et al. (2023), a test was devised to evaluate LLMs' Spatial Reasoning abilities with a focus on mathematical representation of questions \cite{lin2023using}. Their research demonstrated that while LLMs may not excel at directly answering spatial questions, they exhibit proficiency in transforming questions into mathematical forms based on user demands.
 
