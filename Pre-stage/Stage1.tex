@@ -154,7 +154,25 @@ Through this systematic workflow, the experiment aims to assess the performance 
 This project exclusively focuses on the utilization of GPT-series models due to their favorable characteristics and accessibility. Extensive research conducted on the Internet indicates that GPT-series models offer notable convenience compared to other models such as BERT, RoBERTa, and T5. The aforementioned models are deemed unsuitable for this project due to their limited support for text input exclusively. While models like ViBERT, ViT, and CLIP support both image and text inputs, they are not readily accessible on public websites. Although researchers have uploaded some training models on platforms like HuggingFace, their usage necessitates deployment on local machines, which requires high-performance experimental equipment that is not currently available for me. Conversely, GPT-series models are readily accessible on the OpenAI website and can be directly employed without the need for additional infrastructure, thus rendering them highly convenient for the purposes of this project.
 
 \subsection{Question Template}
-The question template is an important part of this project. The question template is shown as follows:
+The question template is an important part of this project. The question template is shown as Table \ref{tab:question_template}. As shown in the table, the question template consists of two parts: the input image and the question. The input image is the image that will be used to test the LLMs. The question is the question that will be asked to the LLMs. The question template will be used to generate the question set.
+
+\begin{table}[ht]
+    \centering
+    \caption{Question Template}
+    \label{tab:question_template}
+    \begin{tabular}{|p{0.4\linewidth}|p{0.5\linewidth}|}
+        \hline
+        \textbf{Input Image} &\textbf{Question}\\
+        \hline
+        \begin{center} \includegraphics[width=\linewidth]{./pic/000000573553.jpg} \end{center}
+        & \begin{enumerate}
+            \item Can you describe the spatial relationship between the tea table and the sofa?
+            \item Can you describe the relevant spatial relationships between the objects on the tea table?
+            \item Show the Reasoning Steps.
+        \end{enumerate}\\
+        \hline
+        \end{tabular}
+\end{table}
 
 
 \section{Data Sources}
@@ -243,7 +261,7 @@ By following this well-structured project plan, the project aims to ensure effic
 
 \section{Risks and Contingency Plans}
 For this project, there are several risks that may affect the project progress. The risks and corresponding contingency plans are outlined in Table \ref{tab:risks} below:
-\begin{table*}[htbp]
+\begin{table*}[ht]
     \centering
     \caption{Risks and Contingency Plans}
     \begin{tabular}{@{}cccc@{}}
