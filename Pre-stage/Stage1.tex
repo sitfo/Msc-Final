@@ -96,7 +96,6 @@ Furthermore, Liu et al. (2021) introduced a benchmark \cite{liu2022things} that 
 
 Figure \ref{fig:spatial_reasoning_benchmarks} showcases a glimpse of these remarkable benchmarks, highlighting the efforts undertaken to assess and comprehend the spatial reasoning prowess of VLMs.
 
-
 These benchmarks and datasets serve as valuable tools to assess the progress and limitations of VLMs in the realm of spatial reasoning and they have such things in common: (i) they are all based on commonsense spatial reasoning, (ii) they all focus on VLMs, (iii) they all only ask LLMs to use simple answers to these questions, like "yes" or "no", and (iv) they all given some bound words to the model to limit the model's answer space.
 
 In conclusion, this literature review presents a thorough examination of the current landscape in the realm of LLMs and their Spatial Reasoning capabilities. It consolidates recent research from the fields of LLMs, Spatial Reasoning, and VQA, providing an in-depth analysis of the advancements made thus far. The review sheds light on the existing limitations and challenges that LLMs encounter when comprehending and reasoning about spatial relationships in visual content. Moreover, it offers valuable insights into potential strategies for enhancing LLMs' Spatial Reasoning abilities. By synthesizing these findings, this review contributes to a comprehensive understanding of the current state of the art in LLMs' Spatial Reasoning capabilities and paves the way for future advancements in this field.
@@ -216,7 +215,7 @@ By addressing these ethical considerations, researchers can ensure the responsib
 \section{Project Plan}
 The project timeline and task allocation are visually represented in Figure \ref{fig:gantt}, showcasing the specific Gantt chart. The project is organized into four distinct stages, each comprising multiple tasks aimed at achieving the project objectives. The stages and their corresponding tasks are outlined below:
 
-\begin{figure*}[hbp]
+\begin{figure*}[htbp]
     \centering
     \includegraphics[width=0.8\linewidth]{./pic/Gnatt.png}
     \caption{Gantt Chart}
@@ -264,17 +263,20 @@ For this project, there are several risks that may affect the project progress. 
 \begin{table*}[ht]
     \centering
     \caption{Risks and Contingency Plans}
-    \begin{tabular}{@{}cccc@{}}
-    \toprule
-    Risks            & Contingencies                                                      & Likelihood & Impact                     \\ \midrule
-Website Break & To pervent this situation, I will limit the number questions in one time          & Medium & May delay the experiment progress  \\
-Hardware Failure & I have backup hardware device to support me to continue experiment & Low        & Will casue project failure \\
-Software Failure & If the software faliure, I can use API of opanai to continue works & Low        & Hardly influence project   \\
-Dataset Issue & If the data source occur issues, I can use other sources to continue this project & Low    & Hardly influence project           \\
-Model Update  & If there occur new version of models, I will add steps in experiment work         & Medium & Will delay the experiment progress \\ \bottomrule
-    \end{tabular}
+    \begin{tabular}{@{}clcl@{}}
+        \toprule
+        Risks            & \multicolumn{1}{c}{Contingencies}                                                 & Likelihood & \multicolumn{1}{c}{Impact}        \\ \midrule
+        Website Break    & To pervent this situation, I will limit the number questions in one time          & Medium     & May delay the experiment progress \\
+        Hardware Failure & I have backup hardware device to support me to continue experiment                & Low        & Will casue project failure        \\
+        Software Failure & If the software faliure, I can use API of opanai to continue works                & Low        & Hardly influence progress         \\
+        Dataset Issue    & If the data source occur issues, I can use other sources to continue this project & Low        & Hardly influence progress         \\
+        Model Update & If there occur new version of models, I will add steps in experiment work & Medium & Will delay the experiment progress \\
+        Expense increase & If the fee of OPENai is affordable after increasing, the experiment can continue  & Low        & Hardly influence progress         \\
+        Model Failure    & If the model fail to work, the experiment will serverly delay                     & Low        & Will cause project failure        \\ \bottomrule
+        \end{tabular}
     \label{tab:risks}
 \end{table*}
+Form the table, we can see that most of the risks are low risk, which means the project is not likely to be affected by these risks. Which means the project is likely to be completed on time.
 
 
 \bibliographystyle{IEEEtran}
