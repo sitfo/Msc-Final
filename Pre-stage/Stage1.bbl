@@ -83,6 +83,12 @@ R.~Burnell, W.~Schellaert, J.~Burden, T.~D. Ullman, F.~Martinez-Plumed, J.~B. Te
 \bibitem{davis2023benchmarks}
 E.~Davis, ``Benchmarks for automated commonsense reasoning: A survey,'' \emph{arXiv preprint arXiv:2302.04752}, 2023.
 
+\bibitem{wu2023visual}
+C.~Wu, S.~Yin, W.~Qi, X.~Wang, Z.~Tang, and N.~Duan, ``Visual chatgpt: Talking, drawing and editing with visual foundation models,'' 2023.
+
+\bibitem{zhu2023minigpt4}
+D.~Zhu, J.~Chen, X.~Shen, X.~Li, and M.~Elhoseiny, ``Minigpt-4: Enhancing vision-language understanding with advanced large language models,'' 2023.
+
 \bibitem{lin2014microsoft}
 T.-Y. Lin, M.~Maire, S.~Belongie, J.~Hays, P.~Perona, D.~Ramanan, P.~Doll{\'a}r, and C.~L. Zitnick, ``Microsoft coco: Common objects in context,'' in \emph{Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2014, pp. 740--755.
 

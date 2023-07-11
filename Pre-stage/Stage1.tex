@@ -137,7 +137,7 @@ For the experimental stage, the workflow can be visualized as depicted in Figure
         \item Different sizes of LLMs.
         \item Different pre-training methods of LLMs.
     \end{itemize}
-    The experiment will involve running the LLMs on the prepared dataset, recording the results, and analyzing their performance. And all testing models will be GPT models, including from GPT-3.5 tubor to GPT-4-0612.
+    The experiment will involve running the LLMs on the prepared dataset, recording the results, and analyzing their performance.
     \item \textbf{Analysis and Evaluation Stage}
     \subitem In this stage, the emphasis is on analyzing the performance of the different versions of LLMs using the prepared dataset. The analysis will primarily consider two aspects:
     \begin{itemize}
@@ -150,7 +150,12 @@ For the experimental stage, the workflow can be visualized as depicted in Figure
 Through this systematic workflow, the experiment aims to assess the performance and capabilities of various versions of LLMs in spatial reasoning tasks. The analysis and evaluation stage provide insights into the strengths, weaknesses, and potential areas for improvement in LLMs' understanding and reasoning abilities pertaining to spatial relationships in visual content.
 
 \subsection{Model Selection}
-This project exclusively focuses on the utilization of GPT-series models due to their favorable characteristics and accessibility. Extensive research conducted on the Internet indicates that GPT-series models offer notable convenience compared to other models such as BERT, RoBERTa, and T5. The aforementioned models are deemed unsuitable for this project due to their limited support for text input exclusively. While models like ViBERT, ViT, and CLIP support both image and text inputs, they are not readily accessible on public websites. Although researchers have uploaded some training models on platforms like HuggingFace, their usage necessitates deployment on local machines, which requires high-performance experimental equipment that is not currently available for me. Conversely, GPT-series models are readily accessible on the OpenAI website and can be directly employed without the need for additional infrastructure, thus rendering them highly convenient for the purposes of this project.
+This project is specifically centered around Visual ChatGPT models, leveraging their innovative and convenient features that combine the visual context from images with textual data from questions\cite{wu2023visual}. While several models, including VLMs such as ViLBERT, LXMERT, UNITER, and VL-BERT, are well-equipped to handle VQA tasks, they often require deployment on local machines or servers. Moreover, they necessitate high-performance GPUs and considerable hard drive space.
+
+Unfortunately, the budget for this project does not accommodate the procurement of high-performance GPUs. Given these constraints, the Visual ChatGPT models emerge as the optimal choice for this project, striking a balance between performance and resource requirements.
+
+Another potential candidate is the miniGPT-4 model\cite{zhu2023minigpt4}. Developed with a frozen visual encoder and a frozen LLM, Vicuna, it offers considerable capabilities. However, with the shutdown of its online demo service, the miniGPT-4 model would also need to be deployed on local machines or servers, posing a similar challenge to the aforementioned models.
+
 
 \subsection{Question Template}
 The question template is an important part of this project. The question template is shown as Table \ref{tab:question_template}. As shown in the table, the question template consists of two parts: the input image and the question. The input image is the image that will be used to test the LLMs. The question is the question that will be asked to the LLMs. The question template will be used to generate the question set.
