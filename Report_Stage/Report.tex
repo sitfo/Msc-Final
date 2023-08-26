@@ -3,7 +3,66 @@
 
 \begin{document}
 \input{title.tex}
-\section{Introduction}
+\section{Project Description}
+In recent years, Large Language Models (LLMs) have transformed the field of Natural Language Processing (NLP) with their impressive achievements. These models, which have been trained on extensive amounts of text data, have proven to be highly effective in solving various NLP tasks, like translating languages, answering questions, and generating text. Their ability to understand and create text that resembles human language has been truly remarkable and easy to appreciate.
 
+However, despite their proficiency in many linguistic tasks, LLMs have faced challenges when it comes to Spatial Reasoning. Unlike tasks that focus solely on language, Spatial Reasoning involves comprehending and manipulating visual and spatial information. To shed light on this limitation, I plan to conduct an experiment using popular LLMs like GPT-4\cite{peng2023instruction}. The main goal will be to test how well they can handle Visual Spatial Reasoning, which is important for understanding the relationships between objects in visual content.
+
+The experiment will center around a commonly used task called Visual Question Answering (VQA). This task requires machines to answer questions based on provided images. For example, when given an image showing different objects, the machine will be given inquiries such as "What is the spatial relationship between object A and object B?". By designing carefully constructed tests like these, we can assess the level of Spatial Reasoning ability demonstrated by LLMs in an easy-to-understand manner.
+
+Through evaluating their performance in VQA and their capacity to comprehend and reason about spatial relationships in visual content, we can gain valuable insights into the Spatial Reasoning capabilities of LLMs. These findings will not only enhance our understanding of the strengths and limitations of these models but also pave the way for further advancements in NLP. This progress will bring us closer to developing more comprehensive and versatile language models that are accessible and easy to work with.
+
+\section{Aims and Objectives}
+In this section, we will provide a clear outline of the aims and objectives of this project. The aims represent the overarching goals that we aim to achieve, while the objectives outline the specific steps and milestones that will be undertaken to fulfill these goals. The aims and objectives of this project are outlined below:
+\subsection{Aims}
+\begin{enumerate}
+    \item To investigate the Spatial Reasoning abilities of Large Language Models (LLMs), specifically focusing on their performance in Visual Question Answering (VQA) tasks.
+    \item To understand the limitations and challenges faced by LLMs in comprehending and reasoning about spatial relationships in visual content.
+    \item To assess the current state of Spatial Reasoning capabilities in leading LLMs, then compare with elder models and explore their improvement in this domain. Besides, to identify potential avenues for enhancing LLMs' Spatial Reasoning abilities.
+\end{enumerate}
+\subsection{Objectives}
+\begin{enumerate}
+    \item Design and develop a comprehensive experimental framework for evaluating LLMs' Spatial Reasoning abilities in VQA tasks.
+    \item Curate a diverse dataset of visual stimuli and corresponding questions that require spatial reasoning skills to answer accurately.
+    \item Conduct systematic experiments using the prepared dataset and modified LLMs to assess their performance and measure their level of Spatial Reasoning competence.
+    \item Analyze the experimental results to identify patterns, trends, and challenges in LLMs' Spatial Reasoning capabilities.
+    \item Provide insights into the strengths and limitations of current LLMs for Spatial Reasoning tasks, based on the experimental findings.
+    \item Suggest potential avenues for enhancing LLMs' Spatial Reasoning abilities, such as incorporating multimodal information or novel architectural modifications.
+    \item Contribute to the existing body of knowledge in the field of NLP by advancing our understanding of LLMs' Spatial Reasoning abilities and their implications for future research and development.
+\end{enumerate}
+
+In summary, this project aims to investigate the Spatial Reasoning abilities of LLMs, specifically in VQA tasks, by designing experiments, analyzing results, and providing insights for improvement. By achieving these objectives, the project will contribute to the advancement of NLP and enhance our understanding of LLMs' capabilities in comprehending and reasoning about spatial relationships in visual content.
+
+\section{Output}
+In this experiment, There are three LLM models have been tested: Visual ChatGPT\cite{wu2023visual}, Bard and MiniGPT-4\cite{zhu2023minigpt4}. For the test form is shown as Table \ref{tab:question_template}, and there are 80 question sets divided into two parts: easy and hard. They divided by the objects in the image. If the objects no more than 5 and the spatial relationship is simple, it will be easy. Otherwise, it will be hard. The question sets and outputs are shown in Appendix \ref{Easy} and \ref{Hard}.
+\begin{table}[ht]
+    \centering
+    \caption{Question Template}
+    \label{tab:question_template}
+    \begin{tabular}{|p{0.4\linewidth}|p{0.5\linewidth}|}
+        \hline
+        \textbf{Input Image} &\textbf{Question}\\
+        \hline
+        \begin{center} \includegraphics[width=\linewidth]{../image set/hard/000000104739.jpg} \end{center}
+        & \begin{enumerate}
+            \item Can you describe the spatial relationship between these two laptops?
+            \item Is this black laptop on the left of the white laptop?
+            \item Show me your specific reasoning steps that lead you to the answer, better in detailed explanation.
+        \end{enumerate}\\
+        \hline
+        \end{tabular}
+\end{table}
+
+\section{Evaluation}
+\subsection{}
+
+\bibliographystyle{IEEEtran}
+\bibliography{mybib}
+
+\appendices
+\input{../Q&A/easy.tex}
+\label{Easy}
+\input{../Q&A/hard.tex}
+\label{Hard}
 
 \end{document}
