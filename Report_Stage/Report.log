@@ -818,4 +818,373 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../image set/easy/000000355156.jpg, id=176, 256.96pt x 256.96pt>
 File: ../image set/easy/000000355156.jpg Graphic file (type jpg)
 <use ../image set/easy/000000355156.jpg>
-Package pdftex.def Info: ../image set/easy/000000355156.jpg  used on input line 1993
+Package pdftex.def Info: ../image set/easy/000000355156.jpg  used on input line 1993.
+(pdftex.def)             Requested size: 201.60077pt x 201.60425pt.
+ [40 <../image set/easy/000000355156.jpg>]
+<../image set/easy/000000368983.jpg, id=180, 429.605pt x 642.4pt>
+File: ../image set/easy/000000368983.jpg Graphic file (type jpg)
+<use ../image set/easy/000000368983.jpg>
+Package pdftex.def Info: ../image set/easy/000000368983.jpg  used on input line 2053.
+(pdftex.def)             Requested size: 201.60077pt x 301.45753pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[41 <../image set/easy/000000368983.jpg>]
+<../image set/easy/000000369036.jpg, id=184, 154.176pt x 115.632pt>
+File: ../image set/easy/000000369036.jpg Graphic file (type jpg)
+<use ../image set/easy/000000369036.jpg>
+Package pdftex.def Info: ../image set/easy/000000369036.jpg  used on input line 2107.
+(pdftex.def)             Requested size: 201.60077pt x 151.20377pt.
+ [42 <../image set/easy/000000369036.jpg>]) (../Q&A/hard.tex
+<../image set/hard/000000003442.jpg, id=189, 185.0112pt x 123.43716pt>
+File: ../image set/hard/000000003442.jpg Graphic file (type jpg)
+<use ../image set/hard/000000003442.jpg>
+Package pdftex.def Info: ../image set/hard/000000003442.jpg  used on input line 6.
+(pdftex.def)             Requested size: 201.60077pt x 134.5118pt.
+ [43 <../image set/hard/000000003442.jpg>]
+<../image set/hard/000000004463.jpg, id=193, 642.4pt x 481.8pt>
+File: ../image set/hard/000000004463.jpg Graphic file (type jpg)
+<use ../image set/hard/000000004463.jpg>
+Package pdftex.def Info: ../image set/hard/000000004463.jpg  used on input line 44.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+ [44 <../image set/hard/000000004463.jpg>]
+<../image set/hard/000000004488.jpg, id=197, 642.4pt x 481.8pt>
+File: ../image set/hard/000000004488.jpg Graphic file (type jpg)
+<use ../image set/hard/000000004488.jpg>
+Package pdftex.def Info: ../image set/hard/000000004488.jpg  used on input line 82.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+ [45 <../image set/hard/000000004488.jpg>]
+<../image set/hard/000000031561.jpg, id=201, 501.875pt x 401.5pt>
+File: ../image set/hard/000000031561.jpg Graphic file (type jpg)
+<use ../image set/hard/000000031561.jpg>
+Package pdftex.def Info: ../image set/hard/000000031561.jpg  used on input line 125.
+(pdftex.def)             Requested size: 201.60077pt x 161.2833pt.
+ [46 <../image set/hard/000000031561.jpg>]
+<../image set/hard/000000048905.jpg, id=205, 642.4pt x 481.8pt>
+File: ../image set/hard/000000048905.jpg Graphic file (type jpg)
+<use ../image set/hard/000000048905.jpg>
+Package pdftex.def Info: ../image set/hard/000000048905.jpg  used on input line 178.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+ [47 <../image set/hard/000000048905.jpg>]
+<../image set/hard/000000049037.jpg, id=209, 346.896pt x 462.528pt>
+File: ../image set/hard/000000049037.jpg Graphic file (type jpg)
+<use ../image set/hard/000000049037.jpg>
+Package pdftex.def Info: ../image set/hard/000000049037.jpg  used on input line 223.
+(pdftex.def)             Requested size: 201.60077pt x 268.8028pt.
+ [48 <../image set/hard/000000049037.jpg>]
+<../image set/hard/000000070033.jpg, id=214, 642.4pt x 428.60126pt>
+File: ../image set/hard/000000070033.jpg Graphic file (type jpg)
+<use ../image set/hard/000000070033.jpg>
+Package pdftex.def Info: ../image set/hard/000000070033.jpg  used on input line 275.
+(pdftex.def)             Requested size: 201.60077pt x 134.50653pt.
+<../image set/hard/000000073549.jpg, id=215, 642.4pt x 481.8pt>
+File: ../image set/hard/000000073549.jpg Graphic file (type jpg)
+<use ../image set/hard/000000073549.jpg>
+Package pdftex.def Info: ../image set/hard/000000073549.jpg  used on input line 320.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[49 <../image set/hard/000000070033.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: ../image set/hard/000000104739.jpg Graphic file (type jpg)
+<use ../image set/hard/000000104739.jpg>
+Package pdftex.def Info: ../image set/hard/000000104739.jpg  used on input line 364.
+(pdftex.def)             Requested size: 201.60077pt x 268.79652pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[50 <../image set/hard/000000073549.jpg>] [51]
+<../image set/hard/000000118302.jpg, id=226, 614.295pt x 614.295pt>
+File: ../image set/hard/000000118302.jpg Graphic file (type jpg)
+<use ../image set/hard/000000118302.jpg>
+Package pdftex.def Info: ../image set/hard/000000118302.jpg  used on input line 412.
+(pdftex.def)             Requested size: 201.60077pt x 201.60254pt.
+ [52 <../image set/hard/000000118302.jpg>]
+<../image set/hard/000000146098.jpg, id=230, 481.8pt x 642.4pt>
+File: ../image set/hard/000000146098.jpg Graphic file (type jpg)
+<use ../image set/hard/000000146098.jpg>
+Package pdftex.def Info: ../image set/hard/000000146098.jpg  used on input line 464.
+(pdftex.def)             Requested size: 201.60077pt x 268.79652pt.
+ [53 <../image set/hard/000000146098.jpg>]
+<../image set/hard/000000146513.jpg, id=234, 642.4pt x 481.8pt>
+File: ../image set/hard/000000146513.jpg Graphic file (type jpg)
+<use ../image set/hard/000000146513.jpg>
+Package pdftex.def Info: ../image set/hard/000000146513.jpg  used on input line 514.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+<../image set/hard/000000152340.jpg, id=235, 642.4pt x 481.8pt>
+File: ../image set/hard/000000152340.jpg Graphic file (type jpg)
+<use ../image set/hard/000000152340.jpg>
+Package pdftex.def Info: ../image set/hard/000000152340.jpg  used on input line 561.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+ [54 <../image set/hard/000000146513.jpg>] [55 <../image set/hard/000000152340.jpg>]
+<../image set/hard/000000173228.jpg, id=243, 154.176pt x 102.6234pt>
+File: ../image set/hard/000000173228.jpg Graphic file (type jpg)
+<use ../image set/hard/000000173228.jpg>
+Package pdftex.def Info: ../image set/hard/000000173228.jpg  used on input line 615.
+(pdftex.def)             Requested size: 201.60077pt x 134.19334pt.
+ [56 <../image set/hard/000000173228.jpg>]
+<../image set/hard/000000179476.jpg, id=247, 642.4pt x 479.7925pt>
+File: ../image set/hard/000000179476.jpg Graphic file (type jpg)
+<use ../image set/hard/000000179476.jpg>
+Package pdftex.def Info: ../image set/hard/000000179476.jpg  used on input line 666.
+(pdftex.def)             Requested size: 201.60077pt x 150.5717pt.
+ [57 <../image set/hard/000000179476.jpg>]
+<../image set/hard/000000186734.jpg, id=251, 200.75pt x 150.5625pt>
+File: ../image set/hard/000000186734.jpg Graphic file (type jpg)
+<use ../image set/hard/000000186734.jpg>
+Package pdftex.def Info: ../image set/hard/000000186734.jpg  used on input line 715.
+(pdftex.def)             Requested size: 201.60077pt x 151.20998pt.
+ [58 <../image set/hard/000000186734.jpg>]
+<../image set/hard/000000199458.jpg, id=255, 462.528pt x 315.8199pt>
+File: ../image set/hard/000000199458.jpg Graphic file (type jpg)
+<use ../image set/hard/000000199458.jpg>
+Package pdftex.def Info: ../image set/hard/000000199458.jpg  used on input line 764.
+(pdftex.def)             Requested size: 201.60077pt x 137.65523pt.
+<../image set/hard/000000204256.jpg, id=256, 501.875pt x 376.40625pt>
+File: ../image set/hard/000000204256.jpg Graphic file (type jpg)
+<use ../image set/hard/000000204256.jpg>
+Package pdftex.def Info: ../image set/hard/000000204256.jpg  used on input line 814.
+(pdftex.def)             Requested size: 201.60077pt x 151.2031pt.
+ [59 <../image set/hard/000000199458.jpg> <../image set/hard/000000204256.jpg>]
+<../image set/hard/000000208882.jpg, id=260, 642.4pt x 481.8pt>
+File: ../image set/hard/000000208882.jpg Graphic file (type jpg)
+<use ../image set/hard/000000208882.jpg>
+Package pdftex.def Info: ../image set/hard/000000208882.jpg  used on input line 868.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[60]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<../image set/hard/000000222075.jpg, id=265, 481.8pt x 642.4pt>
+File: ../image set/hard/000000222075.jpg Graphic file (type jpg)
+<use ../image set/hard/000000222075.jpg>
+Package pdftex.def Info: ../image set/hard/000000222075.jpg  used on input line 922.
+(pdftex.def)             Requested size: 201.60077pt x 268.79652pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61 <../image set/hard/000000208882.jpg>] [62 <../image set/hard/000000222075.jpg>]
+<../image set/hard/000000229342.jpg, id=272, 642.4pt x 481.8pt>
+File: ../image set/hard/000000229342.jpg Graphic file (type jpg)
+<use ../image set/hard/000000229342.jpg>
+Package pdftex.def Info: ../image set/hard/000000229342.jpg  used on input line 973.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+ [63 <../image set/hard/000000229342.jpg>]
+<../image set/hard/000000237031.jpg, id=276, 642.4pt x 428.60126pt>
+File: ../image set/hard/000000237031.jpg Graphic file (type jpg)
+<use ../image set/hard/000000237031.jpg>
+Package pdftex.def Info: ../image set/hard/000000237031.jpg  used on input line 1024.
+(pdftex.def)             Requested size: 201.60077pt x 134.50653pt.
+<../image set/hard/000000239811.jpg, id=277, 642.4pt x 481.8pt>
+File: ../image set/hard/000000239811.jpg Graphic file (type jpg)
+<use ../image set/hard/000000239811.jpg>
+Package pdftex.def Info: ../image set/hard/000000239811.jpg  used on input line 1063.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+ [64 <../image set/hard/000000237031.jpg> <../image set/hard/000000239811.jpg>]
+Underfull \hbox (badness 2744) in paragraph at lines 1095--1096
+\OT1/ptm/m/n/10 I ob-served that there is a white bi-cy-cle parked
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 1095--1096
+\OT1/ptm/m/n/10 on the side of a street. Then, I used the tool
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 1095--1096
+\OT1/ptm/m/n/10 Seg-ment the given ob-ject to seg-ment the white
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 1095--1096
+\OT1/ptm/m/n/10 bi-cy-cle from the im-age, and the out-put wasim-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1096
+\OT1/ptm/m/n/10 age/0328[]segmentation[]dd963103[]dd963103.png(This
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1096
+\OT1/ptm/m/n/10 age/a46d[]detect-something[]0328[]dd963103.png(This
+ []
+
+<../image set/hard/000000256309.jpg, id=281, 642.4pt x 481.8pt>
+File: ../image set/hard/000000256309.jpg Graphic file (type jpg)
+<use ../image set/hard/000000256309.jpg>
+Package pdftex.def Info: ../image set/hard/000000256309.jpg  used on input line 1109.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+[65 <../image set/hard/000000256309.jpg>]
+<../image set/hard/000000262704.jpg, id=285, 201.09914pt x 150.51013pt>
+File: ../image set/hard/000000262704.jpg Graphic file (type jpg)
+<use ../image set/hard/000000262704.jpg>
+Package pdftex.def Info: ../image set/hard/000000262704.jpg  used on input line 1156.
+(pdftex.def)             Requested size: 201.60077pt x 150.8887pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66 <../image set/hard/000000262704.jpg>]
+<../image set/hard/000000267321.jpg, id=290, 376.40625pt x 282.30469pt>
+File: ../image set/hard/000000267321.jpg Graphic file (type jpg)
+<use ../image set/hard/000000267321.jpg>
+Package pdftex.def Info: ../image set/hard/000000267321.jpg  used on input line 1201.
+(pdftex.def)             Requested size: 201.60077pt x 151.20596pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67 <../image set/hard/000000267321.jpg>]
+<../image set/hard/000000272510.jpg, id=294, 642.4pt x 440.64626pt>
+File: ../image set/hard/000000272510.jpg Graphic file (type jpg)
+<use ../image set/hard/000000272510.jpg>
+Package pdftex.def Info: ../image set/hard/000000272510.jpg  used on input line 1253.
+(pdftex.def)             Requested size: 201.60077pt x 138.28658pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68 <../image set/hard/000000272510.jpg>]
+<../image set/hard/000000298564.jpg, id=298, 642.4pt x 481.8pt>
+File: ../image set/hard/000000298564.jpg Graphic file (type jpg)
+<use ../image set/hard/000000298564.jpg>
+Package pdftex.def Info: ../image set/hard/000000298564.jpg  used on input line 1298.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+ [69 <../image set/hard/000000298564.jpg>]
+<../image set/hard/000000306030.jpg, id=302, 256.96pt x 192.72pt>
+File: ../image set/hard/000000306030.jpg Graphic file (type jpg)
+<use ../image set/hard/000000306030.jpg>
+Package pdftex.def Info: ../image set/hard/000000306030.jpg  used on input line 1340.
+(pdftex.def)             Requested size: 201.60077pt x 151.20317pt.
+ [70 <../image set/hard/000000306030.jpg>]
+<../image set/hard/000000363468.jpg, id=306, 642.4pt x 480.79625pt>
+File: ../image set/hard/000000363468.jpg Graphic file (type jpg)
+<use ../image set/hard/000000363468.jpg>
+Package pdftex.def Info: ../image set/hard/000000363468.jpg  used on input line 1394.
+(pdftex.def)             Requested size: 201.60077pt x 150.8867pt.
+ [71 <../image set/hard/000000363468.jpg>]
+<../image set/hard/000000375528.jpg, id=310, 642.4pt x 481.8pt>
+File: ../image set/hard/000000375528.jpg Graphic file (type jpg)
+<use ../image set/hard/000000375528.jpg>
+Package pdftex.def Info: ../image set/hard/000000375528.jpg  used on input line 1449.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+ [72 <../image set/hard/000000375528.jpg>]
+<../image set/hard/000000378087.jpg, id=315, 642.4pt x 481.8pt>
+File: ../image set/hard/000000378087.jpg Graphic file (type jpg)
+<use ../image set/hard/000000378087.jpg>
+Package pdftex.def Info: ../image set/hard/000000378087.jpg  used on input line 1511.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+Underfull \hbox (badness 7576) in paragraph at lines 1545--1546
+\OT1/ptm/m/n/10 De-scrip-tion tool to ob-serve the im-age at im-
+ []
+
+[73 <../image set/hard/000000378087.jpg>]
+<../image set/hard/000000423116.jpg, id=319, 642.4pt x 480.79625pt>
+File: ../image set/hard/000000423116.jpg Graphic file (type jpg)
+<use ../image set/hard/000000423116.jpg>
+Package pdftex.def Info: ../image set/hard/000000423116.jpg  used on input line 1559.
+(pdftex.def)             Requested size: 201.60077pt x 150.8867pt.
+<../image set/hard/000000438851.jpg, id=320, 61.61827pt x 86.29254pt>
+File: ../image set/hard/000000438851.jpg Graphic file (type jpg)
+<use ../image set/hard/000000438851.jpg>
+Package pdftex.def Info: ../image set/hard/000000438851.jpg  used on input line 1599.
+(pdftex.def)             Requested size: 201.60077pt x 282.36847pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[74 <../image set/hard/000000423116.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<../image set/hard/000000452502.jpg, id=324, 642.4pt x 481.8pt>
+File: ../image set/hard/000000452502.jpg Graphic file (type jpg)
+<use ../image set/hard/000000452502.jpg>
+Package pdftex.def Info: ../image set/hard/000000452502.jpg  used on input line 1655.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[75 <../image set/hard/000000438851.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<../image set/hard/000000472143.jpg, id=328, 642.4pt x 642.4pt>
+File: ../image set/hard/000000472143.jpg Graphic file (type jpg)
+<use ../image set/hard/000000472143.jpg>
+Package pdftex.def Info: ../image set/hard/000000472143.jpg  used on input line 1713.
+(pdftex.def)             Requested size: 201.60077pt x 201.6023pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76 <../image set/hard/000000452502.jpg>] [77 <../image set/hard/000000472143.jpg>]
+<../image set/hard/000000474383.jpg, id=335, 642.4pt x 481.8pt>
+File: ../image set/hard/000000474383.jpg Graphic file (type jpg)
+<use ../image set/hard/000000474383.jpg>
+Package pdftex.def Info: ../image set/hard/000000474383.jpg  used on input line 1774.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+ [78 <../image set/hard/000000474383.jpg>]
+<../image set/hard/000000482562.jpg, id=340, 642.4pt x 426.59375pt>
+File: ../image set/hard/000000482562.jpg Graphic file (type jpg)
+<use ../image set/hard/000000482562.jpg>
+Package pdftex.def Info: ../image set/hard/000000482562.jpg  used on input line 1834.
+(pdftex.def)             Requested size: 201.60077pt x 133.87653pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [79] [80 <../image set/hard/000000482562.jpg>]
+<../image set/hard/000000516261.jpg, id=347, 462.528pt x 346.896pt>
+File: ../image set/hard/000000516261.jpg Graphic file (type jpg)
+<use ../image set/hard/000000516261.jpg>
+Package pdftex.def Info: ../image set/hard/000000516261.jpg  used on input line 1888.
+(pdftex.def)             Requested size: 201.60077pt x 151.20024pt.
+ [81 <../image set/hard/000000516261.jpg>]
+<../image set/hard/000000574769.jpg, id=351, 481.8pt x 642.4pt>
+File: ../image set/hard/000000574769.jpg Graphic file (type jpg)
+<use ../image set/hard/000000574769.jpg>
+Package pdftex.def Info: ../image set/hard/000000574769.jpg  used on input line 1947.
+(pdftex.def)             Requested size: 201.60077pt x 268.79652pt.
+ [82 <../image set/hard/000000574769.jpg>]) [83
+
+] (./Report.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6175 strings out of 476025
+ 121348 string characters out of 5790018
+ 1890388 words of memory out of 5000000
+ 26444 multiletter control sequences out of 15000+600000
+ 557265 words of font info for 104 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 87i,16n,91p,1439b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Report.pdf (84 pages, 13605461 bytes).
+PDF statistics:
+ 390 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
+
