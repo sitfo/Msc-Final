@@ -1,0 +1,821 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  28 AUG 2023 15:54
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/liujinlong/Desktop/Msc-Final/Report_Stage/Report
+(/Users/liujinlong/Desktop/Msc-Final/Report_Stage/Report.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen140
+\@IEEEtrantmpdimenB=\dimen141
+\@IEEEtrantmpdimenC=\dimen142
+\@IEEEtrantmpcountA=\count185
+\@IEEEtrantmpcountB=\count186
+\@IEEEtrantmpcountC=\count187
+\@IEEEtrantmptoksA=\toks16
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen143
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen144
+\CLASSINFOnormalsizeunitybaselineskip=\dimen145
+\IEEEnormaljot=\dimen146
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+\IEEEquantizedlength=\dimen147
+\IEEEquantizedlengthdiff=\dimen148
+\IEEEquantizedtextheightdiff=\dimen149
+\IEEEilabelindentA=\dimen150
+\IEEEilabelindentB=\dimen151
+\IEEEilabelindent=\dimen152
+\IEEEelabelindent=\dimen153
+\IEEEdlabelindent=\dimen154
+\IEEElabelindent=\dimen155
+\IEEEiednormlabelsep=\dimen156
+\IEEEiedmathlabelsep=\dimen157
+\IEEEiedtopsep=\skip48
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@IEEEsubequation=\count192
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\c@figure=\count193
+\c@table=\count194
+\@IEEEeqnnumcols=\count195
+\@IEEEeqncolcnt=\count196
+\@IEEEsubeqnnumrollback=\count197
+\@IEEEquantizeheightA=\dimen158
+\@IEEEquantizeheightB=\dimen159
+\@IEEEquantizeheightC=\dimen160
+\@IEEEquantizeprevdepth=\dimen161
+\@IEEEquantizemultiple=\count198
+\@IEEEquantizeboxA=\box51
+\@IEEEtmpitemindent=\dimen162
+\IEEEPARstartletwidth=\dimen163
+\c@IEEEbiography=\count199
+\@IEEEtranrubishbin=\box52
+) (./sharina.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count266
+\float@exts=\toks18
+\float@box=\box53
+\@float@everytoks=\toks19
+\@floatcapt=\box54
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen166
+\captionmargin=\dimen167
+\caption@leftmargin=\dimen168
+\caption@rightmargin=\dimen169
+\caption@width=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi \fi  on input line 1176.
+)
+\c@KVtest=\count267
+\sf@farskip=\skip51
+\sf@captopadj=\dimen174
+\sf@capskip=\skip52
+\sf@nearskip=\skip53
+\c@subfigure=\count268
+\c@subfigure@save=\count269
+\c@lofdepth=\count270
+\c@subtable=\count271
+\c@subtable@save=\count272
+\c@lotdepth=\count273
+\sf@top=\skip54
+\sf@bottom=\skip55
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count274
+\l__pdf_internal_box=\box55
+))
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count275
+\l__lipsum_a_int=\count276
+\l__lipsum_b_int=\count277
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/local/texlive/2023/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen175
+\lightrulewidth=\dimen176
+\cmidrulewidth=\dimen177
+\belowrulesep=\dimen178
+\belowbottomsep=\dimen179
+\aboverulesep=\dimen180
+\abovetopsep=\dimen181
+\cmidrulesep=\dimen182
+\cmidrulekern=\dimen183
+\defaultaddspace=\dimen184
+\@cmidla=\count278
+\@cmidlb=\count279
+\@aboverulesep=\dimen185
+\@belowrulesep=\dimen186
+\@thisruleclass=\count280
+\@lastruleclass=\count281
+\@thisrulewidth=\dimen187
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip56
+\multirow@cntb=\count282
+\multirow@dima=\skip57
+\bigstrutjot=\dimen188
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count283
+\c@Blindtext=\count284
+\c@blind@countparstart=\count285
+\blind@countxx=\count286
+\blindtext@numBlindtext=\count287
+\blind@countyy=\count288
+\c@blindlist=\count289
+\c@blindlistlevel=\count290
+\c@blindlist@level=\count291
+\blind@listitem=\count292
+\c@blind@listcount=\count293
+\c@blind@levelcount=\count294
+\blind@mathformula=\count295
+\blind@Mathformula=\count296
+\c@blind@randomcount=\count297
+\c@blind@randommax=\count298
+\c@blind@pangramcount=\count299
+\c@blind@pangrammax=\count300
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen189
+\ar@mcellbox=\box56
+\extrarowheight=\dimen190
+\NC@list=\toks20
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box57
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen191
+\TX@old@table=\dimen192
+\TX@old@col=\dimen193
+\TX@target=\dimen194
+\TX@delta=\dimen195
+\TX@cols=\count301
+\TX@ftn=\toks21
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+Package: cellspace 2022/01/04 v1.9.0 Spacing table cells (JN)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count302
+\calc@Bcount=\count303
+\calc@Adimen=\dimen196
+\calc@Bdimen=\dimen197
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count304
+\calc@Cskip=\skip62
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
+)
+\XKV@depth=\count305
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\cellspacetoplimit=\dimen198
+\cellspacebottomlimit=\dimen199
+\cellspace@firstht=\dimen256
+\cellspace@lastdp=\dimen257
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip63
+\LTright=\skip64
+\LTpre=\skip65
+\LTpost=\skip66
+\LTchunksize=\count306
+\LTcapwidth=\dimen258
+\LT@head=\box58
+\LT@firsthead=\box59
+\LT@foot=\box60
+\LT@lastfoot=\box61
+\LT@gbox=\box62
+\LT@cols=\count307
+\LT@rows=\count308
+\c@LT@tables=\count309
+\c@LT@chunks=\count310
+\LT@p@ftn=\toks24
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen259
+\c@nlinenum=\count311
+\TeXr@lab=\toks25
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))) (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+No file Report.aux.
+\openout1 = `Report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+-- Lines per column: 58 (exact).
+(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count312
+\scratchdimen=\dimen260
+\scratchbox=\box63
+\nofMPsegments=\count313
+\nofMParguments=\count314
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count315
+\MPscratchDim=\dimen261
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
+\everyMPtoPDFconversion=\toks27
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (./title.tex
+<liverpool.png, id=1, 1204.5pt x 1980.39874pt>
+File: liverpool.png Graphic file (type png)
+<use liverpool.png>
+Package pdftex.def Info: liverpool.png  used on input line 10.
+(pdftex.def)             Requested size: 206.39685pt x 339.35277pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 26.
+ [0
+
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./liverpool.png>])
+
+LaTeX Warning: Citation `peng2023instruction' on page 1 undefined on input line 9.
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 25--26
+[]\OT1/ptm/m/n/10 Design and de-velop a com-pre-hen-sive ex-per-i-men-tal
+ []
+
+
+LaTeX Warning: Citation `wu2023visual' on page 1 undefined on input line 37.
+
+
+LaTeX Warning: Citation `zhu2023minigpt4' on page 1 undefined on input line 37.
+
+
+LaTeX Warning: Reference `tab:question_template' on page 1 undefined on input line 37.
+
+
+LaTeX Warning: Reference `Easy' on page 1 undefined on input line 37.
+
+
+LaTeX Warning: Reference `Hard' on page 1 undefined on input line 37.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 42.
+<../image set/hard/000000104739.jpg, id=12, 481.8pt x 642.4pt>
+File: ../image set/hard/000000104739.jpg Graphic file (type jpg)
+<use ../image set/hard/000000104739.jpg>
+Package pdftex.def Info: ../image set/hard/000000104739.jpg  used on input line 46.
+(pdftex.def)             Requested size: 100.79846pt x 134.39825pt.
+
+LaTeX Warning: Reference `tab:accuracy' on page 1 undefined on input line 57.
+
+
+LaTeX Warning: Reference `tab:easy-acc' on page 1 undefined on input line 58.
+
+
+LaTeX Warning: Reference `tab:hard-acc' on page 1 undefined on input line 58.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 59.
+
+(./Report.bbl [1
+
+]) (./Chart.tex
+
+LaTeX Warning: Float too large for page by 25.33722pt on input line 52.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 53.
+
+
+LaTeX Warning: Float too large for page by 25.33722pt on input line 103.
+
+) [2 <../image set/hard/000000104739.jpg>] [3
+
+] (../Q&A/easy.tex
+<../image set/easy/000000000599.jpg, id=25, 642.4pt x 408.52625pt>
+File: ../image set/easy/000000000599.jpg Graphic file (type jpg)
+<use ../image set/easy/000000000599.jpg>
+Package pdftex.def Info: ../image set/easy/000000000599.jpg  used on input line 6.
+(pdftex.def)             Requested size: 201.60077pt x 128.20645pt.
+<../image set/easy/000000004057.jpg, id=26, 642.4pt x 481.8pt>
+File: ../image set/easy/000000004057.jpg Graphic file (type jpg)
+<use ../image set/easy/000000004057.jpg>
+Package pdftex.def Info: ../image set/easy/000000004057.jpg  used on input line 58.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4
+
+ <../image set/easy/000000000599.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<../image set/easy/000000011742.jpg, id=30, 468.75125pt x 642.4pt>
+File: ../image set/easy/000000011742.jpg Graphic file (type jpg)
+<use ../image set/easy/000000011742.jpg>
+Package pdftex.def Info: ../image set/easy/000000011742.jpg  used on input line 104.
+(pdftex.def)             Requested size: 201.60077pt x 276.27562pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <../image set/easy/000000004057.jpg>]
+Underfull \vbox (badness 1400) has occurred while \output is active []
+
+<../image set/easy/000000023996.jpg, id=34, 642.4pt x 439.6425pt>
+File: ../image set/easy/000000023996.jpg Graphic file (type jpg)
+<use ../image set/easy/000000023996.jpg>
+Package pdftex.def Info: ../image set/easy/000000023996.jpg  used on input line 151.
+(pdftex.def)             Requested size: 201.60077pt x 137.97157pt.
+ [6 <../image set/easy/000000011742.jpg> <../image set/easy/000000023996.jpg>]
+<../image set/easy/000000024260.jpg, id=39, 256.96pt x 156.1835pt>
+File: ../image set/easy/000000024260.jpg Graphic file (type jpg)
+<use ../image set/easy/000000024260.jpg>
+Package pdftex.def Info: ../image set/easy/000000024260.jpg  used on input line 189.
+(pdftex.def)             Requested size: 201.60077pt x 122.53758pt.
+ [7 <../image set/easy/000000024260.jpg>]
+<../image set/easy/000000037024.jpg, id=43, 642.4pt x 361.35pt>
+File: ../image set/easy/000000037024.jpg Graphic file (type jpg)
+<use ../image set/easy/000000037024.jpg>
+Package pdftex.def Info: ../image set/easy/000000037024.jpg  used on input line 234.
+(pdftex.def)             Requested size: 201.60077pt x 113.40129pt.
+ [8 <../image set/easy/000000037024.jpg>]
+<../image set/easy/000000042735.jpg, id=47, 642.4pt x 428.60126pt>
+File: ../image set/easy/000000042735.jpg Graphic file (type jpg)
+<use ../image set/easy/000000042735.jpg>
+Package pdftex.def Info: ../image set/easy/000000042735.jpg  used on input line 278.
+(pdftex.def)             Requested size: 201.60077pt x 134.50653pt.
+ [9 <../image set/easy/000000042735.jpg>]
+<../image set/easy/000000043338.jpg, id=51, 642.4pt x 426.59375pt>
+File: ../image set/easy/000000043338.jpg Graphic file (type jpg)
+<use ../image set/easy/000000043338.jpg>
+Package pdftex.def Info: ../image set/easy/000000043338.jpg  used on input line 317.
+(pdftex.def)             Requested size: 201.60077pt x 133.87653pt.
+ [10 <../image set/easy/000000043338.jpg>]
+<../image set/easy/000000047848.jpg, id=55, 642.4pt x 481.8pt>
+File: ../image set/easy/000000047848.jpg Graphic file (type jpg)
+<use ../image set/easy/000000047848.jpg>
+Package pdftex.def Info: ../image set/easy/000000047848.jpg  used on input line 366.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <../image set/easy/000000047848.jpg>]
+<../image set/easy/000000052290.jpg, id=59, 642.4pt x 481.8pt>
+File: ../image set/easy/000000052290.jpg Graphic file (type jpg)
+<use ../image set/easy/000000052290.jpg>
+Package pdftex.def Info: ../image set/easy/000000052290.jpg  used on input line 415.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <../image set/easy/000000052290.jpg>]
+<../image set/easy/000000060472.jpg, id=64, 376.40625pt x 501.875pt>
+File: ../image set/easy/000000060472.jpg Graphic file (type jpg)
+<use ../image set/easy/000000060472.jpg>
+Package pdftex.def Info: ../image set/easy/000000060472.jpg  used on input line 463.
+(pdftex.def)             Requested size: 201.60077pt x 268.81061pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <../image set/easy/000000060472.jpg>]
+<../image set/easy/000000060568.jpg, id=68, 642.4pt x 424.58624pt>
+File: ../image set/easy/000000060568.jpg Graphic file (type jpg)
+<use ../image set/easy/000000060568.jpg>
+Package pdftex.def Info: ../image set/easy/000000060568.jpg  used on input line 514.
+(pdftex.def)             Requested size: 201.60077pt x 133.2465pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 511--518
+[]\OT1/ptm/m/n/10 Link 12:http://images.cocodataset.org/train2017/000000060568.jpg
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <../image set/easy/000000060568.jpg>]
+<../image set/easy/000000060945.jpg, id=72, 428.60126pt x 642.4pt>
+File: ../image set/easy/000000060945.jpg Graphic file (type jpg)
+<use ../image set/easy/000000060945.jpg>
+Package pdftex.def Info: ../image set/easy/000000060945.jpg  used on input line 567.
+(pdftex.def)             Requested size: 201.60077pt x 302.1633pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <../image set/easy/000000060945.jpg>]
+<../image set/easy/000000067428.jpg, id=76, 154.176pt x 115.632pt>
+File: ../image set/easy/000000067428.jpg Graphic file (type jpg)
+<use ../image set/easy/000000067428.jpg>
+Package pdftex.def Info: ../image set/easy/000000067428.jpg  used on input line 622.
+(pdftex.def)             Requested size: 201.60077pt x 151.20377pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 619--626
+[]\OT1/ptm/m/n/10 Link 14:http://images.cocodataset.org/train2017/000000067428.jpg
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <../image set/easy/000000067428.jpg>]
+<../image set/easy/000000073353.jpg, id=80, 481.8pt x 642.4pt>
+File: ../image set/easy/000000073353.jpg Graphic file (type jpg)
+<use ../image set/easy/000000073353.jpg>
+Package pdftex.def Info: ../image set/easy/000000073353.jpg  used on input line 677.
+(pdftex.def)             Requested size: 201.60077pt x 268.79652pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 674--681
+[]\OT1/ptm/m/n/10 Link 15:http://images.cocodataset.org/train2017/000000073353.jpg
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17 <../image set/easy/000000073353.jpg>]
+<../image set/easy/000000078689.jpg, id=84, 501.875pt x 376.40625pt>
+File: ../image set/easy/000000078689.jpg Graphic file (type jpg)
+<use ../image set/easy/000000078689.jpg>
+Package pdftex.def Info: ../image set/easy/000000078689.jpg  used on input line 728.
+(pdftex.def)             Requested size: 201.60077pt x 151.2031pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 725--732
+[]\OT1/ptm/m/n/10 Link 16:http://images.cocodataset.org/train2017/000000078689.jpg
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <../image set/easy/000000078689.jpg>]
+<../image set/easy/000000089367.jpg, id=89, 361.35pt x 481.8pt>
+File: ../image set/easy/000000089367.jpg Graphic file (type jpg)
+<use ../image set/easy/000000089367.jpg>
+Package pdftex.def Info: ../image set/easy/000000089367.jpg  used on input line 783.
+(pdftex.def)             Requested size: 201.60077pt x 268.79897pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 780--787
+[]\OT1/ptm/m/n/10 Link 17:http://images.cocodataset.org/train2017/000000089367.jpg
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19 <../image set/easy/000000089367.jpg>]
+<../image set/easy/000000106525.jpg, id=93, 231.264pt x 173.448pt>
+File: ../image set/easy/000000106525.jpg Graphic file (type jpg)
+<use ../image set/easy/000000106525.jpg>
+Package pdftex.def Info: ../image set/easy/000000106525.jpg  used on input line 839.
+(pdftex.def)             Requested size: 201.60077pt x 151.20819pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 836--843
+[]\OT1/ptm/m/n/10 Link 18:http://images.cocodataset.org/train2017/000000106525.jpg
+ []
+
+[20 <../image set/easy/000000106525.jpg>]
+<../image set/easy/000000125499.jpg, id=97, 154.176pt x 118.2819pt>
+File: ../image set/easy/000000125499.jpg Graphic file (type jpg)
+<use ../image set/easy/000000125499.jpg>
+Package pdftex.def Info: ../image set/easy/000000125499.jpg  used on input line 900.
+(pdftex.def)             Requested size: 201.60077pt x 154.66885pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 897--904
+[]\OT1/ptm/m/n/10 Link 19:http://images.cocodataset.org/train2017/000000125499.jpg
+ []
+
+[21 <../image set/easy/000000125499.jpg>]
+<../image set/easy/000000138137.jpg, id=101, 642.4pt x 402.50375pt>
+File: ../image set/easy/000000138137.jpg Graphic file (type jpg)
+<use ../image set/easy/000000138137.jpg>
+Package pdftex.def Info: ../image set/easy/000000138137.jpg  used on input line 959.
+(pdftex.def)             Requested size: 201.60077pt x 126.31644pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 956--963
+[]\OT1/ptm/m/n/10 Link 20:http://images.cocodataset.org/train2017/000000138137.jpg
+ []
+
+[22 <../image set/easy/000000138137.jpg>]
+<../image set/easy/000000144202.jpg, id=105, 481.8pt x 642.4pt>
+File: ../image set/easy/000000144202.jpg Graphic file (type jpg)
+<use ../image set/easy/000000144202.jpg>
+Package pdftex.def Info: ../image set/easy/000000144202.jpg  used on input line 1021.
+(pdftex.def)             Requested size: 201.60077pt x 268.79652pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 1018--1025
+[]\OT1/ptm/m/n/10 Link 21:http://images.cocodataset.org/train2017/000000144202.jpg
+ []
+
+[23 <../image set/easy/000000144202.jpg>]
+<../image set/easy/000000147894.jpg, id=109, 642.4pt x 481.8pt>
+File: ../image set/easy/000000147894.jpg Graphic file (type jpg)
+<use ../image set/easy/000000147894.jpg>
+Package pdftex.def Info: ../image set/easy/000000147894.jpg  used on input line 1084.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 1081--1088
+[]\OT1/ptm/m/n/10 Link 22:http://images.cocodataset.org/train2017/000000147894.jpg
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<../image set/easy/000000168289.jpg, id=114, 642.4pt x 428.60126pt>
+File: ../image set/easy/000000168289.jpg Graphic file (type jpg)
+<use ../image set/easy/000000168289.jpg>
+Package pdftex.def Info: ../image set/easy/000000168289.jpg  used on input line 1145.
+(pdftex.def)             Requested size: 201.60077pt x 134.50653pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 1142--1149
+[]\OT1/ptm/m/n/10 Link 23:http://images.cocodataset.org/train2017/000000168289.jpg
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25 <../image set/easy/000000147894.jpg>]
+<../image set/easy/000000184485.jpg, id=118, 256.96pt x 192.72pt>
+File: ../image set/easy/000000184485.jpg Graphic file (type jpg)
+<use ../image set/easy/000000184485.jpg>
+Package pdftex.def Info: ../image set/easy/000000184485.jpg  used on input line 1184.
+(pdftex.def)             Requested size: 201.60077pt x 151.20317pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 1181--1188
+[]\OT1/ptm/m/n/10 Link 24:http://images.cocodataset.org/train2017/000000184485.jpg
+ []
+
+[26 <../image set/easy/000000168289.jpg> <../image set/easy/000000184485.jpg>]
+<../image set/easy/000000313520.jpg, id=122, 642.4pt x 428.60126pt>
+File: ../image set/easy/000000313520.jpg Graphic file (type jpg)
+<use ../image set/easy/000000313520.jpg>
+Package pdftex.def Info: ../image set/easy/000000313520.jpg  used on input line 1236.
+(pdftex.def)             Requested size: 201.60077pt x 134.50653pt.
+
+Overfull \hbox (28.16751pt too wide) in paragraph at lines 1233--1240
+[]\OT1/ptm/m/n/10 Link 25:http://images.cocodataset.org/train2017/000000313520.jpg
+ []
+
+[27 <../image set/easy/000000313520.jpg>]
+<../image set/easy/000000320379.jpg, id=126, 501.875pt x 376.40625pt>
+File: ../image set/easy/000000320379.jpg Graphic file (type jpg)
+<use ../image set/easy/000000320379.jpg>
+Package pdftex.def Info: ../image set/easy/000000320379.jpg  used on input line 1293.
+(pdftex.def)             Requested size: 201.60077pt x 151.2031pt.
+ [28 <../image set/easy/000000320379.jpg>]
+<../image set/easy/000000320554.jpg, id=130, 501.875pt x 376.40625pt>
+File: ../image set/easy/000000320554.jpg Graphic file (type jpg)
+<use ../image set/easy/000000320554.jpg>
+Package pdftex.def Info: ../image set/easy/000000320554.jpg  used on input line 1343.
+(pdftex.def)             Requested size: 201.60077pt x 151.2031pt.
+ [29 <../image set/easy/000000320554.jpg>]
+<../image set/easy/000000322844.jpg, id=134, 481.8pt x 642.4pt>
+File: ../image set/easy/000000322844.jpg Graphic file (type jpg)
+<use ../image set/easy/000000322844.jpg>
+Package pdftex.def Info: ../image set/easy/000000322844.jpg  used on input line 1394.
+(pdftex.def)             Requested size: 201.60077pt x 268.79652pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30 <../image set/easy/000000322844.jpg>]
+<../image set/easy/000000323243.jpg, id=139, 642.4pt x 481.8pt>
+File: ../image set/easy/000000323243.jpg Graphic file (type jpg)
+<use ../image set/easy/000000323243.jpg>
+Package pdftex.def Info: ../image set/easy/000000323243.jpg  used on input line 1456.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31 <../image set/easy/000000323243.jpg>]
+<../image set/easy/000000326849.jpg, id=143, 642.4pt x 481.8pt>
+File: ../image set/easy/000000326849.jpg Graphic file (type jpg)
+<use ../image set/easy/000000326849.jpg>
+Package pdftex.def Info: ../image set/easy/000000326849.jpg  used on input line 1525.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32 <../image set/easy/000000326849.jpg>]
+<../image set/easy/000000329354.jpg, id=147, 428.60126pt x 642.4pt>
+File: ../image set/easy/000000329354.jpg Graphic file (type jpg)
+<use ../image set/easy/000000329354.jpg>
+Package pdftex.def Info: ../image set/easy/000000329354.jpg  used on input line 1570.
+(pdftex.def)             Requested size: 201.60077pt x 302.1633pt.
+ [33 <../image set/easy/000000329354.jpg>]
+<../image set/easy/000000334135.jpg, id=151, 642.4pt x 481.8pt>
+File: ../image set/easy/000000334135.jpg Graphic file (type jpg)
+<use ../image set/easy/000000334135.jpg>
+Package pdftex.def Info: ../image set/easy/000000334135.jpg  used on input line 1628.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+<../image set/easy/000000335339.jpg, id=152, 642.4pt x 481.8pt>
+File: ../image set/easy/000000335339.jpg Graphic file (type jpg)
+<use ../image set/easy/000000335339.jpg>
+Package pdftex.def Info: ../image set/easy/000000335339.jpg  used on input line 1681.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34 <../image set/easy/000000334135.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 <../image set/easy/000000335339.jpg>]
+<../image set/easy/000000335844.jpg, id=159, 642.4pt x 481.8pt>
+File: ../image set/easy/000000335844.jpg Graphic file (type jpg)
+<use ../image set/easy/000000335844.jpg>
+Package pdftex.def Info: ../image set/easy/000000335844.jpg  used on input line 1740.
+(pdftex.def)             Requested size: 201.60077pt x 151.20172pt.
+ [36 <../image set/easy/000000335844.jpg>]
+<../image set/easy/000000335913.jpg, id=164, 154.176pt x 115.632pt>
+File: ../image set/easy/000000335913.jpg Graphic file (type jpg)
+<use ../image set/easy/000000335913.jpg>
+Package pdftex.def Info: ../image set/easy/000000335913.jpg  used on input line 1808.
+(pdftex.def)             Requested size: 201.60077pt x 151.20377pt.
+<../image set/easy/000000353970.jpg, id=165, 642.4pt x 427.5975pt>
+File: ../image set/easy/000000353970.jpg Graphic file (type jpg)
+<use ../image set/easy/000000353970.jpg>
+Package pdftex.def Info: ../image set/easy/000000353970.jpg  used on input line 1859.
+(pdftex.def)             Requested size: 201.60077pt x 134.19153pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37 <../image set/easy/000000335913.jpg>]
+<../image set/easy/000000354799.jpg, id=169, 428.60126pt x 642.4pt>
+File: ../image set/easy/000000354799.jpg Graphic file (type jpg)
+<use ../image set/easy/000000354799.jpg>
+Package pdftex.def Info: ../image set/easy/000000354799.jpg  used on input line 1926.
+(pdftex.def)             Requested size: 201.60077pt x 302.1633pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38 <../image set/easy/000000353970.jpg>] [39 <../image set/easy/000000354799.jpg>]
+<../image set/easy/000000355156.jpg, id=176, 256.96pt x 256.96pt>
+File: ../image set/easy/000000355156.jpg Graphic file (type jpg)
+<use ../image set/easy/000000355156.jpg>
+Package pdftex.def Info: ../image set/easy/000000355156.jpg  used on input line 1993
