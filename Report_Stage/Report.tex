@@ -34,14 +34,22 @@ In this section, we will provide a clear outline of the aims and objectives of t
 In summary, this project aims to investigate the Spatial Reasoning abilities of LLMs, specifically in VQA tasks, by designing experiments, analyzing results, and providing insights for improvement. By achieving these objectives, the project will contribute to the advancement of NLP and enhance our understanding of LLMs' capabilities in comprehending and reasoning about spatial relationships in visual content.
 
 \section{Output}
-In this experiment, There are three LLM models have been tested: Visual ChatGPT\cite{wu2023visual}, Bard and MiniGPT-4\cite{zhu2023minigpt4}. For the test form is shown as Table \ref{tab:question_template}, and there are 80 question sets divided into two parts: Easy and Hard. They divided by the objects in the image. If the objects no more than 5 and the spatial relationship is simple, it will be easy. Otherwise, it will be hard. The question sets and outputs are shown in Appendix \ref{Easy} and \ref{Hard}.
+In the experiment stage, three leading LLM models were evaluated: Visual ChatGPT\cite{wu2023visual}, Bard, and MiniGPT-4\cite{zhu2023minigpt4}.
+
+Visual ChatGPT represents a pioneering integration of ChatGPT's linguistic capabilities with Visual Foundation Models. This allows for a seamless interaction with the AI using both textual and visual inputs. The model is adept at handling intricate visual queries, executing visual editing tasks, and providing refined results. Its architecture is tailored to incorporate visual model data into ChatGPT, making it compatible with models that have multiple I/O channels and those necessitating visual feedback. Research indicates that Visual ChatGPT offers a promising avenue for enhancing ChatGPT's visual competencies through the synergy with Visual Foundation Models\cite{wu2023visual}.
+
+Bard, developed by Google, is a cutting-edge conversational AI that poses significant competition to OpenAI's ChatGPT. Recent enhancements have equipped Bard with the capability to process visual data in tandem with textual prompts, marking a monumental leap in multi-modal conversational AI. This feature empowers Bard to comprehend and interpret visual content, such as images, when guided by textual prompts. While Bard excels in managing textual data, ongoing research has been investigating its proficiency in visual comprehension, shedding light on its strengths and areas for refinement. Such inquiries are pivotal for pinpointing challenges and steering the progression of multi-modal generative models\cite{qin2023good}.
+
+MiniGPT-4 is a sophisticated model designed to encapsulate the functionalities of the expansive GPT-4 model in a streamlined format. It synergizes a static visual encoder with Vicuna, a large language model, through a unique projection layer. This configuration allows MiniGPT-4 to demonstrate many of the multi-modal generative capabilities inherent in GPT-4, ranging from generating intricate image descriptions to crafting websites from handwritten drafts. Notably, MiniGPT-4 has exhibited novel capabilities, such as devising narratives inspired by visuals and offering solutions to visual challenges. The model's training methodology, which prioritizes meticulously curated and aligned datasets, has been instrumental in augmenting its generative reliability\cite{zhu2023minigpt4}.
+
+The evaluation metrics are detailed in Table \ref{tab:question_template}. The test comprises 80 question sets, bifurcated into two categories: Easy and Hard. The categorization is based on the number of objects in the image and their relative sizes. Images with no more than five objects, where at least one object occupies a significant portion of the frame, are classified as 'Easy'. Conversely, images featuring more than five objects, with each object being relatively smaller, are categorized as 'Hard'. Comprehensive details of the question sets and their corresponding outputs can be found in Appendices \ref{Easy} and \ref{Hard}.
 \begin{table}[ht]
     \centering
     \caption{Question Template}
     \label{tab:question_template}
     \begin{tabular}{|p{0.4\linewidth}|p{0.5\linewidth}|}
         \hline
-        \textbf{Input Image} &\textbf{Question}\\
+        \textbf{Input Image} &\textbf{Questions}\\
         \hline
         \begin{center} \includegraphics[width=\linewidth]{../image set/hard/000000104739.jpg} \end{center}
         & \begin{enumerate}
@@ -53,8 +61,17 @@ In this experiment, There are three LLM models have been tested: Visual ChatGPT\
         \end{tabular}
 \end{table}
 
-For these three questions: the first one is to test the model's ability to understand the spatial relationship between two objects. The second one is to test the model's ability to answer the question with directly leading words. The third one is to test the model's ability to explain the answer. The reason of abandoning the accuracy of the first question is that Bard uses a tricky strategy to answer the question: It gives you all the possible answers to the question, which is hard to define the answer is right or wrong, and not fair to other models.
-So the accuracy is the based on the second question, first and third are used to evaluate the model's ability of understanding and reasoning. The accuracy of the three models is shown in Table \ref{tab:accuracy}. And the detailed accuracy charts are shown by Table \ref{tab:easy-acc} and \ref{tab:hard-acc}
+The evaluation encompasses three distinct questions:
+\begin{enumerate}
+    \item Assessing the model's proficiency in comprehending spatial relationships between two objects.
+    \item Evaluating the model's capability to respond to queries with direct leading terms.
+    \item Gauging the model's aptitude in elucidating its answers.
+\end{enumerate}
+The decision to exclude the accuracy calculation for the first question stems from Bard's unconventional approach. Specifically, Bard provides an exhaustive set of potential answers, complicating the determination of correctness. This method not only challenges the definition of a correct response but also skews comparisons with other models.
+
+Consequently, accuracy is primarily derived from the responses to the second question, which offers a more tangible basis for discerning correctness. Both the first and third questions serve to appraise the model's comprehension and reasoning skills. The criterion for accuracy is whether the response adheres to the spatial relationship presented in the query or establishes a plausible spatial relationship between objects depicted in images.
+
+The accuracy metrics for the three models are presented in Table \ref{tab:accuracy}. For a more granular view, refer to Tables \ref{tab:easy-acc} and \ref{tab:hard-acc}.
 \begin{table}[h]
     \centering
     \caption{Accuracy of Three Models}
@@ -68,10 +85,10 @@ So the accuracy is the based on the second question, first and third are used to
     \end{tabular}
 \end{table}
 
-From the accuracy chart, we can see that the accuracy of the three models is not high. 
-
+Upon examining the accuracy chart, it becomes evident that the performance of the three models leaves room for improvement. Among them, Bard consistently underperforms across all question sets. While Visual ChatGPT exhibits some vulnerabilities in the 'Easy' category, it surpasses Bard and notably excels in the 'Hard' category. Conversely, MiniGPT-4 stands out in the 'Easy' set but struggles to maintain its lead in the 'Hard' set. A comprehensive evaluation of these findings will be elaborated upon in the subsequent section.
 
 \section{Evaluation}
+In this section, evaluation 
 
 \bibliographystyle{IEEEtran}
 \bibliography{mybib}
