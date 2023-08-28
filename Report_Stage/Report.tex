@@ -53,10 +53,9 @@ In this experiment, There are three LLM models have been tested: Visual ChatGPT\
         \end{tabular}
 \end{table}
 
-For these three questions: the first one is to test the model's ability to understand the spatial relationship between two objects. The second one is to test the model's ability to answer the question with directly leading words. The third one is to test the model's ability to explain the answer. The reason of abandoning the accuracy of the first question is that Bard uses a tricky strategy to answer the question: It gives you all the possible answers to you. So i
-So the accuracy is the based on the second question, first and third are used to evaluate the model's ability of understanding and reasoning. The accuracy of the three models is shown in Table \ref{tab:accuracy}.
-And the detailed accuracy chart is shown in Table \ref{tab:easy-acc} and \ref{tab:hard-acc}
-\begin{table}[]
+For these three questions: the first one is to test the model's ability to understand the spatial relationship between two objects. The second one is to test the model's ability to answer the question with directly leading words. The third one is to test the model's ability to explain the answer. The reason of abandoning the accuracy of the first question is that Bard uses a tricky strategy to answer the question: It gives you all the possible answers to the question, which is hard to define the answer is right or wrong, and not fair to other models.
+So the accuracy is the based on the second question, first and third are used to evaluate the model's ability of understanding and reasoning. The accuracy of the three models is shown in Table \ref{tab:accuracy}. And the detailed accuracy charts are shown by Table \ref{tab:easy-acc} and \ref{tab:hard-acc}
+\begin{table}[h]
     \centering
     \caption{Accuracy of Three Models}
     \label{tab:accuracy}
@@ -68,6 +67,9 @@ And the detailed accuracy chart is shown in Table \ref{tab:easy-acc} and \ref{ta
     MiniGPT-4                 &  $62.5\%$ & $52.5\%$ &  $57.5\%$  \\ \bottomrule
     \end{tabular}
 \end{table}
+
+From the accuracy chart, we can see that the accuracy of the three models is not high. 
+
 
 \section{Evaluation}
 
