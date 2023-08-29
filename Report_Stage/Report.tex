@@ -85,115 +85,28 @@ The precision metrics pertaining to the trio of models are diligently documented
     \end{tabular}
 \end{table}
 
-Upon a thorough examination of the accuracy metrics, it becomes evident that the performance of the three models necessitates further optimization. Within this ensemble, Bard consistently underperforms across various question sets. Visual ChatGPT, despite exhibiting vulnerabilities in the 'Easy' category, surpasses Bard and notably excels in the 'Hard' category. Conversely, MiniGPT-4 shines in the 'Easy' category but faces challenges in maintaining its superiority in the 'Hard' category. A detailed analysis of these findings will be elucidated in the subsequent section.
+Based on the metrics, the MiniGPT-4 model manifests superior accuracy, succeeded by Visual ChatGPT and subsequently Bard. Notably, Visual ChatGPT's performance closely parallels that of MiniGPT-4. Furthermore, the accuracy across the two question sets remains relatively consistent for each model. However, it's evident that the accuracy for the 'Easy' question set surpasses that of the 'Hard' set for every model. A more granular analysis will be presented in the ensuing section.
 
 \section{Evaluation}
 In this section, we will conduct an in-depth evaluation of the three models, deriving insights from the empirical results. The assessment will be segmented into three salient dimensions:Examination of Accuracy, Scrutiny of the Reasoning Process, and Deliberative Discussions.
 \subsection{Examination of Accuracy}
-The detialed 
+The detailed wrong answer analysis is documented by Table \ref{tab:error-easy} and \ref{tab:error-hard} in Appendix \ref{Chart}. The analysis is predicated on the following categories:
+\begin{itemize}
+    \item \textbf{Left-Right Confusion:} The model confuses the left and right sides of two objects.
+    \item \textbf{Recognition Error:} The model fails to recognize the object in the image or get the wrong object.
+    \item \textbf{Judgement Fault in Front and Back:} The model fails to judge the front and back of the object or the spatial relationship between the front and back of the object.
+    \item \textbf{Positional Fault:} The model gives the wrong spatial relationship between two objects and it is quite different from the image.
+    \item \textbf{Item Misorientation:} The model gives the wrong spatial relationship because of getting a wrong orientation of the object.
+    \item \textbf{Confused Expression:} The model gives a conflicting answer.
+    \item \textbf{No Exact Answer:} The model gives an answer that is not sure or not exact.
+    \item \textbf{No Response:} The model gives no response.
+    \item \textbf{Error Judgement in Post:} The model give the wrong answer about the post of people or animals in the image.
+    \item \textbf{Logic Fault:} The model gives the wrong answer because of the wrong logic.
+    \item \textbf{Vertical Fault:} The model gives the wrong answer in the vertical direction.
+\end{itemize}
 
-\begin{table*}[ht]
-    \centering
-    \caption{Type of Error in Easy part of All Models}
-    \label{tab:error-easy}
-    \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|c|c|c|c|}
-    \hline
-    Question Number & Bard                              & Visual ChatGPT                    & MiniGPT-4                         \\ \hline
-    1               & left-right confusion              & -                                 & -                                 \\ \hline
-    2               & left-right confusion              & -                                 & -                                 \\ \hline
-    3               & -                                 & -                                 & left-right confusion              \\ \hline
-    4               & -                                 & -                                 & left-right confusion              \\ \hline
-    5               & recognition error                 & -                                 & -                                 \\ \hline
-    6               & vertical fault                    & vertical fault                    & -                                 \\ \hline
-    7               & -                                 & -                                 & left-right confusion              \\ \hline
-    8               & -                                 & -                                 & -                                 \\ \hline
-    9               & left-right confusion              & -                                 & left-right confusion              \\ \hline
-    10              & -                                 & left-right confusion              & -                                 \\ \hline
-    11              & error judgement in front and back & error judgement in front and back & error judgement in post           \\ \hline
-    12              & Item misorientation               & Item misorientation               & -                                 \\ \hline
-    13              & left-right confusion              & -                                 & -                                 \\ \hline
-    14              & error judgement in front and back & error judgement in front and back & error judgement in front and back \\ \hline
-    15              & positional fault                  & error judgement in frame          & -                                 \\ \hline
-    16              & recognition error                 & -                                 & -                                 \\ \hline
-    17              & -                                 & -                                 & -                                 \\ \hline
-    18              & -                                 & no response                       & -                                 \\ \hline
-    19              & left-right confusion              & -                                 & left-right confusion              \\ \hline
-    20              & -                                 & -                                 & -                                 \\ \hline
-    21              & -                                 & left-right confusion              & -                                 \\ \hline
-    22              & -                                 & -                                 & left-right confusion              \\ \hline
-    23              & error judgement in front and back & error judgement in front and back & -                                 \\ \hline
-    24              & left-right confusion              & -                                 & -                                 \\ \hline
-    25              & -                                 & left-right confusion              & -                                 \\ \hline
-    26              & -                                 & -                                 & -                                 \\ \hline
-    27              & error judgement in front and back & error judgement in front and back & -                                 \\ \hline
-    28              & error judgement in front and back & error judgement in front and back & error judgement in front and back \\ \hline
-    29              & -                                 & -                                 & -                                 \\ \hline
-    30              & vertical fault                    & -                                 & -                                 \\ \hline
-    31              & -                                 & -                                 & -                                 \\ \hline
-    32              & -                                 & -                                 & error judegment in side           \\ \hline
-    33              & error judgement in front and back & error judgement in front and back & positional fault                  \\ \hline
-    34              & positional fault                  & -                                 & positional fault                  \\ \hline
-    35              & -                                 & -                                 & -                                 \\ \hline
-    36              & -                                 & -                                 & -                                 \\ \hline
-    37              & positional fault                  & positional fault                  & positional fault                  \\ \hline
-    38              & -                                 & -                                 & -                                 \\ \hline
-    39              & positional fault                  & error judgement in front and back & error judgement in front and back \\ \hline
-    40              & positional fault                  & -                                 & -                                 \\ \hline
-    \end{tabular}%
-    }
-\end{table*}
-\begin{table*}[ht]
-    \centering
-    \caption{Type of Error in Hard part of All Models}
-    \label{tab:error-hard}
-    \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|c|c|c|c|}
-    \hline
-    Question Number & Bard                              & Visual ChatGPT       & MiniGPT-4                         \\ \hline
-    41              & -                                 & -                    & no exact answer                   \\ \hline
-    42              & -                                 & -                    & -                                 \\ \hline
-    43              & -                                 & -                    & -                                 \\ \hline
-    44              & positional fault                 & -                    & -                                 \\ \hline
-    45              & confused expression               & confused expression  & confused expression               \\ \hline
-    46              & item misorientation               & left-right confusion & -                                 \\ \hline
-    47              & -                                 & -                    & -                                 \\ \hline
-    48              & -                                 & -                    & -                                 \\ \hline
-    49              & positional fault                 & -                    & -                                 \\ \hline
-    50              & left-right confusion              & left-right confusion & left-right confusion              \\ \hline
-    51              & positional fault                 & -                    & left-right confusion              \\ \hline
-    52              & -                                 & -                    & no exact answer                   \\ \hline
-    53              & confused expression               & left-right confusion & confused expression               \\ \hline
-    54              & -                                 & -                    & -                                 \\ \hline
-    55              & -                                 & error in logic       & positional fault                 \\ \hline
-    56              & no exact answer                   & recognition error    & left-right confusion              \\ \hline
-    57              & -                                 & -                    & -                                 \\ \hline
-    58              & error judgement in front and back & no exact answer      & -                                 \\ \hline
-    59              & positional fault                 & no exact answer      & left-right confusion              \\ \hline
-    60              & positional fault                 & -                    & -                                 \\ \hline
-    61              & recognition error                 & -                    & -                                 \\ \hline
-    62              & recognition error                 & -                    & -                                 \\ \hline
-    63              & -                                 & -                    & -                                 \\ \hline
-    64              & positional fault                 & positional fault    & error judgement in front and back \\ \hline
-    65              & -                                 & -                    & -                                 \\ \hline
-    66              & -                                 & -                    & left-right confusion              \\ \hline
-    67              & recognition error                 & -                    & -                                 \\ \hline
-    68              & positional fault                 & left-right confusion & -                                 \\ \hline
-    69              & -                                 & -                    & -                                 \\ \hline
-    70              & -                                 & recognition error    & -                                 \\ \hline
-    71              & -                                 & -                    & -                                 \\ \hline
-    72              & positional fault                 & left-right confusion & left-right confusion              \\ \hline
-    73              & positional fault                 & positional fault    & -                                 \\ \hline
-    74              & -                                 & positional fault    & -                                 \\ \hline
-    75              & positional fault                 & left-right confusion & positional fault                 \\ \hline
-    76              & recognition error                 & recognition error    & recognition error                 \\ \hline
-    77              & -                                 & positional fault    & positional fault                 \\ \hline
-    78              & positional fault                 & -                    & no exact answer                   \\ \hline
-    79              & recognition error                 & -                    & item misorientation               \\ \hline
-    80              & no exact answer                   & -                    & -                                 \\ \hline
-    \end{tabular}%
-    }
-\end{table*}
+Firstly, in Easy part, Bard has the most type of errors, most of them are 'judgement fault in front and back', the most significant example is in Question 14 and Question 37
+
 \subsection{Scrutiny of the Reasoning Process}
 
 \subsection{Deliberative Discussions}
