@@ -179,7 +179,7 @@ Upon comprehensive analysis of accuracy metrics, MiniGPT-4 emerges as the most c
 
 \subsection{Scrutiny of the Reasoning Process}
 
-For the second dimension, we will analyze the reasoning process of the models. The analysis will be based on every models, because the type of answer is quite different. The example answer will be Question 17, that is because they all give the correct answer in question 17-2. Image of Question 17 is shown in Figure \ref{fig:reasoning-process}. The query 17-3 is framed as \textcolor{orange}{Show me your specific reasoning steps that lead you to the answer, better in detailed explanation.}, eliciting the following response:
+Within the second dimension, the objective is to scrutinize the models' reasoning mechanisms. This analysis will individually consider each model due to the distinct nature of their responses. A representative answer for this dimension is derived from Question 17, selected primarily because all models correctly ascertain in question 17-2 that the boy is positioned in front of the pizza. Further elucidation on the reasoning steps can be found in Appendix \ref{Easy} and \ref{Hard}. The visual context for Question 17 is depicted in Figure \ref{fig:reasoning-process}. When posed with the query 17-3, phrased as \textcolor{orange}{Show me your specific reasoning steps that lead you to the answer, better in detailed explanation.}, eliciting the following response:
 
 \begin{figure}[h]
     \centering
@@ -209,14 +209,17 @@ I hope this explanation is clear and helpful. Let me know if you have any other 
 7. The pizza appears to be a pepperoni pizza, which is a common type of pizza.
 8. Based on these observations, it is likely that the pizza is in front of the boy.}
 
+Upon analyzing the aforementioned responses, it becomes evident that the reasoning capabilities of all models leave much to be desired. Visual ChatGPT's elucidation is particularly lackluster, offering a terse statement that merely describes an object's presence. MiniGPT-4, while marginally superior to Visual ChatGPT, provides explanations that lack clarity and depth, often reverting to rudimentary image descriptions. Bard's responses stand out as the most coherent, closely resembling human-like reasoning. However, even Bard's explanations, while detailed, could benefit from enhanced clarity and depth. Overall, the models' reasoning processes appear to be overly simplistic and lack the nuanced understanding characteristic of human responses.
 
 \subsection{Deliberative Discussions}
+After a comprehensive analysis of the models' performance, it's evident that all models exhibit that while all models demonstrate some degree of Spatial Reasoning ability, they are far from perfect. The models' performance is particularly lackluster in the "Hard" category, with accuracy metrics ranging from $42.5\%$ to $57.5\%$. This is likely due to the increased complexity of the images, which feature more objects and greater occlusion. The models' performance in the "Easy" category is relatively better, with accuracy metrics ranging from $45.0\%$ to $65.0\%$. This is likely due to the relative simplicity of the images, which feature fewer objects and easier spatial relationships so less occlusion. Overall, the models' performance is relatively consistent across the two categories, with the "Easy" category exhibiting marginally better accuracy. 
+
+The models' performance in reasoning steps is , with all models providing explanations that are overly simplistic and lack the nuanced understanding characteristic of human responses. This is likely due to the models' inability to comprehend the visual context of the images, and the methodology of all models to judge spatial relationships based on such as, shelter, size, distance form the camera, etc. 
 
 \section{Conclusion}
 
 \bibliographystyle{IEEEtran}
 \bibliography{mybib}
-
 \appendices
 \input{Chart.tex}
 \label{Chart}
