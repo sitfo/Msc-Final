@@ -88,7 +88,8 @@ The precision metrics pertaining to the trio of models are diligently documented
 Based on the metrics, the MiniGPT-4 model manifests superior accuracy, succeeded by Visual ChatGPT and subsequently Bard. Notably, Visual ChatGPT's performance closely parallels that of MiniGPT-4. Furthermore, the accuracy across the two question sets remains relatively consistent for each model. However, it's evident that the accuracy for the 'Easy' question set surpasses that of the 'Hard' set for every model. A more granular analysis will be presented in the ensuing section.
 
 \section{Evaluation}
-In this section, we will conduct an in-depth evaluation of the three models, deriving insights from the empirical results. The assessment will be segmented into three salient dimensions:Examination of Accuracy, Scrutiny of the Reasoning Process, and Deliberative Discussions.
+In the ensuing section, a comprehensive analysis of the three models will be undertaken, gleaning insights from the observed data. The evaluation will be partitioned into three distinct facets: Examination of Accuracy, Scrutiny of the Reasoning Process, and Deliberative Discussions.
+
 \subsection{Examination of Accuracy}
 The detailed wrong answer analysis is documented by Table \ref{tab:error-easy} and \ref{tab:error-hard} in Appendix \ref{Chart}. The analysis is predicated on the following categories:
 \begin{itemize}
@@ -105,16 +106,95 @@ The detailed wrong answer analysis is documented by Table \ref{tab:error-easy} a
     \item \textbf{Vertical Fault:} The model gives the wrong answer in the vertical direction.
 \end{itemize}
 
-Firstly, in Easy part, all models have problems in 'left-right confusion'and 'judgement fault in front and back'. The 'left-right confusion' is quite normal in this benchmark, the reason of this phenomena is hard to find, it appears with no significant points, and there are many error answers you can find in Appendix \ref{Easy}. 
-\begin{figure}
+In the initial evaluation within the "Easy" category, all models grapple with challenges related to 'Left-Right Confusion' and 'Judgement Fault in Front and Back'. The 'Left-Right Confusion' emerges as a consistent aberration in this assessment. The root cause of this irregularity remains ambiguous, materializing without apparent catalysts. Multiple instances of such inaccuracies can be consulted in Appendix \ref{Easy}. For example, in Question 9, where the visual representation is provided in Figure \ref{fig:left-right}, the query 9-2 is articulated as \textcolor{orange}{Is the cat on the right of the laptop?}. The ensuing responses include: 
+
+\textcolor{red}{Bard:} \textcolor{gray}{No, the cat is not on the right of the laptop.The cat is sitting on the left side of the laptop, ...}
+
+\textcolor{red}{Visual ChatGPT:} \textcolor{gray}{Yes, the cat is on the right of the laptop.}
+
+\textcolor{red}{MiniGPT-4:} \textcolor{gray}{No, the cat is on the left of the laptop.}
+
+While Visual ChatGPT accurately responds to this particular query, similar discrepancies persist in subsequent questions.
+
+\begin{figure}[h]
     \centering
-    \includegraphics[width=\linewidth]{../image set/easy/000000067428.jpg}
-    \caption{Image of Question 14}
-    \label{fig:left-right}
+    \begin{minipage}{0.5\linewidth}
+      \centering
+      \includegraphics[width=0.8\linewidth]{../image set/easy/000000047848.jpg}
+      \caption{Image of Question 9}
+      \label{fig:left-right}
+    \end{minipage}%
+    \begin{minipage}{0.5\linewidth}
+      \centering
+      \includegraphics[width=0.8\linewidth]{../image set/easy/000000067428.jpg}
+      \caption{Image of Question 14}
+      \label{fig:front-back}
+    \end{minipage}
 \end{figure}
-The 'judgement fault in front and back' is another common error, the typical error answer is for Question 14, input image shown in Figure \ref{fig:left-right}, the question 14-2 is \textcolor{orange}{Is the horse on the back of the vehicle?} Answer: \textcolor{red}{Bard:} \textcolor{gray}{No, the horse is not on the back of the vehicle. The horse is in front of the vehicle, pulling it. The horse is attached to the vehicle by a harness, and the horse is walking forward, pulling the vehicle behind it.If the horse were on the back of the vehicle, it would be facing the opposite direction of the vehicle. The horse would also be attached to the vehicle by a different type of harness, such as a trailer hitch.The image you provided shows the horse in front of the vehicle, pulling it. This is a common sight in many parts of the world, where horses are used to pull vehicles such as carriages and carts.} \textcolor{red}{Visual ChatGPT:} \textcolor{gray}{The image shows a red truck parked next to a horse. The horse is not on the back of the vehicle.} \textcolor{red}{MiniGPT-4:} \textcolor{gray}{ No, the horse is not on the back of the vehicle. The horse is standing in front of the vehicle, next to it. The vehicle is a red pickup truck with a bed liner. The sky is clear and there are clouds in the background. The image is a scene of a horse and a pickup truck in a grassy field.} From this answer, it is clearly that all models have recognized horse and vehicle, 
+
+The "Judgement Fault in Front and Back" emerges as a recurrent error. A quintessential instance of this is observed in Question 14, with the corresponding image depicted in Figure \ref{fig:front-back}. The query, 14-2, posed as \textcolor{orange}{Is the horse on the back of the vehicle?} elicited the following responses:
+
+\textcolor{red}{Bard:} \textcolor{gray}{No, the horse is not on the back of the vehicle. The horse is in front of the vehicle, pulling it. The horse is attached to the vehicle by a harness, and the horse is walking forward, pulling the vehicle behind it. If the horse were on the back of the vehicle, it would be facing the opposite direction of the vehicle. The horse would also be attached to the vehicle by a different type of harness, such as a trailer hitch. The image you provided shows the horse in front of the vehicle, pulling it. This is a common sight in many parts of the world, where horses are used to pull vehicles such as carriages and carts.}
+
+\textcolor{red}{Visual ChatGPT:} \textcolor{gray}{The image shows a red truck parked next to a horse. The horse is not on the back of the vehicle.}
+
+\textcolor{red}{MiniGPT-4:} \textcolor{gray}{No, the horse is not on the back of the vehicle. The horse is standing in front of the vehicle, next to it. The vehicle is a red pickup truck with a bed liner. The sky is clear and there are clouds in the background. The image is a scene of a horse and a pickup truck in a grassy field.}
+
+From these elucidations, it's palpable that while all models discern the presence of the horse and vehicle, they falter in accurately determining their spatial interrelation. Subsequent analysis of their reasoning, especially in the ensuing questions, underscores an initial misinterpretation of spatial dynamics. A comprehensive breakdown of their responses can be found in Appendix \ref{Easy}. This underscores a challenge faced by the models in accurately interpreting spatial relationships within images.
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.5\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{../image set/hard/000000256309.jpg}
+        \caption{Image of Question 64}
+        \label{fig:positional-fault}
+    \end{minipage}%
+    \begin{minipage}{0.5\linewidth}
+      \centering
+      \includegraphics[width=0.8\linewidth]{../image set/easy/000000037024.jpg}
+      \caption{Image of Question 6}
+      \label{fig:vertical-fault}
+    \end{minipage}
+\end{figure}
+
+The "Hard" category manifests a broader spectrum of discrepancies. The most recurrent inconsistency observed is the "Positional Fault". An illustrative instance is Question 64, accompanied by its visual representation in Figure \ref{fig:positional-fault}. The inquiry, 64-2, framed as \textcolor{orange}{Is this microwave situated behind the toaster?}, yielded the subsequent reactions:
+
+\textcolor{red}{Bard:} \textcolor{gray}{No, the microwave in the image you provided is not behind the toaster. The microwave is on top of the toaster. It is not possible for the microwave to be behind the toaster because the microwave is larger than the toaster and it is in the foreground of the image. The microwave would have to be partially transparent in order to be behind the toaster.}
+
+\textcolor{red}{Visual ChatGPT:} \textcolor{gray}{The microwave is not behind the toaster, it is located to the left of the toaster.}
+
+\textcolor{red}{MiniGPT-4:} \textcolor{gray}{No, the microwave is in front of the toaster.}
+
+From the elucidated responses, it becomes evident that the amalgamation of multiple objects in an image, especially when compounded by partial occlusion, introduces a degree of interpretative ambiguity. All models exhibit challenges in discerning the relative spatial relationships of objects within the visual context, potentially leading to misinterpretations.
+
+Throughout the evaluation, several consistent anomalies emerged. The models frequently manifested "Item Misorientation", "Recognition Error", and "Confused Expression". Delving deeper: "Item Misorientation" likely originates from the model's object recognition subsystem, which, while capable of identifying the object, grapples with determining its precise orientation. Both "Recognition Error" and "Confused Expression" may have a shared genesis, potentially arising from the intricate nature of images laden with numerous objects, thereby taxing the model's recognition faculties. This postulation gains traction considering that both "Recognition Error" and "Confused Expression" are predominantly evident in the "Hard" category.
+
+In addtionally, Bard consistently displays an anomaly termed "Vertical Fault". It seemingly discerns spatial relationships, particularly 'above' and 'below', predominantly when the centroids of two objects are vertically congruent. A representative instance is delineated in Question 6, visually depicted in Figure \ref{fig:vertical-fault}. The query 6-2 is framed as \textcolor{orange}{Is the blue bag situated above the yellow package?}, eliciting the following response
+
+\textcolor{red}{Bard:} \textcolor{gray}{No, the blue bag is not above the yellow package. The blue bag and the yellow package are both sitting on the bench, and there is no space between the two objects. Therefore, the blue bag cannot be above the yellow package.}
+
+Upon comprehensive analysis of accuracy metrics, MiniGPT-4 emerges as the most consistent model, delivering cogent responses in the majority of scenarios. Visual ChatGPT ranks second, generally providing logical answers; however, its performance exhibits variability during testing, occasionally failing to respond. Bard, while demonstrating some stability, lags in consistency. Its responses, though occasionally reasonable, lack the precision and quality exhibited by the other two models, with answers ranging from imprecise to entirely erroneous.
+
 
 \subsection{Scrutiny of the Reasoning Process}
+For the second dimension, we will analyze the reasoning process of the models. The analysis will be based on every models, because the type of answer is quite different. The example answer will be Question 17, that is because they all give the correct answer in question 17-2. Image of Question 17 is shown in Figure \ref{fig:reasoning-process}. The query 17-3 is framed as \textcolor{orange}{Show me your specific reasoning steps that lead you to the answer, better in detailed explanation.}, eliciting the following response:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{../image set/easy/000000089367.jpg}
+    \caption{Image of Question 17}
+    \label{fig:reasoning-process}
+\end{figure}
+\textcolor{red}{Bard:} \textcolor{gray}{Sure, here are my specific reasoning steps that lead me to the answer: I first looked at the image and saw that the boy was facing a pizza on a table. I then considered the question "Is the pizza in front of the boy?". I realized that the answer to this question depends on the definition of "in front of".
+I decided to use the following definition of "in front of": "located in front of or facing someone or something". Based on this definition, I concluded that the pizza was in front of the boy, because the boy was facing the pizza and his hands were on the table, near the pizza.
+Here is a more detailed explanation of each step:
+Step 1: I looked at the image and saw that the boy was facing a pizza on a table. This was the first piece of evidence that led me to the conclusion that the pizza was in front of the boy.
+Step 2: I considered the question "Is the pizza in front of the boy?". I realized that the answer to this question depends on the definition of "in front of". This was an important step in my reasoning process, because it helped me to clarify the meaning of the question.
+Step 3: I decided to use the following definition of "in front of": "located in front of or facing someone or something". This was a reasonable definition to use, because it was consistent with the way that the word "in front of" is commonly used.
+Step 4: Based on this definition, I concluded that the pizza was in front of the boy, because the boy was facing the pizza and his hands were on the table, near the pizza. This was the final step in my reasoning process.
+I hope this explanation is clear and helpful. Let me know if you have any other questions.}
+
+
 
 \subsection{Deliberative Discussions}
 
