@@ -101,7 +101,6 @@ The detailed wrong answer analysis is documented by Table \ref{tab:error-easy} a
     \item \textbf{Confused Expression:} The model gives a conflicting answer.
     \item \textbf{No Exact Answer:} The model gives an answer that is not sure or not exact.
     \item \textbf{No Response:} The model gives no response.
-    \item \textbf{Error Judgement in Post:} The model give the wrong answer about the post of people or animals in the image.
     \item \textbf{Logic Fault:} The model gives the wrong answer because of the wrong logic.
     \item \textbf{Vertical Fault:} The model gives the wrong answer in the vertical direction.
 \end{itemize}
@@ -158,7 +157,7 @@ From these elucidations, it's palpable that while all models discern the presenc
     \end{minipage}
 \end{figure}
 
-The "Hard" category manifests a broader spectrum of discrepancies. The most recurrent inconsistency observed is the "Positional Fault". An illustrative instance is Question 64, accompanied by its visual representation in Figure \ref{fig:positional-fault}. The inquiry, 64-2, framed as \textcolor{orange}{Is this microwave situated behind the toaster?}, yielded the subsequent reactions:
+The "Hard" category manifests a broader spectrum of discrepancies. The most recurrent inconsistency observed is the "Positional Fault". An illustrative instance is Question 64, accompanied by its visual representation in Figure \ref{fig:positional-fault}. The inquiry, 64-2, framed as \textcolor{orange}{Is this microwave behind the toaster?}, yielded the subsequent reactions:
 
 \textcolor{red}{Bard:} \textcolor{gray}{No, the microwave in the image you provided is not behind the toaster. The microwave is on top of the toaster. It is not possible for the microwave to be behind the toaster because the microwave is larger than the toaster and it is in the foreground of the image. The microwave would have to be partially transparent in order to be behind the toaster.}
 
@@ -170,7 +169,7 @@ From the elucidated responses, it becomes evident that the amalgamation of multi
 
 Throughout the evaluation, several consistent anomalies emerged. The models frequently manifested "Item Misorientation", "Recognition Error", and "Confused Expression". Delving deeper: "Item Misorientation" likely originates from the model's object recognition subsystem, which, while capable of identifying the object, grapples with determining its precise orientation. Both "Recognition Error" and "Confused Expression" may have a shared genesis, potentially arising from the intricate nature of images laden with numerous objects, thereby taxing the model's recognition faculties. This postulation gains traction considering that both "Recognition Error" and "Confused Expression" are predominantly evident in the "Hard" category.
 
-In addtionally, Bard consistently displays an anomaly termed "Vertical Fault". It seemingly discerns spatial relationships, particularly 'above' and 'below', predominantly when the centroids of two objects are vertically congruent. A representative instance is delineated in Question 6, visually depicted in Figure \ref{fig:vertical-fault}. The query 6-2 is framed as \textcolor{orange}{Is the blue bag situated above the yellow package?}, eliciting the following response
+In addtionally, Bard consistently displays an anomaly termed "Vertical Fault". It seemingly discerns spatial relationships, particularly 'above' and 'below', predominantly when the centroids of two objects are vertically congruent. A representative instance is delineated in Question 6, visually depicted in Figure \ref{fig:vertical-fault}. The query 6-2 is framed as \textcolor{orange}{Is the blue bag above the yellow package?}, eliciting the following response
 
 \textcolor{red}{Bard:} \textcolor{gray}{No, the blue bag is not above the yellow package. The blue bag and the yellow package are both sitting on the bench, and there is no space between the two objects. Therefore, the blue bag cannot be above the yellow package.}
 
@@ -225,6 +224,7 @@ The challenges faced by LLMs in Visual Spatial Reasoning can be traced back to s
     \item A limited understanding of visual intricacies within images.
     \item The language generation frameworks not being refined enough to weave detailed explanations.
 \end{enumerate}
+
 
 \section{Conclusion}
 In this research endeavor, we delved into the Visual Spatial Reasoning competencies of LLMs, with a particular emphasis on their efficacy in VQA tasks. By architecting and executing a robust experimental paradigm, we meticulously assessed three preeminent LLMs: Visual ChatGPT, Bard, and MiniGPT-4. Our evaluation pivoted around two distinct question sets: Easy and Hard, each encompassing 40 queries. These queries were crafted to probe the models' Visual Spatial Reasoning prowess, with the Easy set spotlighting less intricate visuals and the Hard set showcasing more convoluted imagery. The assessment entailed presenting these questions to the models and subsequently dissecting their responses. These responses underwent scrutiny based on criteria like accuracy, logical reasoning, and elucidation. The resultant data was then synthesized to discern patterns, trajectories, and impediments in LLMs' Visual Spatial Reasoning capacities. Drawing from this analysis, we have elucidated the inherent strengths and constraints of contemporary LLMs in Visual Spatial Reasoning tasks, suggesting prospective pathways for amplifying their proficiencies.
