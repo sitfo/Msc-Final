@@ -1,5 +1,4 @@
-\documentclass[a4paper,11pt]{report}
-
+\documentclass[twocolumn,11pt]{report}
 
 %%%%  The next package provides very powerful methods for 
 %%%%  drawing figures, but be warned that the manual for the 
@@ -9,8 +8,9 @@
 
 
 %%%%  Add some length to the page, as margins always seem too big.  
-\addtolength{\topmargin}{-1.5in}
-\addtolength{\textheight}{2in}
+% \addtolength{\topmargin}{1in}
+% \addtolength{\textheight}{2in}
+\geometry{a4paper,scale=0.8}
 
 \begin{document}
 
@@ -51,7 +51,7 @@ MASTER OF SCIENCE
 
 
 \maketitle
-
+\onecolumn
 
 %%%%  ABSTRACT
 \chapter*{\center Abstract}
@@ -141,7 +141,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \pagenumbering{arabic}
 
 %%%%  INTRODUCTION
-
+\twocolumn
 \chapter{Introduction}\label{chap:intro}
  
 This project describes the greatest invention since sliced bread, 
