@@ -1,0 +1,27 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {chapter}{\numberline {2}Aims and Objectives}{2}{}%
+\contentsline {section}{\numberline {2.1}Aims}{2}{}%
+\contentsline {section}{\numberline {2.2}Objectives}{2}{}%
+\contentsline {chapter}{\numberline {3}Background}{3}{}%
+\contentsline {chapter}{\numberline {4}Ethical Use of Data}{6}{}%
+\contentsline {section}{\numberline {4.1}Data Sources}{6}{}%
+\contentsline {section}{\numberline {4.2}Ethical Considerations}{6}{}%
+\contentsline {chapter}{\numberline {5}Design}{8}{}%
+\contentsline {section}{\numberline {5.1}Original design}{8}{}%
+\contentsline {subsection}{\numberline {5.1.1}Model Selection}{9}{}%
+\contentsline {subsection}{\numberline {5.1.2}Question Template}{9}{}%
+\contentsline {section}{\numberline {5.2}Changes to original design}{9}{}%
+\contentsline {chapter}{\numberline {6}Evaluation}{11}{}%
+\contentsline {section}{\numberline {6.1}Evaluation}{11}{}%
+\contentsline {subsection}{\numberline {6.1.1}Examination of Accuracy}{11}{}%
+\contentsline {subsection}{\numberline {6.1.2}Scrutiny of the Reasoning Process}{13}{}%
+\contentsline {section}{\numberline {6.2}Deliberative Discussions}{14}{}%
+\contentsline {chapter}{\numberline {7}Learning Points}{15}{}%
+\contentsline {section}{\numberline {7.1}Learning Points of the Experiment}{15}{}%
+\contentsline {chapter}{\numberline {8}Conclusions}{16}{}%
+\contentsline {chapter}{\numberline {A}Extra Tables}{19}{}%
+\contentsline {section}{\numberline {A.1}Charts}{19}{}%
+\contentsline {chapter}{\numberline {B}Experimental results}{23}{}%
+\contentsline {section}{\numberline {B.1}Easy Part}{23}{}%
+\contentsline {section}{\numberline {B.2}Hard Part}{77}{}%
+\contentsline {chapter}{\numberline {C}Original design document}{131}{}%
