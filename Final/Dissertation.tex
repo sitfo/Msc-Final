@@ -1,0 +1,568 @@
+\documentclass[twocolumn,11pt]{report}
+
+%%%%  The next package provides very powerful methods for 
+%%%%  drawing figures, but be warned that the manual for the 
+%%%%  package is 400 pages long.  
+
+\usepackage{sharina}
+
+
+%%%%  Add some length to the page, as margins always seem too big.  
+% \addtolength{\topmargin}{1in}
+% \addtolength{\textheight}{2in}
+\geometry{a4paper,scale=0.8}
+
+\begin{document}
+
+%%%%  Number the initial front matter with roman numerals
+\pagenumbering{roman}
+
+
+%%%%  TITLE PAGE
+%%  Here are the elements that make up the title page of the document.  
+
+\thispagestyle{empty}  %%  Make the title page have no number.  
+
+%%%%  INSERT TITLE AND NAME HERE!!
+\title{\LARGE
+Visual Spatial Reasoning for Large Language Models}
+
+\author{Jinlong Liu
+\\    \\    \\
+A DISSERTATION
+\\    \\
+Submitted to 
+\\    \\    \\ 
+The University of Liverpool
+\\    \\
+\\    \\
+in partial fulfilment of the requirements
+\\
+for the degree of 
+\\     \\
+MASTER OF SCIENCE
+\\     \\    \\    \\
+}
+
+
+%%  Fill in a date here if you want, or comment out the line below and
+%%  the current date will be automatically inserted for you.  
+\date{}
+
+
+\maketitle
+\onecolumn
+
+%%%%  ABSTRACT
+\chapter*{\center Abstract}
+
+In recent years, Large Language Models (LLMs) have transformed the field of Natural Language Processing (NLP) with their impressive achievements. But despite their proficiency in many linguistic tasks, LLMs have faced challenges when it comes to Spatial Reasoning. To shed light on this limitation, I plan to conduct an experiment using popular LLMs like GPT-4. The main goal will be to test how well they can handle Visual Spatial Reasoning, which is important for understanding the relationships between objects in visual content. Through evaluating their performance in Visual Question Answering (VQA) and their capacity to comprehend and reason about spatial relationships in visual content, we can gain valuable insights into the Spatial Reasoning capabilities of LLMs. These findings will not only enhance our understanding of the strengths and limitations of these models but also pave the way for further advancements in NLP. This progress will bring us closer to developing more comprehensive and versatile language models that are accessible and easy to work with.
+
+\newpage
+
+
+
+%%%%  STUDENT DECLARATION ON PLAGIARISM
+\chapter*{\center Student Declaration} 
+
+I confirm that I have read and understood the University's Academic Integrity Policy.
+
+I confirm that I have acted honestly, ethically and professionally in conduct leading
+to assessment for the programme of study.  
+
+I confirm that I have not copied material from another source nor committed plagiarism
+nor fabricated data when completing the attached piece of work.  I confirm that I have 
+not previously presented the work or part thereof for assessment for another University
+of Liverpool module.  I confirm that I have not copied material from another source, nor
+colluded with any other student in the preparation and production of this work.  
+
+I confirm that I have not incorporated into this assignment material that has been 
+submitted by me or any other person in support of a successful application for a 
+degree of this or any other university or degree-awarding body.  
+
+\vspace*{1in}
+
+\noindent SIGNATURE \verb!______________________________________!
+
+\noindent DATE \hspace*{.4in}  \today
+
+\vspace*{1in}
+
+%%  NOTE ABOUT CONFIDENTIAL MATERIAL  
+%%     Students who need to keep their dissertation confidential should uncomment
+%%     the following sentence on this same page.  This will preclude the dissertation 
+%%     from being placed in the University Library.  Students that submit work that 
+%%     isn't confidential should leave this line commented out.  
+
+% This dissertation contains material that is confidential and/or commercially
+% sensitive. It is included here on the understanding that this will not be revealed to 
+% any person not involved in the assessment process.  
+
+
+\newpage
+
+%%%%  ACKNOWLEDGMENTS
+%%%%    A section for Acknowledgments, should you want one.
+
+\chapter*{\center Acknowledgments}
+
+\newpage
+
+
+%%%%  TABLE OF CONTENTS  
+%%%%      Usually the following command will give you the formatting you want.  
+
+\tableofcontents
+
+
+
+%%%%  LIST OF FIGURES
+%%%%      Comment out this line if you have no figures in your document.  
+\listoffigures
+
+
+%%%%  LIST OF TABLES  
+%%%%      Comment out this next line if you have no tables in your document.  
+\listoftables
+
+
+
+\newpage
+
+
+%%%%  Turn page numbering back to arabic.  This also resets the numbering
+%%%%  to begin again at page 1.  
+
+\pagenumbering{arabic}
+
+%%%%  INTRODUCTION
+\twocolumn
+\chapter{Introduction}\label{chap:intro}
+
+In recent years, Large Language Models (LLMs) have transformed the field of Natural Language Processing (NLP) with their impressive achievements. These models, which have been trained on extensive amounts of text data, have proven to be highly effective in solving various NLP tasks, like translating languages, answering questions, and generating text. Their ability to understand and create text that resembles human language has been truly remarkable and easy to appreciate.
+
+However, despite their proficiency in many linguistic tasks, LLMs have faced challenges when it comes to Spatial Reasoning. Unlike tasks that focus solely on language, Spatial Reasoning involves comprehending and manipulating visual and spatial information. To shed light on this limitation, I plan to conduct an experiment using popular LLMs like GPT-4\cite{peng2023instruction}. The main goal will be to test how well they can handle Visual Spatial Reasoning, which is important for understanding the relationships between objects in visual content.
+
+The experiment will center around a commonly used task called Visual Question Answering (VQA). This task requires machines to answer questions based on provided images. For example, when given an image showing different objects, the machine will be given inquiries such as "What is the spatial relationship between object A and object B?". By designing carefully constructed tests like these, we can assess the level of Spatial Reasoning ability demonstrated by LLMs in an easy-to-understand manner.
+
+Through evaluating their performance in VQA and their capacity to comprehend and reason about spatial relationships in visual content, we can gain valuable insights into the Spatial Reasoning capabilities of LLMs. These findings will not only enhance our understanding of the strengths and limitations of these models but also pave the way for further advancements in NLP. This progress will bring us closer to developing more comprehensive and versatile language models that are accessible and easy to work with.
+
+
+%%%%  BACKGROUND
+
+\chapter{Aims and Objectives}\label{chap:Aims and Objectives}
+
+In this section, we will provide a clear outline of the aims and objectives of this project. The aims represent the overarching goals that we aim to achieve, while the objectives outline the specific steps and milestones that will be undertaken to fulfill these goals. The aims and objectives of this project are outlined below:
+\section{Aims}
+\begin{enumerate}
+    \item To investigate the Spatial Reasoning abilities of Large Language Models (LLMs), specifically focusing on their performance in Visual Question Answering (VQA) tasks.
+    \item To understand the limitations and challenges faced by LLMs in comprehending and reasoning about spatial relationships in visual content.
+    \item To assess the current state of Spatial Reasoning capabilities in leading LLMs, then compare with elder models and explore their improvement in this domain. Besides, to identify potential avenues for enhancing LLMs' Spatial Reasoning abilities.
+\end{enumerate}
+
+\section{Objectives}
+\begin{enumerate}
+    \item Design and develop a comprehensive experimental framework for evaluating LLMs' Spatial Reasoning abilities in VQA tasks.
+    \item Curate a diverse dataset of visual stimuli and corresponding questions that require spatial reasoning skills to answer accurately.
+    \item Conduct systematic experiments using the prepared dataset and modified LLMs to assess their performance and measure their level of Spatial Reasoning competence.
+    \item Analyze the experimental results to identify patterns, trends, and challenges in LLMs' Spatial Reasoning capabilities.
+    \item Provide insights into the strengths and limitations of current LLMs for Spatial Reasoning tasks, based on the experimental findings.
+    \item Suggest potential avenues for enhancing LLMs' Spatial Reasoning abilities, such as incorporating multimodal information or novel architectural modifications.
+    \item Contribute to the existing body of knowledge in the field of NLP by advancing our understanding of LLMs' Spatial Reasoning abilities and their implications for future research and development.
+\end{enumerate}
+
+In summary, this project aims to investigate the Spatial Reasoning abilities of LLMs, specifically in VQA tasks, by designing experiments, analyzing results, and providing insights for improvement. By achieving these objectives, the project will contribute to the advancement of NLP and enhance our understanding of LLMs' capabilities in comprehending and reasoning about spatial relationships in visual content.
+%%%%  BACKGROUND
+
+\chapter{Background}\label{chap:background}
+Spatial Reasoning plays a fundamental role in commonsense reasoning, dating back to the Naive Physics enterprise\cite{Hobbs1985-HOBFTO}. Extensive research has been conducted on the representation of qualitative spatial reasoning\cite{chen2015survey}, exploring various methods for representing spatial relations in both 2D and 3D spaces.
+
+
+Building upon these foundations, Spatial Reasoning encompasses several key aspects, including (i) mereotopology, (ii) direction and orientation, (iii) size, (iv) distance, and (v) shape, as discussed by Cohn et al. (2008) in their qualitative analysis\cite{cohn2008qualitative}. These aspects should be judged simultaneously to determine the spatial relationship between two objects. For example, to determine whether a circle is larger than a square, we must consider both the size and shape of the objects. 
+
+To evaluate the performance of Large Language Models (LLMs) in Spatial Reasoning, Cohn et al. (2023) developed a comprehensive Spatial Reasoning test that covers essential spatial relations, such as parthood, rotation, and direction, as well as size, shape, location, affordances, object interaction, and object permanence\cite{cohn2023dialectical}. Their findings revealed inconsistencies in LLMs' responses to the same question across multiple sessions, indicating that LLMs struggle to maintain consistency in Spatial Reasoning tasks. Here is an example prompt and response from their study:
+\begin{quotation}
+    Prompt-5.1: \emph{If a circle b is larger than a circle c, is it possible to move b so that it is entirely contained by c?}
+
+    GPT-3.5turbo response:\emph{Yes, it is possible to move a larger circle (b) so that it is entirely contained by a smaller circle (c). To do this, you would need to move the 
+    center of circle b towards the center of circle c until the edge of circle b touches the edge of circle c. As long as the radius of circle b is smaller than the distance between the centers of the two circles, it is possible to move circle b in this way so that it is entirely contained by circle c. It’s important to note that in order for circle b to be entirely contained by circle c, the radius of circle b must be less than or equal to the 
+    difference between the radii of circle c and circle b.}
+\end{quotation}
+
+In a related study by Lin et al. (2023), a test was devised to evaluate LLMs' Spatial Reasoning abilities with a focus on mathematical representation of questions \cite{lin2023using}. Their research demonstrated that while LLMs may not excel at directly answering spatial questions, they exhibit proficiency in transforming questions into mathematical forms based on user demands.
+
+Moreover, Borji (2023) proposed a failure task category for ChatGPT, within which Spatial Reasoning was highlighted \cite{borji2023categorical}. In this task, the researcher provided a grid description and asked the model to find a path from a start point to an end point. However, the model failed to answer the question accurately, highlighting its limitations in Spatial Reasoning tasks.
+
+Besides, an additional area of research closely connected to Spatial Reasoning is Theory-of-Mind (ToM). Theory-of-Mind entails comprehending and reasoning about the mental states of individuals, encompassing their beliefs, intentions, and desires. It requires a common-sense understanding of Spatial Reasoning to grasp the spatial relationship between agents and objects. The investigation revealed that despite their remarkable language capabilities, LLMs encounter difficulties when confronted with Theory-of-Mind tasks involving trivial alterations. Trivial alterations denote minor modifications in the task settings or presented scenarios \cite{ullman2023large}.
+
+Collectively, these studies shed light on the challenges LLMs face when it comes to Spatial Reasoning, including inconsistencies in responses, struggles with direct spatial question answering, and difficulties in solving specific spatial tasks like path finding. 
+
+An essential consideration lies in the domain of Visual Spatial Reasoning (VSR) and its intrinsic significance within the realm of Visual Language Models (VLMs), which constitutes a distinct sphere divergent from the purview of LLMs. It is of utmost importance to underscore the extensive body of research pertaining to this domain. VLMs, in stark contrast to their LLM counterparts, assume a multifaceted disposition as they amalgamate both visual and textual information, wherein images and text coalesce to effectuate various tasks. Notable exemplars of such triumphant VLMs include ViLBERT \cite{li2019visualbert}, LXMERT \cite{tan2019lxmert}, and UNITER \cite{chen2020uniter}, whose architectural frameworks are vividly depicted in Figure \ref{fig:VLMs}.
+
+\begin{figure}[htbp]
+    \centering
+    \subfloat[ViLBERT \cite{li2019visualbert}]{\includegraphics[width=0.8\linewidth]{./pic/ViBERT.png}}\\
+    \subfloat[LXMERT \cite{tan2019lxmert}]{\includegraphics[width=0.8\linewidth]{./pic/LXMERT.png}}\\
+    \subfloat[UNITER \cite{chen2020uniter}]{\includegraphics[width=0.8\linewidth]{./pic/UNITER.png}}
+    \caption{Architectural of ViLBERT, LXMERT, and UNITER.}
+    \label{fig:VLMs}
+\end{figure}
+
+Researchers have dedicated efforts to assess the ability of VLMs in comprehending commonsense spatial reasoning. Visual Question Answering (VQA) tasks have been employed to evaluate the performance of VLMs in answering questions that involve spatial relationships between objects depicted in images\cite{7410636}. Consequently, various benchmarks and question sets have been developed to specifically evaluate the spatial reasoning capabilities of VLMs.
+
+For instance, Liu et al. (2022) meticulously curated an extensive dataset comprising more than 10,000 text-image pairs, encompassing a remarkable range of 66 distinct types of spatial relations \cite{liu2022visual}. Through their comprehensive evaluation, encompassing both human subjects and Virtual Language Models (VLMs), they illuminated the notable disparity between VLMs and human performance in this intricate task. Furthermore, to comprehensively assess the spatial reasoning capacities of VLMs, various benchmarks have been developed.
+
+\begin{figure*}[ht]
+    \centering
+  \subfloat[a\label{1a}]{%
+       \includegraphics[width=0.45\linewidth]{./pic/Example of Bechmark.png}}
+    \hfill
+  \subfloat[b\label{1b}]{%
+        \includegraphics[width=0.45\linewidth]{./pic/GQA-example.png}}
+    \\
+  \subfloat[c\label{1c}]{%
+        \includegraphics[width=0.45\linewidth]{./pic/AGQA-example.png}}
+    \hfill
+  \subfloat[d\label{1d}]{%
+        \includegraphics[width=0.45\linewidth]{./pic/example of B Liu.png }}
+  \caption{Examples of spatial reasoning benchmarks. (a)Example in benchmark proposed by Liu et al. (2022) \cite{liu2022visual}  (b)Example questions and images of GQA \cite{hudson2019gqa}. (c)Example questions and images of AGQA \cite{grunde2021agqa}. (d)Example in benchmark proposed by Liu et al. (2021) it asks VLMs to give potential position between car and man. \cite{liu2022things}.}
+  \label{fig:spatial_reasoning_benchmarks}
+\end{figure*}
+
+One such benchmark, GQA \cite{hudson2019gqa}, delves into the domain of question generation, pushing the boundaries of VLMs' ability to generate relevant questions. AGQA \cite{grunde2021agqa}, on the other hand, extends the evaluation to include video-based data, capturing the nuances of spatial reasoning in dynamic visual contexts. The Compositional Visual Relations Dataset \cite{zerroug2022benchmark} was meticulously constructed with a focus on Compositional Visual Relations (CVR), challenging VLMs with intricate visual relationships. VALSE \cite{parcalabescu2021valse} places its emphasis on unraveling the sensitivity of VLMs in spatial reasoning tasks, aiming to uncover their aptitude for subtle distinctions.
+
+Furthermore, Liu et al. (2021) introduced a benchmark \cite{liu2022things} that scrutinizes the relative scales of objects, enabling a deeper exploration of VLMs' comprehension of spatial proportions. To capture a richer spectrum of spatial phenomena, SpartQA \cite{mirzaee2021spartqa} was meticulously devised, providing a challenging arena for evaluating VLMs' spatial reasoning capabilities.
+
+Figure \ref{fig:spatial_reasoning_benchmarks} showcases a glimpse of these remarkable benchmarks, highlighting the efforts undertaken to assess and comprehend the spatial reasoning prowess of VLMs.
+
+These benchmarks and datasets serve as valuable tools to assess the progress and limitations of VLMs in the realm of spatial reasoning and they have such things in common: (i) they are all based on commonsense spatial reasoning, (ii) they all focus on VLMs, (iii) they all only ask LLMs to use simple answers to these questions, like "yes" or "no", and (iv) they all given some bound words to the model to limit the model's answer space.
+
+In conclusion, this literature review presents a thorough examination of the current landscape in the realm of LLMs and their Spatial Reasoning capabilities. It consolidates recent research from the fields of LLMs, Spatial Reasoning, and VQA, providing an in-depth analysis of the advancements made thus far. The review sheds light on the existing limitations and challenges that LLMs encounter when comprehending and reasoning about spatial relationships in visual content. Moreover, it offers valuable insights into potential strategies for enhancing LLMs' Spatial Reasoning abilities. By synthesizing these findings, this review contributes to a comprehensive understanding of the current state of the art in LLMs' Spatial Reasoning capabilities and paves the way for future advancements in this field.
+
+%%%%  DESIGN
+
+\chapter{Design}\label{chap:design}
+
+In this chapter, we will outline the design of the software that was
+developed in this project.  
+
+\section{Original design}\label{chap:first_design}
+For the experimental stage, the workflow can be visualized as depicted in Figure \ref{fig:workflow}. The experiment is divided into three distinct parts, each serving a specific purpose:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{./pic/workflow.drawio.png}
+    \caption{Workflow of the experiment}
+    \label{fig:workflow}
+\end{figure}
+
+\begin{enumerate}
+    \item \textbf{Prepare Stage}
+    \subitem During this stage, the primary objective is to gather a diverse collection of images that contain various spatial relations. These images can be sourced from the internet or generated using appropriate tools. For this project, the dataset will consist of a combination of an existing benchmark proposed by Liu et al. (2022) \cite{liu2022visual}.
+    Another crucial aspect is the question set, which will be divided into three parts:
+    \begin{itemize}
+        \item Questions discussing the spatial relationships between objects depicted in the images.
+        \item Questions requiring the reasoning steps behind the previous answers.
+        \item Questions sets following the guidelines proposed by Burnell et al. (2023) and Davis(2023) \cite{burnell2023rethink,davis2023benchmarks}.
+    \end{itemize}
+    \item \textbf{Experiment Stage}
+    \subitem The focus of this stage is to test different versions of Large Language Models (LLMs) using the prepared dataset and question set. The LLMs will be evaluated based on two factors:
+    \begin{itemize}
+        \item Different sizes of LLMs.
+        \item Different pre-training methods of LLMs.
+    \end{itemize}
+    The experiment will involve running the LLMs on the prepared dataset, recording the results, and analyzing their performance.
+    \item \textbf{Analysis and Evaluation Stage}
+    \subitem In this stage, the emphasis is on analyzing the performance of the different versions of LLMs using the prepared dataset. The analysis will primarily consider two aspects:
+    \begin{itemize}
+        \item The accuracy of the answers provided by the LLMs.
+        \item The reasoning steps generated by the LLMs.
+    \end{itemize}
+    Based on the accuracy, the effectiveness and capability of the LLMs in spatial reasoning can be evaluated and compared. By examining the reasoning steps, any limitations and challenges faced by LLMs in comprehending and reasoning about spatial relationships in visual content can be identified.
+\end{enumerate}
+
+Through this systematic workflow, the experiment aims to assess the performance and capabilities of various versions of LLMs in spatial reasoning tasks. The analysis and evaluation stage provide insights into the strengths, weaknesses, and potential areas for improvement in LLMs' understanding and reasoning abilities pertaining to spatial relationships in visual content.
+
+\subsection{Model Selection}
+This project is specifically centered around Visual ChatGPT models, leveraging their innovative and convenient features that combine the visual context from images with textual data from questions\cite{wu2023visual}. While several models, including VLMs such as ViLBERT, LXMERT, UNITER, and VL-BERT, are well-equipped to handle VQA tasks, they often require deployment on local machines or servers. Moreover, they necessitate high-performance GPUs and considerable hard drive space.
+
+Unfortunately, the budget for this project does not accommodate the procurement of high-performance GPUs. Given these constraints, the Visual ChatGPT models emerge as the optimal choice for this project, striking a balance between performance and resource requirements.
+
+Another potential candidate is the miniGPT-4 model\cite{zhu2023minigpt4}. Developed with a frozen visual encoder and a frozen LLM, Vicuna, it offers considerable capabilities. However, with the shutdown of its online demo service, the miniGPT-4 model would also need to be deployed on local machines or servers, posing a similar challenge to the aforementioned models.
+
+
+\subsection{Question Template}
+The question template is an important part of this project. The question template is shown as Table \ref{tab:question_template}. As shown in the table, the question template consists of two parts: the input image and the question. The input image is the image that will be used to test the LLMs. The question is the question that will be asked to the LLMs. The question template will be used to generate the question set.
+
+\begin{table}[ht]
+    \centering
+    \caption{Question Template}
+    \label{tab:question_template}
+    \begin{tabular}{|p{0.4\linewidth}|p{0.5\linewidth}|}
+        \hline
+        \textbf{Input Image} &\textbf{Question}\\
+        \hline
+        \begin{center} \includegraphics[width=\linewidth]{./pic/000000573553.jpg} \end{center}
+        & \begin{enumerate}
+            \item Can you describe the spatial relationship between the tea table and the sofa?
+            \item Can you describe the relevant spatial relationships between the objects on the tea table?
+            \item Show the Reasoning Steps.
+        \end{enumerate}\\
+        \hline
+        \end{tabular}
+\end{table}
+
+
+\section{Changes to original design}
+During the experimental phase, an exhaustive assessment was undertaken on three leading LLM (Language and Logic Model) paradigms: Visual ChatGPT\cite{wu2023visual}, Bard, and MiniGPT-4\cite{zhu2023minigpt4}.
+
+Visual ChatGPT, a fusion of ChatGPT's linguistic strengths with Visual Foundation Models, offers a sophisticated AI interface that adeptly integrates textual and visual modalities. This model excels in handling complex visual tasks, with its architecture tailored to merge visual data seamlessly with ChatGPT, ensuring adaptability across diverse I/O configurations\cite{wu2023visual}.
+
+Bard, Google's avant-garde conversational AI, stands as a formidable contender to OpenAI's ChatGPT. Enhanced with the ability to co-process visual and textual data, Bard signifies a leap in multi-modal conversational AI. Its prowess in textual analytics is undisputed, but its visual comprehension is under rigorous academic scrutiny, aiming to refine its multi-modal capabilities\cite{qin2023good}.
+
+MiniGPT-4 encapsulates GPT-4's vast attributes within a compact design, merging a visual encoder with Vicuna, a potent language model. This design equips MiniGPT-4 with diverse multi-modal generative skills, from intricate narrative generation to website creation from sketches. Emphasizing data alignment in its training, MiniGPT-4 ensures high generative precision\cite{zhu2023minigpt4}.
+
+The metrics utilized for evaluation are detailed in Table \ref{tab:question_template}. The analysis comprises 80 question sets, bifurcated into two categories: Easy and Hard. This classification is predicated on the number of objects within the image and their respective scales. Images featuring no more than five objects, with a predominant object occupying a significant portion of the frame, are categorized as 'Easy'. Conversely, images displaying more than five objects, where each item has a comparatively modest presence, are labeled as 'Hard'. A comprehensive overview of the question sets, along with their corresponding outputs, is documented in Appendices \ref{Easy} and \ref{Hard}.
+\begin{table}[ht]
+    \centering
+    \caption{Question Template}
+    \label{tab:question_template}
+    \begin{tabular}{|p{0.4\linewidth}|p{0.5\linewidth}|}
+        \hline
+        \textbf{Input Image} &\textbf{Questions}\\
+        \hline
+        \begin{center} \includegraphics[width=\linewidth]{../image set/hard/000000104739.jpg} \end{center}
+        & \begin{enumerate}
+            \item Can you describe the spatial relationship between these two laptops?
+            \item Is this black laptop on the left of the white laptop?
+            \item Show me your specific reasoning steps that lead you to the answer, better in detailed explanation.
+        \end{enumerate}\\
+        \hline
+        \end{tabular}
+\end{table}
+The evaluation framework is structured around three pivotal dimensions:
+\begin{enumerate}
+\item Assessing the model's aptitude in discerning spatial relationships among object pairs.
+\item Analyzing the model's competence in addressing queries emphasized by specific guiding terminologies.
+\item Evaluating the model's skill in providing thorough rationales for its conclusions.
+\end{enumerate}
+The deliberate omission of accuracy metrics for the primary query is attributed to Bard's novel operational approach. In essence, Bard generates a broad array of potential conclusions, introducing challenges in conclusively affirming the veracity of a given response. This approach not only redefines the conventional notion of a 'correct' answer but also complicates the task of drawing equitable comparisons with analogous models.
+
+As a result, the primary accuracy metric is derived from the responses to the second dimension, offering a more concrete benchmark for assessing truthfulness. The initial and final queries act as essential markers in gauging the model's depth of understanding and its capacity for inferential reasoning. The benchmark for accuracy is based on the alignment of the response with the spatial relationship delineated in the directive or the proposition of a credible spatial correlation among visual entities.
+
+%%%%  EVALUATION
+
+\chapter{Evaluation}\label{chap:evaluation}
+
+The precision metrics pertaining to the trio of models are diligently documented in Table \ref{tab:accuracy}. For a more granular analytical insight, readers are directed to Tables \ref{tab:easy-acc} and \ref{tab:hard-acc}.
+\begin{table}[h]
+    \centering
+    \caption{Accuracy of Three Models}
+    \label{tab:accuracy}
+    \begin{tabular}{@{}lccc@{}}
+    \toprule
+    \multicolumn{1}{c}{Model} & Easy      & Hard & Total \\ \midrule
+    Bard                      &  $45.0\%$ & $42.5\%$ &  $43.75\%$ \\
+    Visual ChatGPT            &  $62.5\%$ & $57.5\%$ &  $60.0\%$  \\
+    MiniGPT-4                 &  $65.0\%$ & $57.5\%$ &  $61.25\%$  \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+Based on the metrics, the MiniGPT-4 model manifests superior accuracy, succeeded by Visual ChatGPT and subsequently Bard. Notably, Visual ChatGPT's performance closely parallels that of MiniGPT-4. Furthermore, the accuracy across the two question sets remains relatively consistent for each model. However, it's evident that the accuracy for the 'Easy' question set surpasses that of the 'Hard' set for every model. A more granular analysis will be presented in the ensuing section.
+
+\section{Evaluation}
+In the ensuing section, a comprehensive analysis of the three models will be undertaken, gleaning insights from the observed data. The evaluation will be partitioned into three distinct facets: Examination of Accuracy, Scrutiny of the Reasoning Process, and Deliberative Discussions.
+
+\subsection{Examination of Accuracy}
+The detailed wrong answer analysis is documented by Table \ref{tab:error-easy} and \ref{tab:error-hard} in Appendix \ref{Chart}. The analysis is predicated on the following categories:
+\begin{itemize}
+    \item \textbf{Left-Right Confusion:} The model confuses the left and right sides of two objects.
+    \item \textbf{Recognition Error:} The model fails to recognize the object in the image or get the wrong object.
+    \item \textbf{Judgement Fault in Front and Back:} The model fails to judge the front and back of the object or the spatial relationship between the front and back of the object.
+    \item \textbf{Positional Fault:} The model gives the wrong spatial relationship between two objects and it is quite different from the image.
+    \item \textbf{Item Misorientation:} The model gives the wrong spatial relationship because of getting a wrong orientation of the object.
+    \item \textbf{Confused Expression:} The model gives a conflicting answer.
+    \item \textbf{No Exact Answer:} The model gives an answer that is not sure or not exact.
+    \item \textbf{No Response:} The model gives no response.
+    \item \textbf{Logic Fault:} The model gives the wrong answer because of the wrong logic.
+    \item \textbf{Vertical Fault:} The model gives the wrong answer in the vertical direction.
+\end{itemize}
+
+In the initial evaluation within the "Easy" category, all models grapple with challenges related to 'Left-Right Confusion' and 'Judgement Fault in Front and Back'. The issue of 'Left-Right Confusion', particularly concerning left-right distinctions, consistently manifested throughout this evaluation. The genesis of this anomaly remains enigmatic, surfacing sporadically; for instance, while some models accurately discerned the left-right orientation in question 1, they faltered in question 2. Various exemplifications of these discrepancies can be referenced in Appendix \ref{Easy}. To illustrate, in Question 9, accompanied by a visual aid in Figure \ref{fig:left-right}, the query 9-2 is posed as \textcolor{orange}{Is the cat on the right of the laptop?}. The subsequent responses are as follows:.
+
+\textcolor{red}{Bard:} \textcolor{gray}{No, the cat is not on the right of the laptop.The cat is sitting on the left side of the laptop, ...}
+
+\textcolor{red}{Visual ChatGPT:} \textcolor{gray}{Yes, the cat is on the right of the laptop.}
+
+\textcolor{red}{MiniGPT-4:} \textcolor{gray}{No, the cat is on the left of the laptop.}
+
+While Visual ChatGPT accurately responds to this particular query, similar discrepancies persist in subsequent questions.
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.5\linewidth}
+      \centering
+      \includegraphics[width=0.8\linewidth]{../image set/easy/000000047848.jpg}
+      \caption{Image of Question 9}
+      \label{fig:left-right}
+    \end{minipage}%
+    \begin{minipage}{0.5\linewidth}
+      \centering
+      \includegraphics[width=0.8\linewidth]{../image set/easy/000000067428.jpg}
+      \caption{Image of Question 14}
+      \label{fig:front-back}
+    \end{minipage}
+\end{figure}
+
+The "Judgement Fault in Front and Back" emerges as a recurrent error. A quintessential instance of this is observed in Question 14, with the corresponding image depicted in Figure \ref{fig:front-back}. The query, 14-2, posed as \textcolor{orange}{Is the horse on the back of the vehicle?} elicited the following responses:
+
+\textcolor{red}{Bard:} \textcolor{gray}{No, the horse is not on the back of the vehicle. The horse is in front of the vehicle, pulling it. The horse is attached to the vehicle by a harness, and the horse is walking forward, pulling the vehicle behind it. If the horse were on the back of the vehicle, it would be facing the opposite direction of the vehicle. The horse would also be attached to the vehicle by a different type of harness, such as a trailer hitch. The image you provided shows the horse in front of the vehicle, pulling it. This is a common sight in many parts of the world, where horses are used to pull vehicles such as carriages and carts.}
+
+\textcolor{red}{Visual ChatGPT:} \textcolor{gray}{The image shows a red truck parked next to a horse. The horse is not on the back of the vehicle.}
+
+\textcolor{red}{MiniGPT-4:} \textcolor{gray}{No, the horse is not on the back of the vehicle. The horse is standing in front of the vehicle, next to it. The vehicle is a red pickup truck with a bed liner. The sky is clear and there are clouds in the background. The image is a scene of a horse and a pickup truck in a grassy field.}
+
+From these elucidations, it's palpable that while all models discern the presence of the horse and vehicle, they falter in accurately determining their spatial interrelation. Subsequent analysis of their reasoning, especially in the ensuing questions, underscores an initial misinterpretation of spatial dynamics. A comprehensive breakdown of their responses can be found in Appendix \ref{Easy}. This underscores a challenge faced by the models in accurately interpreting spatial relationships within images.
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.5\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{../image set/hard/000000256309.jpg}
+        \caption{Image of Question 64}
+        \label{fig:positional-fault}
+    \end{minipage}%
+    \begin{minipage}{0.5\linewidth}
+      \centering
+      \includegraphics[width=0.8\linewidth]{../image set/easy/000000037024.jpg}
+      \caption{Image of Question 6}
+      \label{fig:vertical-fault}
+    \end{minipage}
+\end{figure}
+
+The "Hard" category manifests a broader spectrum of discrepancies. The most recurrent inconsistency observed is the "Positional Fault". An illustrative instance is Question 64, accompanied by its visual representation in Figure \ref{fig:positional-fault}. The inquiry, 64-2, framed as \textcolor{orange}{Is this microwave behind the toaster?}, yielded the subsequent reactions:
+
+\textcolor{red}{Bard:} \textcolor{gray}{No, the microwave in the image you provided is not behind the toaster. The microwave is on top of the toaster. It is not possible for the microwave to be behind the toaster because the microwave is larger than the toaster and it is in the foreground of the image. The microwave would have to be partially transparent in order to be behind the toaster.}
+
+\textcolor{red}{Visual ChatGPT:} \textcolor{gray}{The microwave is not behind the toaster, it is located to the left of the toaster.}
+
+\textcolor{red}{MiniGPT-4:} \textcolor{gray}{No, the microwave is in front of the toaster.}
+
+From the elucidated responses, it becomes evident that the amalgamation of multiple objects in an image, especially when compounded by partial occlusion, introduces a degree of interpretative ambiguity. All models exhibit challenges in discerning the relative spatial relationships of objects within the visual context, potentially leading to misinterpretations.
+
+Throughout the evaluation, several consistent anomalies emerged. The models frequently manifested "Item Misorientation", "Recognition Error", and "Confused Expression". Delving deeper: "Item Misorientation" likely originates from the model's object recognition subsystem, which, while capable of identifying the object, grapples with determining its precise orientation. Both "Recognition Error" and "Confused Expression" may have a shared genesis, potentially arising from the intricate nature of images laden with numerous objects, thereby taxing the model's recognition faculties. This postulation gains traction considering that both "Recognition Error" and "Confused Expression" are predominantly evident in the "Hard" category.
+
+In addtionally, Bard consistently displays an anomaly termed "Vertical Fault". It seemingly discerns spatial relationships, particularly 'above' and 'below', predominantly when the centroids of two objects are vertically congruent. A representative instance is delineated in Question 6, visually depicted in Figure \ref{fig:vertical-fault}. The query 6-2 is framed as \textcolor{orange}{Is the blue bag above the yellow package?}, eliciting the following response
+
+\textcolor{red}{Bard:} \textcolor{gray}{No, the blue bag is not above the yellow package. The blue bag and the yellow package are both sitting on the bench, and there is no space between the two objects. Therefore, the blue bag cannot be above the yellow package.}
+
+Upon comprehensive analysis of accuracy metrics, MiniGPT-4 emerges as the most consistent model, delivering cogent responses in the majority of scenarios. Visual ChatGPT ranks second, generally providing logical answers; however, its performance exhibits variability during testing, occasionally failing to respond. Bard, while demonstrating some stability, lags in consistency. Its responses, though occasionally reasonable, lack the precision and quality exhibited by the other two models, with answers ranging from imprecise to entirely erroneous.
+
+
+\subsection{Scrutiny of the Reasoning Process}
+
+Within the second dimension, the objective is to scrutinize the models' reasoning mechanisms. This analysis will individually consider each model due to the distinct nature of their responses. A representative answer for this dimension is derived from Question 17, selected primarily because all models correctly ascertain in question 17-2 that the boy is positioned in front of the pizza. Further elucidation on the reasoning steps can be found in Appendix \ref{Easy} and \ref{Hard}. The visual context for Question 17 is depicted in Figure \ref{fig:reasoning-process}. When posed with the query 17-3, phrased as \textcolor{orange}{Show me your specific reasoning steps that lead you to the answer, better in detailed explanation.}, eliciting the following response:
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{../image set/easy/000000089367.jpg}
+    \caption{Image of Question 17}
+    \label{fig:reasoning-process}
+\end{figure}
+
+\textcolor{red}{Bard:} \textcolor{gray}{Sure, here are my specific reasoning steps that lead me to the answer: I first looked at the image and saw that the boy was facing a pizza on a table. I then considered the question "Is the pizza in front of the boy?". I realized that the answer to this question depends on the definition of "in front of".
+I decided to use the following definition of "in front of": "located in front of or facing someone or something". Based on this definition, I concluded that the pizza was in front of the boy, because the boy was facing the pizza and his hands were on the table, near the pizza.
+Here is a more detailed explanation of each step:
+Step 1: I looked at the image and saw that the boy was facing a pizza on a table. This was the first piece of evidence that led me to the conclusion that the pizza was in front of the boy.
+Step 2: I considered the question "Is the pizza in front of the boy?". I realized that the answer to this question depends on the definition of "in front of". This was an important step in my reasoning process, because it helped me to clarify the meaning of the question.
+Step 3: I decided to use the following definition of "in front of": "located in front of or facing someone or something". This was a reasonable definition to use, because it was consistent with the way that the word "in front of" is commonly used.
+Step 4: Based on this definition, I concluded that the pizza was in front of the boy, because the boy was facing the pizza and his hands were on the table, near the pizza. This was the final step in my reasoning process.
+I hope this explanation is clear and helpful. Let me know if you have any other questions.}
+
+\textcolor{red}{Visual ChatGPT:} \textcolor{gray}{The image provided is of a boy holding a pizza. From the description, it is clear that the pizza is in front of the boy. To confirm this, I used the Get Photo Description tool to observe the image and confirm that the boy is indeed holding the pizza in his hands.}
+
+\textcolor{red}{MiniGPT-4:} \textcolor{gray}{Sure, here are the specific reasoning steps that led me to the answer:
+1. The image shows a young boy sitting at a table with a large pizza in front of him.
+2. The pizza is on a large round plate, which suggests that it is a personal-sized pizza.
+3. The boy is using a fork to cut into the pizza, which suggests that he is eating the pizza.
+4. The boy is wearing a red and white plaid shirt, which suggests that he is in a casual setting.
+5. The tablecloth is white and the walls of the room are painted a light blue, which suggests that the setting is a restaurant or cafe.
+6. There are a few small white flowers on the table in front of the boy, which suggests that the setting is a nice, upscale restaurant or cafe.
+7. The pizza appears to be a pepperoni pizza, which is a common type of pizza.
+8. Based on these observations, it is likely that the pizza is in front of the boy.}
+
+Upon a meticulous examination of the provided responses, the reasoning aptitudes of the models appear suboptimal. Visual ChatGPT's rationale is notably cursory, furnishing a succinct declaration that merely acknowledges an object's existence. MiniGPT-4, albeit slightly more insightful than Visual ChatGPT, delivers explanations that are wanting in precision and profundity, often defaulting to basic image annotations. Bard's elucidations emerge as the most articulate, mirroring a semblance of human-like deductive reasoning. Nonetheless, even Bard's justifications, though comprehensive, could be further refined for clarity and depth. Furthermore, the models' reasoning approach seems more inclined towards validating their conclusions rather than explicating the spatial interrelation between objects. This trend is particularly pronounced across all three models, especially when their responses to the second query are erroneous.
+
+\section{Deliberative Discussions}
+
+Upon a meticulous assessment of the models' capabilities, it's evident that while each exhibits a degree of Spatial Reasoning proficiency, they are not without shortcomings. Their performance is notably diminished in the "Hard" category, with accuracy metrics ranging between $42.5\%$ and $57.5\%$. This can be linked to the complexity of the images, typified by an increased object density and significant occlusions. In contrast, within the "Easy" category, the models demonstrate superior performance, registering accuracy metrics from $45.0\%$ to $65.0\%$. This improved outcome is likely due to the images' simplicity, featuring fewer objects and clearer spatial delineations. Collectively, the models exhibit relative uniformity across both categories, though with a modest advantage in the "Easy" segment.
+
+In terms of reasoning articulation, the models' explanations tend to be elementary, lacking the depth characteristic of human interpretations. This constraint could be a byproduct of the models' struggles with visual subtleties and their language generation systems not being adept enough to produce detailed narratives.
+
+The challenges faced by LLMs in Visual Spatial Reasoning can be traced back to several factors:
+\begin{enumerate}
+    \item The models' struggles in identifying spatial interrelations among image objects.
+    \item Difficulties in reasoning about these spatial interconnections.
+    \item A constrained ability to generate comprehensive justifications for their determinations.
+    \item A limited understanding of visual intricacies within images.
+    \item The language generation frameworks not being refined enough to weave detailed explanations.
+\end{enumerate}
+
+%%%%  This figure uses the "tikz" package mentioned earlier to
+%%%%  draw it.  Obviously there are other ways to draw pictures,
+%%%%  including native LaTeX commands for doing so.  I am merely
+%%%%  providing an example here.  The "label" is how you can 
+%%%%  add a label to refer to the figure in the body of the document.
+
+%%%% LEARNING POINTS
+\chapter{Learning Points}\label{chap:learning}
+In this chapter, the learning points of this project will be discussed. The learning points are divided into three parts: the learning points of the experiment, the learning points of the model, and the learning points of the project.
+
+\section{Learning Points of the Experiment}
+
+%%%%  CONCLUSIONS
+\chapter{Conclusions}\label{chap:conclusions}
+In this research endeavor, we delved into the Visual Spatial Reasoning competencies of LLMs, with a particular emphasis on their efficacy in VQA tasks. By architecting and executing a robust experimental paradigm, we meticulously assessed three preeminent LLMs: Visual ChatGPT, Bard, and MiniGPT-4. Our evaluation pivoted around two distinct question sets: Easy and Hard, each encompassing 40 queries. These queries were crafted to probe the models' Visual Spatial Reasoning prowess, with the Easy set spotlighting less intricate visuals and the Hard set showcasing more convoluted imagery. The assessment entailed presenting these questions to the models and subsequently dissecting their responses. These responses underwent scrutiny based on criteria like accuracy, logical reasoning, and elucidation. The resultant data was then synthesized to discern patterns, trajectories, and impediments in LLMs' Visual Spatial Reasoning capacities. Drawing from this analysis, we have elucidated the inherent strengths and constraints of contemporary LLMs in Visual Spatial Reasoning tasks, suggesting prospective pathways for amplifying their proficiencies.
+
+%%%%   REFERENCES
+
+%%%%  Section for references, using the \bibitem directive to 
+%%%%  specify labels used to cite sources in the document.  
+
+\bibliographystyle{IEEEtran}
+\bibliography{mybib}
+
+
+%%%%   APPENDICES
+\appendix
+
+%%%  First appendix.  
+
+\chapter{Extra Tables}\label{app:Extra_Tables}
+\input{../Report_Stage/Chart.tex}
+\label{Chart}
+
+%%%  A second appendix.
+
+\chapter{Experimental results}\label{app:Experimental_results}
+
+Here I give details of some experiments that were performed during the
+course of the project.  
+
+%%%
+\input{../Q&A/easy.tex}
+\label{Easy}
+
+%%%
+\input{../Q&A/hard.tex}
+\label{Hard}
+
+
+
+%%%  Original design document.
+\chapter{Original design document}\label{app:Original_design}
+
+Here I might insert the original design document for the project, in order
+to refer to it and changes that I made.  
+
+\end{document}
