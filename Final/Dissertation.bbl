@@ -77,6 +77,9 @@ L.~Parcalabescu, M.~Cafagna, L.~Muradjan, A.~Frank, I.~Calixto, and A.~Gatt, ``V
 \bibitem{mirzaee2021spartqa}
 R.~Mirzaee, H.~R. Faghihi, Q.~Ning, and P.~Kordjmashidi, ``Spartqa:: A textual question answering benchmark for spatial reasoning,'' \emph{arXiv preprint arXiv:2104.05832}, 2021.
 
+\bibitem{lin2014microsoft}
+T.-Y. Lin, M.~Maire, S.~Belongie, J.~Hays, P.~Perona, D.~Ramanan, P.~Doll{\'a}r, and C.~L. Zitnick, ``Microsoft coco: Common objects in context,'' in \emph{Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2014, pp. 740--755.
+
 \bibitem{burnell2023rethink}
 R.~Burnell, W.~Schellaert, J.~Burden, T.~D. Ullman, F.~Martinez-Plumed, J.~B. Tenenbaum, D.~Rutar, L.~G. Cheke, J.~Sohl-Dickstein, M.~Mitchell \emph{et~al.}, ``Rethink reporting of evaluation results in ai,'' \emph{Science}, vol. 380, no. 6641, pp. 136--138, 2023.
 
