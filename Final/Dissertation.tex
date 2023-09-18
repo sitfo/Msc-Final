@@ -141,20 +141,19 @@ I would like to express my profound gratitude to Professor Frank Wolter for his 
 \twocolumn
 \chapter{Introduction}\label{chap:intro}
 
-In recent years, Large Language Models (LLMs) have transformed the field of Natural Language Processing (NLP) with their impressive achievements. These models, which have been trained on extensive amounts of text data, have proven to be highly effective in solving various NLP tasks, like translating languages, answering questions, and generating text. Their ability to understand and create text that resembles human language has been truly remarkable and easy to appreciate.
+In the contemporary landscape of Natural Language Processing (NLP), Large Language Models (LLMs) have emerged as pivotal entities, revolutionizing the domain with their unparalleled proficiencies. These state-of-the-art models, underpinned by vast textual datasets, have demonstrated exceptional efficacy across a spectrum of NLP tasks, encompassing language translation, query resolution, and text generation. The remarkable semblance of their outputs to human-like language articulation stands as a testament to their sophistication.
 
-However, despite their proficiency in many linguistic tasks, LLMs have faced challenges when it comes to Spatial Reasoning. Unlike tasks that focus solely on language, Spatial Reasoning involves comprehending and manipulating visual and spatial information. To shed light on this limitation, I plan to conduct an experiment using popular LLMs like GPT-4\cite{peng2023instruction}. The main goal will be to test how well they can handle Visual Spatial Reasoning, which is important for understanding the relationships between objects in visual content.
+Yet, for all their linguistic prowess, LLMs encounter significant hurdles in the realm of Spatial Reasoning. Contrary to tasks that are predominantly linguistic, Spatial Reasoning mandates the comprehension and manipulation of visual and spatial constructs. To elucidate these constraints, an empirical study is proposed, leveraging renowned LLMs such as GPT-4\cite{peng2023instruction}. The primary objective is to gauge their adeptness in Visual Spatial Reasoning, a crucial competency for discerning inter-object relationships within visual contexts.
 
-The experiment will center around a commonly used task called Visual Question Answering (VQA). This task requires machines to answer questions based on provided images. For example, when given an image showing different objects, the machine will be given inquiries such as "What is the spatial relationship between object A and object B?". By designing carefully constructed tests like these, we can assess the level of Spatial Reasoning ability demonstrated by LLMs in an easy-to-understand manner.
+Central to this investigation is the Visual Question Answering (VQA) task, a widely-adopted benchmark that necessitates machine responses to queries anchored in visual stimuli. For instance, presented with an illustrative depiction of diverse objects, the model might be probed with questions like "What is the spatial relationship between object A and object B?". Through such methodically designed evaluations, the Spatial Reasoning capabilities of LLMs can be systematically assessed.
 
-Through evaluating their performance in VQA and their capacity to comprehend and reason about spatial relationships in visual content, we can gain valuable insights into the Spatial Reasoning capabilities of LLMs. These findings will not only enhance our understanding of the strengths and limitations of these models but also pave the way for further advancements in NLP. This progress will bring us closer to developing more comprehensive and versatile language models that are accessible and easy to work with.
-
+By critically appraising their VQA performance and their aptitude to interpret and reason spatial interrelations in visual content, invaluable insights into LLMs' Spatial Reasoning faculties can be gleaned. Such revelations not only enrich the understanding of these models' capabilities and constraints but also chart a course for future NLP innovations. Ultimately, this endeavor seeks to foster the evolution of holistic and versatile language models that are both robust and user-friendly.
 
 %%%%  BACKGROUND
 
 \chapter{Aims and Objectives}\label{chap:Aims and Objectives}
 
-In this section, we will provide a clear outline of the aims and objectives of this project. The aims represent the overarching goals that we aim to achieve, while the objectives outline the specific steps and milestones that will be undertaken to fulfill these goals. The aims and objectives of this project are outlined below:
+In this chapter, a comprehensive delineation of the project's aims and objectives will be presented. The aims encapsulate the broader aspirations targeted for realization, whereas the objectives detail the precise actions and benchmarks set to actualize these overarching goals. The ensuing sections elucidate the specific aims and objectives underpinning this project:
 \section{Aims}
 \begin{enumerate}
     \item To investigate the Spatial Reasoning abilities of Large Language Models (LLMs), specifically focusing on their performance in Visual Question Answering (VQA) tasks.
@@ -245,6 +244,8 @@ In conclusion, this literature review presents a thorough examination of the cur
 
 \chapter{Ethical Use of Data}\label{chap:ethics}
 
+In this chapter, we will outline the ethical considerations that should be taken into account when conducting this project. The ethical considerations will be divided into two parts: the ethical use of data and the ethical use of LLMs.
+
 \section{Data Sources}
 The data utilized in this project will be divided into two main parts: the dataset and question set, and the answers generated by the Large Language Models (LLMs).
 
@@ -272,8 +273,7 @@ By addressing these ethical considerations, researchers can ensure the responsib
 
 \chapter{Design}\label{chap:design}
 
-In this chapter, we will outline the design of the software that was
-developed in this project.  
+In this chapter, we will outline the design of this experiment. The design will be divided into three parts: the dataset and question set, the experiment, and the analysis and evaluation. The dataset and question set will be used to test the LLMs. The experiment will be used to test the performance of the LLMs. The analysis and evaluation will be used to analyze the performance of the LLMs.
 
 \section{Original design}\label{chap:first_design}
 For the experimental stage, the workflow can be visualized as depicted in Figure \ref{fig:workflow}. The experiment is divided into three distinct parts, each serving a specific purpose:
@@ -321,12 +321,12 @@ Another potential candidate is the miniGPT-4 model\cite{zhu2023minigpt4}. Develo
 
 
 \subsection{Question Template}
-The question template is an important part of this project. The question template is shown as Table \ref{tab:question_template}. As shown in the table, the question template consists of two parts: the input image and the question. The input image is the image that will be used to test the LLMs. The question is the question that will be asked to the LLMs. The question template will be used to generate the question set.
+The question template is an important part of this project. The question template is shown as Table \ref{tab:question_template_original}. As shown in the table, the question template consists of two parts: the input image and the question. The input image is the image that will be used to test the LLMs. The question is the question that will be asked to the LLMs. The question template will be used to generate the question set.
 
 \begin{table}[ht]
     \centering
     \caption{Question Template}
-    \label{tab:question_template}
+    \label{tab:question_template_original}
     \begin{tabular}{|p{0.4\linewidth}|p{0.5\linewidth}|}
         \hline
         \textbf{Input Image} &\textbf{Question}\\
@@ -343,15 +343,11 @@ The question template is an important part of this project. The question templat
 
 
 \section{Changes to original design}
-During the experimental phase, an exhaustive assessment was undertaken on three leading LLM (Language and Logic Model) paradigms: Visual ChatGPT\cite{wu2023visual}, Bard, and MiniGPT-4\cite{zhu2023minigpt4}.
 
-Visual ChatGPT, a fusion of ChatGPT's linguistic strengths with Visual Foundation Models, offers a sophisticated AI interface that adeptly integrates textual and visual modalities. This model excels in handling complex visual tasks, with its architecture tailored to merge visual data seamlessly with ChatGPT, ensuring adaptability across diverse I/O configurations\cite{wu2023visual}.
+Compare to the original design, the final design has changed the question content, because of in the test of the original design, the questions is not very concrete and the answers are not very accurate. And for Bard model, it uses a strategy of generating a large number of potential answers, which makes it difficult to judge the accuracy of the answers.
 
-Bard, Google's avant-garde conversational AI, stands as a formidable contender to OpenAI's ChatGPT. Enhanced with the ability to co-process visual and textual data, Bard signifies a leap in multi-modal conversational AI. Its prowess in textual analytics is undisputed, but its visual comprehension is under rigorous academic scrutiny, aiming to refine its multi-modal capabilities\cite{qin2023good}.
+So, the final design has changed the question content to make the questions more concrete and the answers more accurate. The final question template is shown as Table \ref{tab:question_template}. And for the experimental phase, there are three LLMs have been chosen: Visual ChatGPT\cite{wu2023visual}, Bard, and MiniGPT-4\cite{zhu2023minigpt4}. 
 
-MiniGPT-4 encapsulates GPT-4's vast attributes within a compact design, merging a visual encoder with Vicuna, a potent language model. This design equips MiniGPT-4 with diverse multi-modal generative skills, from intricate narrative generation to website creation from sketches. Emphasizing data alignment in its training, MiniGPT-4 ensures high generative precision\cite{zhu2023minigpt4}.
-
-The metrics utilized for evaluation are detailed in Table \ref{tab:question_template}. The analysis comprises 80 question sets, bifurcated into two categories: Easy and Hard. This classification is predicated on the number of objects within the image and their respective scales. Images featuring no more than five objects, with a predominant object occupying a significant portion of the frame, are categorized as 'Easy'. Conversely, images displaying more than five objects, where each item has a comparatively modest presence, are labeled as 'Hard'. A comprehensive overview of the question sets, along with their corresponding outputs, is documented in Appendices \ref{Easy} and \ref{Hard}.
 \begin{table}[ht]
     \centering
     \caption{Question Template}
@@ -369,6 +365,14 @@ The metrics utilized for evaluation are detailed in Table \ref{tab:question_temp
         \hline
         \end{tabular}
 \end{table}
+This final question template is more detailed and more accurate than the original question template. It can help the LLMs to understand the question better and give more accurate answers.\\
+
+
+
+%%%%  EVALUATION
+
+\chapter{Evaluation}\label{chap:evaluation}
+The analysis comprises 80 question sets, bifurcated into two categories: Easy and Hard. This classification is predicated on the number of objects within the image and their respective scales. Images featuring no more than five objects, with a predominant object occupying a significant portion of the frame, are categorized as 'Easy'. Conversely, images displaying more than five objects, where each item has a comparatively modest presence, are labeled as 'Hard'. A comprehensive overview of the question sets, along with their corresponding outputs, is documented in Appendices \ref{Easy} and \ref{Hard}.\\
 The evaluation framework is structured around three pivotal dimensions:
 \begin{enumerate}
 \item Assessing the model's aptitude in discerning spatial relationships among object pairs.
@@ -376,12 +380,6 @@ The evaluation framework is structured around three pivotal dimensions:
 \item Evaluating the model's skill in providing thorough rationales for its conclusions.
 \end{enumerate}
 The deliberate omission of accuracy metrics for the primary query is attributed to Bard's novel operational approach. In essence, Bard generates a broad array of potential conclusions, introducing challenges in conclusively affirming the veracity of a given response. This approach not only redefines the conventional notion of a 'correct' answer but also complicates the task of drawing equitable comparisons with analogous models.
-
-As a result, the primary accuracy metric is derived from the responses to the second dimension, offering a more concrete benchmark for assessing truthfulness. The initial and final queries act as essential markers in gauging the model's depth of understanding and its capacity for inferential reasoning. The benchmark for accuracy is based on the alignment of the response with the spatial relationship delineated in the directive or the proposition of a credible spatial correlation among visual entities.
-
-%%%%  EVALUATION
-
-\chapter{Evaluation}\label{chap:evaluation}
 
 The precision metrics pertaining to the trio of models are diligently documented in Table \ref{tab:accuracy}. For a more granular analytical insight, readers are directed to Tables \ref{tab:easy-acc} and \ref{tab:hard-acc}.
 \begin{table}[h]
