@@ -273,7 +273,7 @@ By addressing these ethical considerations, researchers can ensure the responsib
 
 \chapter{Design}\label{chap:design}
 
-In this chapter, we shall elucidate the architectural framework of the experiment, which is systematically partitioned into three distinct phases: the preparatory phase, the experimental phase, and the analysis and evaluation phase. The preparatory phase is dedicated to the meticulous assembly of the dataset and the formulation of the question set. Subsequently, the experimental phase emphasizes the execution of the experiment and the subsequent collation of results. The concluding phase, analysis and evaluation, delves into a rigorous examination of the results, culminating in a comprehensive assessment of the LLMs' performance.
+In this chapter, we will elucidate the experimental design framework. This framework is methodically segmented into three distinct phases: the preparatory phase, the experimental execution phase, and the subsequent analysis and evaluation phase. Subsequently, a comparative analysis will be undertaken to highlight the modifications made from the initial design blueprint.
 
 \section{Original design}\label{chap:first_design}
 For the experimental stage, the workflow can be visualized as depicted in Figure \ref{fig:workflow}. The experiment is divided into three distinct parts, each serving a specific purpose:
@@ -321,9 +321,9 @@ Another potential candidate is the miniGPT-4 model\cite{zhu2023minigpt4}. Develo
 
 
 \subsection{Question Template}
-Within the purview of this research endeavor, the question template assumes paramount importance. As delineated in Table \ref{tab:question_template_original}, the template is meticulously segmented into two pivotal components: the visual stimulus, represented by the input image, and the concomitant query. The former acts as a visual catalyst for the assessment of the LLMs, while the latter is directly posed to the LLMs to elicit their responses. This meticulously crafted template is instrumental in curating an exhaustive set of questions pivotal to this study.
+Within the framework of this scholarly investigation, the question template holds profound significance. As expounded in Table \ref{tab:question_template_original}, the template is adeptly divided into two essential facets: the visual representation, embodied by the input image, and the accompanying inquiry. The former serves as a visual impetus for the evaluation of the LLMs, while the latter is presented directly to the LLMs to garner their feedback. This judiciously designed template plays a crucial role in formulating a comprehensive array of questions central to this research.
 
-In total, the dataset comprises 80 images, bifurcated into two categories based on their complexity: 40 images for rudimentary questions and 40 for intricate ones. The criterion for this categorization hinges on the number of objects present and the spatial occupation within the image. Images with a count of five objects or fewer, where the primary object dominates a significant portion of the visual space, are classified under rudimentary questions. Conversely, images that do not adhere to this criterion are deemed intricate.
+The dataset, in its entirety, encompasses 80 images, partitioned into two distinct classifications based on their intricacy: 40 images tailored for elementary queries and 40 for more advanced ones. The demarcation for this classification is anchored on the quantity of objects depicted and their spatial prominence within the image. Images featuring a maximum of five objects, wherein the principal object commands a substantial visual presence, fall under the elementary category. In contrast, images deviating from this standard are categorized as advanced.
 
 \begin{table}[ht]
     \centering
