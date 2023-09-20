@@ -372,16 +372,8 @@ Regarding the experimental framework, three LLMs were selected for evaluation: V
 %%%%  EVALUATION
 
 \chapter{Evaluation}\label{chap:evaluation}
-The analysis comprises 80 question sets, bifurcated into two categories: Easy and Hard. This classification is predicated on the number of objects within the image and their respective scales. Images featuring no more than five objects, with a predominant object occupying a significant portion of the frame, are categorized as 'Easy'. Conversely, images displaying more than five objects, where each item has a comparatively modest presence, are labeled as 'Hard'. A comprehensive overview of the question sets, along with their corresponding outputs, is documented in Appendices \ref{Easy} and \ref{Hard}.\\
-The evaluation framework is structured around three pivotal dimensions:
-\begin{enumerate}
-\item Assessing the model's aptitude in discerning spatial relationships among object pairs.
-\item Analyzing the model's competence in addressing queries emphasized by specific guiding terminologies.
-\item Evaluating the model's skill in providing thorough rationales for its conclusions.
-\end{enumerate}
-The deliberate omission of accuracy metrics for the primary query is attributed to Bard's novel operational approach. In essence, Bard generates a broad array of potential conclusions, introducing challenges in conclusively affirming the veracity of a given response. This approach not only redefines the conventional notion of a 'correct' answer but also complicates the task of drawing equitable comparisons with analogous models.
 
-The precision metrics pertaining to the trio of models are diligently documented in Table \ref{tab:accuracy}. For a more granular analytical insight, readers are directed to Tables \ref{tab:easy-acc} and \ref{tab:hard-acc}.
+In the ensuing chapter, a comprehensive assessment of the models is delineated. Initially, it is imperative to elucidate the resultant output. A meticulous examination of the output can be undertaken in Appendix \ref{Easy} and \ref{Hard}. The accuracy metrics associated with the ensemble of models are systematically cataloged in Table \ref{tab:accuracy}. For a nuanced analytical perspective, readers are encouraged to refer to Tables \ref{tab:easy-acc} and \ref{tab:hard-acc}.
 \begin{table}[h]
     \centering
     \caption{Accuracy of Three Models}
@@ -397,10 +389,9 @@ The precision metrics pertaining to the trio of models are diligently documented
 
 Based on the metrics, the MiniGPT-4 model manifests superior accuracy, succeeded by Visual ChatGPT and subsequently Bard. Notably, Visual ChatGPT's performance closely parallels that of MiniGPT-4. Furthermore, the accuracy across the two question sets remains relatively consistent for each model. However, it's evident that the accuracy for the 'Easy' question set surpasses that of the 'Hard' set for every model. A more granular analysis will be presented in the ensuing section.
 
-\section{Evaluation}
 In the ensuing section, a comprehensive analysis of the three models will be undertaken, gleaning insights from the observed data. The evaluation will be partitioned into three distinct facets: Examination of Accuracy, Scrutiny of the Reasoning Process, and Deliberative Discussions.
 
-\subsection{Examination of Accuracy}
+\section{Examination of Accuracy}
 The detailed wrong answer analysis is documented by Table \ref{tab:error-easy} and \ref{tab:error-hard} in Appendix \ref{Chart}. The analysis is predicated on the following categories:
 \begin{itemize}
     \item \textbf{Left-Right Confusion:} The model confuses the left and right sides of two objects.
@@ -486,7 +477,7 @@ In addtionally, Bard consistently displays an anomaly termed "Vertical Fault". I
 Upon comprehensive analysis of accuracy metrics, MiniGPT-4 emerges as the most consistent model, delivering cogent responses in the majority of scenarios. Visual ChatGPT ranks second, generally providing logical answers; however, its performance exhibits variability during testing, occasionally failing to respond. Bard, while demonstrating some stability, lags in consistency. Its responses, though occasionally reasonable, lack the precision and quality exhibited by the other two models, with answers ranging from imprecise to entirely erroneous.
 
 
-\subsection{Scrutiny of the Reasoning Process}
+\section{Scrutiny of the Reasoning Process}
 
 Within the second dimension, the objective is to scrutinize the models' reasoning mechanisms. This analysis will individually consider each model due to the distinct nature of their responses. A representative answer for this dimension is derived from Question 17, selected primarily because all models correctly ascertain in question 17-2 that the boy is positioned in front of the pizza. Further elucidation on the reasoning steps can be found in Appendix \ref{Easy} and \ref{Hard}. The visual context for Question 17 is depicted in Figure \ref{fig:reasoning-process}. When posed with the query 17-3, phrased as \textcolor{orange}{Show me your specific reasoning steps that lead you to the answer, better in detailed explanation.}, eliciting the following response:
 
@@ -534,12 +525,6 @@ The challenges faced by LLMs in Visual Spatial Reasoning can be traced back to s
     \item A limited understanding of visual intricacies within images.
     \item The language generation frameworks not being refined enough to weave detailed explanations.
 \end{enumerate}
-
-%%%%  This figure uses the "tikz" package mentioned earlier to
-%%%%  draw it.  Obviously there are other ways to draw pictures,
-%%%%  including native LaTeX commands for doing so.  I am merely
-%%%%  providing an example here.  The "label" is how you can 
-%%%%  add a label to refer to the figure in the body of the document.
 
 %%%% LEARNING POINTS
 \chapter{Learning Points}\label{chap:learning}
