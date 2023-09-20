@@ -387,12 +387,12 @@ In the ensuing chapter, a comprehensive assessment of the models is delineated. 
     \end{tabular}
 \end{table}
 
-Based on the metrics, the MiniGPT-4 model manifests superior accuracy, succeeded by Visual ChatGPT and subsequently Bard. Notably, Visual ChatGPT's performance closely parallels that of MiniGPT-4. Furthermore, the accuracy across the two question sets remains relatively consistent for each model. However, it's evident that the accuracy for the 'Easy' question set surpasses that of the 'Hard' set for every model. A more granular analysis will be presented in the ensuing section.
+Based on the metrics, the MiniGPT-4 model manifests superior accuracy, succeeded by Visual ChatGPT and subsequently Bard. Notably, Visual ChatGPT's performance closely parallels that of MiniGPT-4. Furthermore, the accuracy across the two question sets remains relatively consistent for each model. However, it's evident that the accuracy for the 'Easy' question set surpasses that of the 'Hard' set for every model.
 
 In the ensuing section, a comprehensive analysis of the three models will be undertaken, gleaning insights from the observed data. The evaluation will be partitioned into three distinct facets: Examination of Accuracy, Scrutiny of the Reasoning Process, and Deliberative Discussions.
 
-\section{Examination of Accuracy}
-The detailed wrong answer analysis is documented by Table \ref{tab:error-easy} and \ref{tab:error-hard} in Appendix \ref{Chart}. The analysis is predicated on the following categories:
+\section{Examination of Accuracy}\label{chap:accuracy}
+The detailed wrong answer analysis is documented by Table \ref{tab:error-easy} and \ref{tab:error-hard} in Appendix \ref{app:Extra_Tables}. The analysis is predicated on the following categories:
 \begin{itemize}
     \item \textbf{Left-Right Confusion:} The model confuses the left and right sides of two objects.
     \item \textbf{Recognition Error:} The model fails to recognize the object in the image or get the wrong object.
@@ -418,13 +418,13 @@ While Visual ChatGPT accurately responds to this particular query, similar discr
 
 \begin{figure}[h]
     \centering
-    \begin{minipage}{0.5\linewidth}
+    \begin{minipage}{0.8\linewidth}
       \centering
       \includegraphics[width=0.8\linewidth]{../image set/easy/000000047848.jpg}
       \caption{Image of Question 9}
       \label{fig:left-right}
-    \end{minipage}%
-    \begin{minipage}{0.5\linewidth}
+    \end{minipage}\par
+    \begin{minipage}{0.8\linewidth}
       \centering
       \includegraphics[width=0.8\linewidth]{../image set/easy/000000067428.jpg}
       \caption{Image of Question 14}
@@ -444,13 +444,13 @@ From these elucidations, it's palpable that while all models discern the presenc
 
 \begin{figure}[h]
     \centering
-    \begin{minipage}{0.5\linewidth}
+    \begin{minipage}{0.8\linewidth}
         \centering
         \includegraphics[width=0.8\linewidth]{../image set/hard/000000256309.jpg}
         \caption{Image of Question 64}
         \label{fig:positional-fault}
-    \end{minipage}%
-    \begin{minipage}{0.5\linewidth}
+    \end{minipage}\par
+    \begin{minipage}{0.8\linewidth}
       \centering
       \includegraphics[width=0.8\linewidth]{../image set/easy/000000037024.jpg}
       \caption{Image of Question 6}
@@ -477,7 +477,7 @@ In addtionally, Bard consistently displays an anomaly termed "Vertical Fault". I
 Upon comprehensive analysis of accuracy metrics, MiniGPT-4 emerges as the most consistent model, delivering cogent responses in the majority of scenarios. Visual ChatGPT ranks second, generally providing logical answers; however, its performance exhibits variability during testing, occasionally failing to respond. Bard, while demonstrating some stability, lags in consistency. Its responses, though occasionally reasonable, lack the precision and quality exhibited by the other two models, with answers ranging from imprecise to entirely erroneous.
 
 
-\section{Scrutiny of the Reasoning Process}
+\section{Scrutiny of the Reasoning Process}\label{chap:reasoning}
 
 Within the second dimension, the objective is to scrutinize the models' reasoning mechanisms. This analysis will individually consider each model due to the distinct nature of their responses. A representative answer for this dimension is derived from Question 17, selected primarily because all models correctly ascertain in question 17-2 that the boy is positioned in front of the pizza. Further elucidation on the reasoning steps can be found in Appendix \ref{Easy} and \ref{Hard}. The visual context for Question 17 is depicted in Figure \ref{fig:reasoning-process}. When posed with the query 17-3, phrased as \textcolor{orange}{Show me your specific reasoning steps that lead you to the answer, better in detailed explanation.}, eliciting the following response:
 
@@ -511,26 +511,46 @@ I hope this explanation is clear and helpful. Let me know if you have any other 
 
 Upon a meticulous examination of the provided responses, the reasoning aptitudes of the models appear suboptimal. Visual ChatGPT's rationale is notably cursory, furnishing a succinct declaration that merely acknowledges an object's existence. MiniGPT-4, albeit slightly more insightful than Visual ChatGPT, delivers explanations that are wanting in precision and profundity, often defaulting to basic image annotations. Bard's elucidations emerge as the most articulate, mirroring a semblance of human-like deductive reasoning. Nonetheless, even Bard's justifications, though comprehensive, could be further refined for clarity and depth. Furthermore, the models' reasoning approach seems more inclined towards validating their conclusions rather than explicating the spatial interrelation between objects. This trend is particularly pronounced across all three models, especially when their responses to the second query are erroneous.
 
-\section{Deliberative Discussions}
+\section{Deliberative Discussions}\label{chap:discussion}
 
-Upon a meticulous assessment of the models' capabilities, it's evident that while each exhibits a degree of Spatial Reasoning proficiency, they are not without shortcomings. Their performance is notably diminished in the "Hard" category, with accuracy metrics ranging between $42.5\%$ and $57.5\%$. This can be linked to the complexity of the images, typified by an increased object density and significant occlusions. In contrast, within the "Easy" category, the models demonstrate superior performance, registering accuracy metrics from $45.0\%$ to $65.0\%$. This improved outcome is likely due to the images' simplicity, featuring fewer objects and clearer spatial delineations. Collectively, the models exhibit relative uniformity across both categories, though with a modest advantage in the "Easy" segment.
+In the subsequent sections, specifically \ref{chap:accuracy} and \ref{chap:reasoning}, we have embarked on an evaluative journey. Now, it is imperative to delve into a comprehensive discourse on the derived outcomes.
 
-In terms of reasoning articulation, the models' explanations tend to be elementary, lacking the depth characteristic of human interpretations. This constraint could be a byproduct of the models' struggles with visual subtleties and their language generation systems not being adept enough to produce detailed narratives.
+Several quandaries merit discussion within this domain. Foremost among them is the "Left-Right Confusion." Pinpointing the genesis of this issue proves elusive, as no salient indicators precipitate it. For illustration, while the inaugural query from the set might witness the model accurately discerning the left-right relationship, the subsequent query, post the integration of a lead word, manifests an erroneous response. This stark discrepancy suggests potential anomalies within the model's inferential framework, rendering its conclusions inconsistent or capricious.
 
-The challenges faced by LLMs in Visual Spatial Reasoning can be traced back to several factors:
+\begin{figure}[h]
+    \centering
+  \subfloat[a\label{2a}]{%
+       \includegraphics[width=0.6\linewidth]{./pic/left-right-example.png}}
+    \\
+  \subfloat[b\label{2b}]{%
+        \includegraphics[width=0.6\linewidth]{./pic/up-down-example.png}}
+    \\
+  \subfloat[c\label{2c}]{%
+        \includegraphics[width=0.6\linewidth]{./pic/confusion-example.png}}
+  \caption{Examples of spatial relationship (a)Example of simple left-right relationship (b)Example of simple up-down relationship (c)Example of complex relationship}
+  \label{fig:example}
+\end{figure}
+
+Another conundrum confronting the models pertains to their rigid interpretation of spatial relationships. When objects, as depicted in Figures \ref{2a} and \ref{2b}, share proximity and align along a common axis, the models adeptly elucidate their relationship. However, when objects are spatially distanced, as in Figure \ref{2c}, the models grapple with discerning their interrelation. This rigidity contrasts with real-world spatial dynamics, which are inherently fluid and contingent on perspective. For instance, in Fig \ref{2c}, the objects' spatial relationship could be construed as either left-right or up-down, yet the model's verdict remains nebulous.
+
+Moreover, intrinsic limitations plague the models. Bard's response strategy lacks clarity; Visual ChatGPT exhibits volatility, occasionally faltering in its responses; and while MiniGPT-4 is commendable in its responsiveness, its inferential methodology is suboptimal.
+
+Furthermore, the models' reasoning paradigms are found wanting. Their inability to elucidate a lucid and granular reasoning trajectory is evident. The majority exhibit a paucity of analytical prowess, proffering rudimentary conclusions bereft of depth, thereby obfuscating their inferential processes. Additionally, their reasoning lacks the intuitive human touch, devoid of pivotal insights that naturally guide conclusions.
+
+In summation, when assessing LLMs in the realm of Visual Spatial Reasoning, several areas warrant enhancement:
 \begin{enumerate}
-    \item The models' struggles in identifying spatial interrelations among image objects.
-    \item Difficulties in reasoning about these spatial interconnections.
-    \item A constrained ability to generate comprehensive justifications for their determinations.
-    \item A limited understanding of visual intricacies within images.
-    \item The language generation frameworks not being refined enough to weave detailed explanations.
+    \item A more adaptive approach to spatial relationship discernment.
+    \item Augmentation of the reasoning process to emulate human-like depth and nuance.
+    \item Refinement of object recognition capabilities to bolster accuracy and stability.
 \end{enumerate}
 
 %%%% LEARNING POINTS
 \chapter{Learning Points}\label{chap:learning}
-In this chapter, the learning points of this project will be discussed. The learning points are divided into three parts: the learning points of the experiment, the learning points of the model, and the learning points of the project.
+The ensuing chapter will delineate the learning points gleaned from this research endeavor. These learning points are systematically cataloged into three distinct categories: Technical, Methodological, and Professional.
 
-\section{Learning Points of the Experiment}
+\section{Technical}
+
+
 
 %%%%  PROFESSIONAL ISSUES
 \chapter{Professional Issues}\label{chap:issues}
@@ -552,13 +572,213 @@ In this research endeavor, we delved into the Visual Spatial Reasoning competenc
 \appendix
 
 %%%  First appendix.  
-
+\onecolumn
 \chapter{Extra Tables}\label{app:Extra_Tables}
-\input{../Report_Stage/Chart.tex}
-\label{Chart}
-
+%\input{../Report_Stage/Chart.tex}
+\begin{longtable}[c]{|c|c|c|c|}
+    \caption{Accuarcy in Easy of Three Models}
+    \label{tab:easy-acc}\\
+    \hline
+    Question Number & Bard      & Visual ChatGPT & MiniGPT-4 \\ \hline
+    \endfirsthead
+    %
+    \endhead
+    %
+    1               & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    2               & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    3               & \ding{52} & \ding{52}      & \ding{55} \\ \hline
+    4               & \ding{52} & \ding{52}      & \ding{55} \\ \hline
+    5               & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    6               & \ding{55} & \ding{55}      & \ding{52} \\ \hline
+    7               & \ding{52} & \ding{52}      & \ding{55} \\ \hline
+    8               & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    9               & \ding{55} & \ding{52}      & \ding{55} \\ \hline
+    10              & \ding{52} & \ding{55}      & \ding{52} \\ \hline
+    11              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    12              & \ding{55} & \ding{55}      & \ding{52} \\ \hline
+    13              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    14              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    15              & \ding{55} & \ding{55}      & \ding{52} \\ \hline
+    16              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    17              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    18              & \ding{52} & \ding{55}      & \ding{52} \\ \hline
+    19              & \ding{55} & \ding{52}      & \ding{55} \\ \hline
+    20              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    21              & \ding{52} & \ding{55}      & \ding{52} \\ \hline
+    22              & \ding{52} & \ding{52}      & \ding{55} \\ \hline
+    23              & \ding{55} & \ding{55}      & \ding{52} \\ \hline
+    24              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    25              & \ding{52} & \ding{55}      & \ding{52} \\ \hline
+    26              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    27              & \ding{55} & \ding{55}      & \ding{52} \\ \hline
+    28              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    29              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    30              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    31              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    32              & \ding{52} & \ding{52}      & \ding{55} \\ \hline
+    33              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    34              & \ding{55} & \ding{52}      & \ding{55} \\ \hline
+    35              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    36              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    37              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    38              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    39              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    40              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+\end{longtable}
+\begin{longtable}[c]{|c|c|c|c|}
+    \caption{Accuarcy in Hard of Three Models}
+    \label{tab:hard-acc}\\
+    \hline
+    Question Number & Bard      & Visual ChatGPT & MiniGPT-4 \\ \hline
+    \endfirsthead
+    %
+    \endhead
+    %
+    41              & \ding{52} & \ding{52}      & \ding{55} \\ \hline
+    42              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    43              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    44              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    45              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    46              & \ding{55} & \ding{55}      & \ding{52} \\ \hline
+    47              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    48              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    49              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    50              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    51              & \ding{55} & \ding{52}      & \ding{55} \\ \hline
+    52              & \ding{52} & \ding{52}      & \ding{55} \\ \hline
+    53              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    54              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    55              & \ding{52} & \ding{55}      & \ding{55} \\ \hline
+    56              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    57              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    58              & \ding{55} & \ding{55}      & \ding{52} \\ \hline
+    59              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    60              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    61              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    62              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    63              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    64              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    65              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    66              & \ding{52} & \ding{52}      & \ding{55} \\ \hline
+    67              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+    68              & \ding{55} & \ding{55}      & \ding{52} \\ \hline
+    69              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    70              & \ding{52} & \ding{55}      & \ding{52} \\ \hline
+    71              & \ding{52} & \ding{52}      & \ding{52} \\ \hline
+    72              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    73              & \ding{55} & \ding{55}      & \ding{52} \\ \hline
+    74              & \ding{52} & \ding{55}      & \ding{52} \\ \hline
+    75              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    76              & \ding{55} & \ding{55}      & \ding{55} \\ \hline
+    77              & \ding{52} & \ding{55}      & \ding{55} \\ \hline
+    78              & \ding{55} & \ding{52}      & \ding{55} \\ \hline
+    79              & \ding{55} & \ding{52}      & \ding{55} \\ \hline
+    80              & \ding{55} & \ding{52}      & \ding{52} \\ \hline
+\end{longtable}
+\begin{table*}[ht]
+    \centering
+    \caption{Type of Error in Easy part of All Models}
+    \label{tab:error-easy}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    Question Number & Bard                              & Visual ChatGPT                    & MiniGPT-4                         \\ \hline
+    1               & left-right confusion              & -                                 & -                                 \\ \hline
+    2               & left-right confusion              & -                                 & -                                 \\ \hline
+    3               & -                                 & -                                 & left-right confusion              \\ \hline
+    4               & -                                 & -                                 & left-right confusion              \\ \hline
+    5               & recognition error                 & -                                 & -                                 \\ \hline
+    6               & vertical fault                    & vertical fault                    & -                                 \\ \hline
+    7               & -                                 & -                                 & left-right confusion              \\ \hline
+    8               & -                                 & -                                 & -                                 \\ \hline
+    9               & left-right confusion              & -                                 & left-right confusion              \\ \hline
+    10              & -                                 & left-right confusion              & -                                 \\ \hline
+    11              & judgement fault in front and back & judgement fault in front and back & positional fault                  \\ \hline
+    12              & Item misorientation               & Item misorientation               & -                                 \\ \hline
+    13              & left-right confusion              & -                                 & -                                 \\ \hline
+    14              & judgement fault in front and back & judgement fault in front and back & judgement fault in front and back \\ \hline
+    15              & positional fault                  & recognition error                 & -                                 \\ \hline
+    16              & recognition error                 & -                                 & -                                 \\ \hline
+    17              & -                                 & -                                 & -                                 \\ \hline
+    18              & -                                 & no response                       & -                                 \\ \hline
+    19              & left-right confusion              & -                                 & left-right confusion              \\ \hline
+    20              & -                                 & -                                 & -                                 \\ \hline
+    21              & -                                 & left-right confusion              & -                                 \\ \hline
+    22              & -                                 & -                                 & left-right confusion              \\ \hline
+    23              & judgement fault in front and back & judgement fault in front and back & -                                 \\ \hline
+    24              & left-right confusion              & -                                 & -                                 \\ \hline
+    25              & -                                 & left-right confusion              & -                                 \\ \hline
+    26              & -                                 & -                                 & -                                 \\ \hline
+    27              & judgement fault in front and back & judgement fault in front and back & -                                 \\ \hline
+    28              & recognition error                 & recognition error                 & recognition error                 \\ \hline
+    29              & -                                 & -                                 & -                                 \\ \hline
+    30              & vertical fault                    & -                                 & -                                 \\ \hline
+    31              & -                                 & -                                 & -                                 \\ \hline
+    32              & -                                 & -                                 & positional fault                  \\ \hline
+    33              & judgement fault in front and back & judgement fault in front and back & positional fault                  \\ \hline
+    34              & positional fault                  & -                                 & positional fault                  \\ \hline
+    35              & -                                 & -                                 & -                                 \\ \hline
+    36              & -                                 & -                                 & -                                 \\ \hline
+    37              & positional fault                  & positional fault                  & positional fault                  \\ \hline
+    38              & -                                 & -                                 & -                                 \\ \hline
+    39              & positional fault                  & judgement fault in front and back & judgement fault in front and back \\ \hline
+    40              & positional fault                  & -                                 & -                                 \\ \hline
+    \end{tabular}%
+    }
+\end{table*}
+\begin{table*}[ht]
+    \centering
+    \caption{Type of Error in Hard part of All Models}
+    \label{tab:error-hard}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    Question Number & Bard                              & Visual ChatGPT       & MiniGPT-4                         \\ \hline
+    41              & -                                 & -                    & no exact answer                   \\ \hline
+    42              & -                                 & -                    & -                                 \\ \hline
+    43              & -                                 & -                    & -                                 \\ \hline
+    44              & positional fault                  & -                    & -                                   \\ \hline
+    45              & confused expression               & positional fault     & confused expression               \\ \hline
+    46              & item misorientation               & left-right confusion & -                                 \\ \hline
+    47              & -                                 & -                    & -                                 \\ \hline
+    48              & -                                 & -                    & -                                 \\ \hline
+    49              & positional fault                  & -                    & -                                   \\ \hline
+    50              & no exact answer                   & left-right confusion & left-right confusion              \\ \hline
+    51              & positional fault                  & -                    & left-right confusion                \\ \hline
+    52              & -                                 & -                    & no exact answer                   \\ \hline
+    53              & confused expression               & left-right confusion & confused expression               \\ \hline
+    54              & -                                 & -                    & -                                 \\ \hline
+    55              & -                                 & logic fault           & positional fault                 \\ \hline
+    56              & no exact answer                   & recognition error    & left-right confusion              \\ \hline
+    57              & -                                 & -                    & -                                 \\ \hline
+    58              & judgement fault in front and back & no exact answer      & -                                 \\ \hline
+    59              & positional fault                  & no exact answer      & left-right confusion              \\ \hline
+    60              & positional fault                  & -                    & -                                 \\ \hline
+    61              & recognition error                 & -                    & -                                 \\ \hline
+    62              & recognition error                 & -                    & -                                 \\ \hline
+    63              & -                                 & -                    & -                                 \\ \hline
+    64              & positional fault                  & positional fault    & judgement fault in front and back \\ \hline
+    65              & -                                 & -                    & -                                 \\ \hline
+    66              & -                                 & -                    & left-right confusion              \\ \hline
+    67              & recognition error                 & -                    & -                                 \\ \hline
+    68              & positional fault                  & left-right confusion & -                                 \\ \hline
+    69              & -                                 & -                    & -                                 \\ \hline
+    70              & -                                 & recognition error    & -                                 \\ \hline
+    71              & -                                 & -                    & -                                 \\ \hline
+    72              & positional fault                  & left-right confusion & left-right confusion              \\ \hline
+    73              & positional fault                  & positional fault    & -                                 \\ \hline
+    74              & -                                 & positional fault    & -                                 \\ \hline
+    75              & positional fault                  & left-right confusion & positional fault                 \\ \hline
+    76              & recognition error                 & recognition error    & recognition error                 \\ \hline
+    77              & -                                 & positional fault    & positional fault                 \\ \hline
+    78              & positional fault                  & -                    & no exact answer                   \\ \hline
+    79              & recognition error                 & -                    & item misorientation               \\ \hline
+    80              & no exact answer                   & -                    & -                                 \\ \hline
+    \end{tabular}%
+    }
+\end{table*}
 %%%  A second appendix.
-
+\twocolumn
 \chapter{Experimental results}\label{app:Experimental_results}
 
 Here I give details of some experiments that were performed during the
